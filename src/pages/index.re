@@ -13,12 +13,12 @@ let make = _children => {
 
           <div>
             <img src=Assets.logo width="507" height="132" />
-            <div>
+            <p>
               (
                 "World's first Reason conference for web-developers & OCaml enthusiasts"
                 |> Utils.s
               )
-            </div>
+            </p>
             <p>
               (
                 "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
@@ -28,8 +28,9 @@ let make = _children => {
           </div>
           /* this second div gets 30% of div teaser */
           <div>
-            <div> ("11-13 May 2018" |> Utils.s) </div>
-            <div> ("Vienna, Austria" |> Utils.s) </div>
+            <div> ({j|11–13 May 2018|j} |> str) </div>
+            <div> ("Vienna, Austria" |> str) </div>
+            <a href="#tickets"> ("Buy Tickets" |> str) </a>
           </div>
         </div>
       <h2> ("Get productive with Reason in 3 days" |> str) </h2>
@@ -44,24 +45,24 @@ let make = _children => {
         </div>
       </div>
       <div>
-        <div> ("Day 2" |> Utils.s) </div>
+        <div> ("Day 2" |> str) </div>
         <h3> ("Get inspired" |> str) </h3>
-        <div>
+        <p>
           (
             "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
             |> str
           )
-        </div>
+        </p>
       </div>
       <div>
-        <div> ("Day 3" |> Utils.s) </div>
+        <div> ("Day 3" |> str) </div>
         <h3> ("Get productive" |> str) </h3>
-        <div>
+        <p>
           (
             "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
             |> str
           )
-        </div>
+        </p>
       </div>
       <h2> ("Speakers" |> str) </h2>
       <div>
@@ -75,6 +76,8 @@ let make = _children => {
         (ste("Cristiano Calcagno"))
       </div>
       <h2> ("Sponsors" |> str) </h2>
+      <p> ({j|Reason Conf is looking for amazing sponsors...|j} |> str) </p>
+      <h2 id="tickets"> ("Tickets" |> str) </h2>
       <div>
         <img src=Assets.patrick width="28" height="28" />
         ("Patrick" |> str)
