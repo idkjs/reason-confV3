@@ -66,6 +66,12 @@ let make = _children => {
       <h2> ("Speakers" |> str) </h2>
       <h2> ("Sponsors" |> str) </h2>
       <div>
+        <img src=Assets.patrick width="28" height="28" />
+        ("Patrick" |> str)
+        <img src=Assets.nik width="28" height="28" />
+        ("Nik" |> str)
+        <img src=Assets.andrey width="28" height="28" />
+        ("Andrey" |> str)
         <p>
           (
             "ReasonConf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community."
