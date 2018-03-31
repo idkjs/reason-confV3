@@ -1,9 +1,17 @@
-# gatsby-starter-default
+# gatsby based demo
 
-Demo
+## Develop
+
+* run bucklescript
+  `yarn re:start`
+
+* run Gatsby
+  `yarn start`
+
+## Build
 
 ```sh
-yarn run dev
+yarn re:build && yarn build
 ```
 
 ## Deploy
