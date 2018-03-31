@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "reason-confV3",
+  "description": "reason-confV3",
   "version": "1.0.0",
   "author": "Alain Armand <aarmand.inbox@gmail.com",
   "dependencies": {
@@ -17,7 +17,8 @@
     "start": "gatsby develop",
     "re:build": "bsb -make-world",
     "re:start": "bsb -make-world -w",
-    "re:clean": "bsb -clean-world"
+    "re:clean": "bsb -clean-world",
+    "prepare": "npm link bs-platform"
   },
   "devDependencies": {
     "gatsby": "^1.9.243",

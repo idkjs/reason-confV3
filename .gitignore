@@ -6,3 +6,8 @@ build/
 public/
 *.bs.js
 .cache/
+
+# ignore reason output files
+src/Gatsby.js
+src/pages/coc.js
+.bsb.lock
