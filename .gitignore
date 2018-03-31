@@ -11,3 +11,4 @@ public/
 src/Gatsby.js
 src/pages/coc.js
 .bsb.lock
+src/Utils.js

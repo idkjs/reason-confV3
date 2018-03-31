@@ -4,11 +4,11 @@ let make = _children => {
   ...component,
   render: _self =>
     <div>
-      <h1> ({j|Code of Conduct|j} |> Utils.s) </h1>
-      <Gatsby.Link destination="/">
-        ({j|Return to HomePage|j} |> Utils.s)
-      </Gatsby.Link>
-    </div>,
+
+        <h1> ({j|Code of Conduct|j} |> Utils.s) </h1>
+        <Gatsby.Link destination="/"> "[back]" </Gatsby.Link>
+      </div>,
+      /* example of passing an string with an array of text. works! */ /* ({j|Return to HomePage|j} |> Utils.s) */
 };
 
 /* set up default with wrapForJs
