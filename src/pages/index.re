@@ -102,7 +102,7 @@ let make = _children => {
         </div>
         <div>
           <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
-          <div> ("Atrium, 2018" |> str) </div>
+          <div> ({j|© Atrium, 2018|j} |> str) </div>
         </div>
       </div>
     </div>,
