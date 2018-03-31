@@ -78,7 +78,22 @@ let make = _children => {
             |> str
           )
         </p>
-        <div> <Gatsby.Link to_="/coc/"> "Code of Conduct" </Gatsby.Link> </div>
+        <div>
+          <a href="https://www.example.com">
+            ("Subscribe to newsletter" |> str)
+          </a>
+          <Gatsby.Link to_="/coc/"> "Code of Conduct" </Gatsby.Link>
+          <a href="https://www.example.com"> ("Contact Us" |> str) </a>
+        </div>
+        <div>
+          <a href="https://www.twitter.com"> ("Twitter" |> str) </a>
+          <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
+          <a href="https://www.github.com"> ("Github" |> str) </a>
+        </div>
+        <div>
+          <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
+          <div> ("Atrium, 2018" |> str) </div>
+        </div>
       </div>
     </div>,
 };
