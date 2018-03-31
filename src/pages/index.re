@@ -8,22 +8,30 @@ let make = _children => {
   ...component,
   render: _self =>
     <div>
-      <div>
-        (
-          "World's first Reason conference for web-developers & OCaml enthusiasts"
-          |> Utils.s
-        )
-      </div>
-      <div>
-        <div> ("11-13 May 2018" |> Utils.s) </div>
-        <div> ("Vienna, Austria" |> Utils.s) </div>
-      </div>
-      <p>
-        (
-          "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
-          |> str
-        )
-      </p>
+      <div className="teaser">
+        /* this div gets 70% of div teaser */
+
+          <div>
+            <img src=Assets.logo width="507" height="132" />
+            <div>
+              (
+                "World's first Reason conference for web-developers & OCaml enthusiasts"
+                |> Utils.s
+              )
+            </div>
+            <p>
+              (
+                "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
+                |> str
+              )
+            </p>
+          </div>
+          /* this second div gets 30% of div teaser */
+          <div>
+            <div> ("11-13 May 2018" |> Utils.s) </div>
+            <div> ("Vienna, Austria" |> Utils.s) </div>
+          </div>
+        </div>
       <h2> ("Get productive with Reason in 3 days" |> str) </h2>
       <div>
         <div> (ste("Day 1")) </div>

@@ -1,5 +1,5 @@
 {
-  "name": "reason-confV3",
+  "name": "reason-conf-v3",
   "description": "reason-confV3",
   "version": "1.0.0",
   "author": "Alain Armand <aarmand.inbox@gmail.com",
@@ -10,9 +10,7 @@
     "react-helmet": "^5.2.0",
     "reason-react": "^0.3.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
