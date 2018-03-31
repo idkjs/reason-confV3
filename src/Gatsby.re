@@ -1,6 +1,10 @@
-/* binding to gatsby link */
+/* binding to gatsby link
+   Running into default issue again. Name the bs module inside brackets and get default
+   version of the module
+   */
 module Link = {
-  [@bs.module] external gatsbyLink : ReasonReact.reactClass = "gatsby-link";
+  [@bs.module "gatsby-link"]
+  external gatsbyLink : ReasonReact.reactClass = "default";
   let make = (~destination: string, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=gatsbyLink,
