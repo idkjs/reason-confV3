@@ -1,16 +1,9 @@
-let component = ReasonReact.statelessComponent("CodeOfConduct");
+let component = ReasonReact.statelessComponent("Home");
 
 let ste = ReasonReact.stringToElement;
 
 let str = Utils.s;
 
-/*
-
- <div>(
-   "PlaceHolder"
-   |> Utils.s
- )</div>
- */
 let make = _children => {
   ...component,
   render: _self =>
@@ -25,14 +18,6 @@ let make = _children => {
         <div> ("11-13 May 2018" |> Utils.s) </div>
         <div> ("Vienna, Austria" |> Utils.s) </div>
       </div>
-      /* <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div>
-         <div> ("PlaceHolder" |> Utils.s) </div> */
       <p>
         (
           "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"

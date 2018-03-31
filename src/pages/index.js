@@ -5,7 +5,7 @@ var React = require("react");
 var Gatsby = require("../Gatsby.js");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 
-var component = ReasonReact.statelessComponent("CodeOfConduct");
+var component = ReasonReact.statelessComponent("Home");
 
 function ste(prim) {
   return prim;
