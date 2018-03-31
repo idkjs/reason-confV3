@@ -4,11 +4,12 @@ let make = _children => {
   ...component,
   render: _self =>
     <div>
-
-        <h1> ({j|Code of Conduct|j} |> Utils.s) </h1>
-        <Gatsby.Link destination="/"> "[back]" </Gatsby.Link>
-      </div>,
-      /* example of passing an string with an array of text. works! */ /* ({j|Return to HomePage|j} |> Utils.s) */
+      <h1> ({j|Code of Conduct|j} |> Utils.s) </h1>
+      <Gatsby.Link to_="/"> "[back]" </Gatsby.Link>
+    </div> /* example of passing an string with an array of text. works
+    I think because reason is reading it as a property of a record. Gatsby.Link must
+    be treating anything passed to it as a record?
+    ! */ /* ({j|Return to HomePage|j} |> Utils.s) */
 };
 
 /* set up default with wrapForJs
