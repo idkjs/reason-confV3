@@ -9,10 +9,28 @@
 
 [@bs.module] external andreyImport : string = "./assets/andrey.jpg";
 
+[@bs.module] external chengLouImport : string = "./assets/cheng-lou.jpg";
+
+[@bs.module] external keiraImport : string = "./assets/keira-hodgkison.jpg";
+
+[@bs.module]
+external lauraGaetanoImport : string = "./assets/laura-gaetano.jpg";
+
+[@bs.module]
+external cristianoCalcagnoImport : string = "./assets/cristiano-calcagno.jpg";
+
 let logo = logoImport;
 
 let nik = nikImport;
 
+let andrey = andreyImport;
+
 let patrick = patrickImport;
 
-let andrey = andreyImport;
+let keiraHodgkison = keiraImport;
+
+let chengLou = chengLouImport;
+
+let lauraGaetano = lauraGaetanoImport;
+
+let cristianoCalcagno = cristianoCalcagnoImport;

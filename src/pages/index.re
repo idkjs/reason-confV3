@@ -64,6 +64,16 @@ let make = _children => {
         </div>
       </div>
       <h2> ("Speakers" |> str) </h2>
+      <div>
+        <img src=Assets.chengLou width="225" height="225" />
+        (ste("Cheng Lou"))
+        <img src=Assets.lauraGaetano width="225" height="225" />
+        (ste("Laura Gaetano"))
+        <img src=Assets.keiraHodgkison width="225" height="225" />
+        (ste("Keira"))
+        <img src=Assets.cristianoCalcagno width="225" height="225" />
+        (ste("Cristiano Calcagno"))
+      </div>
       <h2> ("Sponsors" |> str) </h2>
       <div>
         <img src=Assets.patrick width="28" height="28" />
@@ -86,7 +96,7 @@ let make = _children => {
           <a href="https://www.example.com"> ("Contact Us" |> str) </a>
         </div>
         <div>
-          <a href="https://www.twitter.com"> ("Twitter" |> str) </a>
+          <a href="https://www.twitter.com/reasonconf"> ("Twitter" |> str) </a>
           <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
           <a href="https://www.github.com"> ("Github" |> str) </a>
         </div>
