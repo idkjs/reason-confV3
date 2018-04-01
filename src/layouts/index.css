@@ -6,19 +6,40 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 }
 
 body {
-  font-family: sans-serif;
-  /* font-size: 14px; */
+  font-family: "Assistant", sans-serif;
+  font-size: 16pt;
 }
 
+/* apply following font to all following tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hammersmith One", Arial, sans-serif;
+}
 /* Main grid layout, we apply it in layouts/index.js on article 
 min-width: if the content is smaller than the minWidth, minWidth size
 is applied, ignored if content is larger than min-width.
 */
-/* Main grid layout */
 .container {
-  display: grid;
-  justify-content: center;
+}
+
+.container--centered {
+  margin: 0 auto;
   min-width: 960px;
+}
+/* main grid layout  */
+.grid {
+  display: grid;
+}
+
+.grid-4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-6col {
+  grid-template-columns: repeat(6, 1fr);
 }
 /* format logo in index.re
 The grid-template-rows CSS property defines the line names 
@@ -26,6 +47,7 @@ and track sizing functions of the grid rows.
 gtc splits the component where applied into two columns, here o 70 and 30 %  of 
 available area.
 */
+/* home page header section */
 .teaser {
   display: grid;
   grid-template-columns: 70% 30%;
