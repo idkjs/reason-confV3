@@ -11,34 +11,36 @@ let make = _children => {
       <header className="teaser">
         /* this div gets 70% of div teaser */
 
-          <div>
-            <h1 className="teaser--logo">
-              <img
-                src=Assets.logo
-                width="507"
-                height="132"
-                alt="Reason Conf Logo"
-              />
-            </h1>
-            <h2 className="teaser--tagline">
-              (
-                "World's first Reason conference for web-developers & OCaml enthusiasts"
-                |> str
-              )
-            </h2>
-            <p className="teaser--text">
-              (
-                "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
-                |> str
-              )
-            </p>
-          </div>
-          /* this second div gets 30% of div teaser */
-          <div>
-            <p> ({j|11–13 May 2018|j} |> str) </p>
-            <p> ("Vienna, Austria" |> str) </p>
-            <a href="#tickets"> ("Buy Tickets" |> str) </a>
-          </div>
+          <section className="teaser--wrapper">
+            <div>
+              <h1 className="teaser--logo">
+                <img
+                  src=Assets.logo
+                  width="507"
+                  height="132"
+                  alt="Reason Conf Logo"
+                />
+              </h1>
+              <h2 className="teaser--tagline">
+                (
+                  "World's first Reason conference for web-developers & OCaml enthusiasts"
+                  |> str
+                )
+              </h2>
+              <p className="teaser--text">
+                (
+                  "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
+                  |> str
+                )
+              </p>
+            </div>
+            /* this second div gets 30% of div teaser */
+            <div>
+              <p> ({j|11–13 May 2018|j} |> str) </p>
+              <p> ("Vienna, Austria" |> str) </p>
+              <a href="#tickets"> ("Buy Tickets" |> str) </a>
+            </div>
+          </section>
         </header>
       <section className="timeline">
         <h2> ("Get productive with Reason in 3 days" |> str) </h2>
