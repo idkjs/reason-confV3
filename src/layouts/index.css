@@ -28,7 +28,8 @@ is applied, ignored if content is larger than min-width.
 
 .container--centered {
   margin: 0 auto;
-  min-width: 960px;
+  padding: 20px;
+  min-width: 1000px;
 }
 /* main grid layout  */
 .grid {

@@ -168,3 +168,7 @@ footer--about {
   text-align: right;
 }
 ```
+
+## container--centered
+
+Add container--centered to all sections and now becomes a bit simpler to adjust all sections by playing with properties of that property. Adding padding and max-width 1000 seems to have helped look some but not yet responsive.
