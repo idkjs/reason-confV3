@@ -77,3 +77,13 @@ Also, this div will show after img because of img's z-index.
   padding: 2rem 20px 20px 20px;
   background: #fff;
 }
+
+.speaker--name {
+  margin: 0.5em 0;
+  font-size: 1rem;
+}
+
+.speaker--company {
+  margin: 0;
+  font-size: 0.75rem;
+}
