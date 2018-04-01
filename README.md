@@ -37,3 +37,37 @@ yarn re:build && yarn build
 ## Nik's CSS Tips
 
 1.  Write your tag names before writing the css then go write the css. Think ahead.
+
+## speaker-list css
+
+Just adding speaker-list without anything:
+
+```css
+.speaker-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Adding css for each item doesnt fix:
+
+```css
+.speaker-list--item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+```
+
+Adding css for each speaker block with position: relative renders the four items with spacing that respects the size of speaker-list-list. Without this, takes alignment of everything on page outside the viewport.
+
+```css
+/* single speaker block */
+.speaker {
+  position: relative;
+  margin: 0;
+}
+```

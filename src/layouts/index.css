@@ -43,3 +43,15 @@ so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
   margin: 0;
   padding: 0;
 }
+
+.speaker-list--item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* single speaker block */
+.speaker {
+  position: relative;
+  margin: 0;
+}
