@@ -1,12 +1,20 @@
-/* at this point this component just renders "Imprint" text when called.
-   I can see how we might put a logo or whatever here. A limited function
-   component.
-   */
 let component = ReasonReact.statelessComponent("Imprint");
+
+let ste = Utils.s;
 
 let make = _children => {
   ...component,
-  render: _self => <div> <h1> ({j|Imprint|j} |> Utils.s) </h1> </div>,
+  render: _self =>
+    <div>
+      <h1> ({j|Imprint|j} |> ste) </h1>
+      <h2>
+        (
+          ste({j|Atrium—Verein zur Förderung von SoftwareentwicklerInnen|j})
+        )
+      </h2>
+      <p> (ste("Siebenbrunnengasse 44, 1050 Vienna, Austria")) </p>
+      <p> <a href="mailto:nik@nikgraf.com"> (ste("nik@nikgraf.com")) </a> </p>
+    </div>,
 };
 
 let default = ReasonReact.wrapReasonForJs(~component, _jsProps => make([||]));
