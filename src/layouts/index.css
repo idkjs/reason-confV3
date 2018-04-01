@@ -98,10 +98,21 @@ see: https://alligator.io/css/css-grid-layout-repeat-notation/
 so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
 */
 
+/* The ::before selector inserts something before the content of each selected element(s). */
+/* Speaker section */
+.speakers::before {
+  position: absolute;
+  margin-top: -80px;
+  background: url("../assets/speakers-bg.svg");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+}
 /* Speakers list grid */
 .speaker-list {
   display: grid;
-  /* justify-items: start; */
+  justify-items: start;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin: 0;
@@ -129,17 +140,16 @@ before the other elements in div like name and company, in this case
 */
 .speaker > img {
   position: relative;
-  z-index: 1;
+  width: 200px;
+  height: 200px;
+  filter: grayscale(1) drop-shadow(10px 75px white);
 }
 /* apply following style to figcaption nested in div with .speaker class.
 Also, this div will show after img because of img's z-index.
 */
 .speaker > figcaption {
   position: relative;
-  top: -2rem;
-  left: 20px;
-  padding: 2rem 20px 20px 20px;
-  background: #fff;
+  padding: 0 20px;
 }
 
 .speaker--name {

@@ -206,3 +206,19 @@ Specifies named grid areas, which are not associated with any particular grid it
 Defines the default justify-self for all items of the box, given them the default way of justifying each box along the appropriate axi.
 The CSS justify-items property defines the default justify-self for all items of the box, giving them the default way of justifying each box along the appropriate axis.
 [source](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
+
+## ::before selector
+
+The [::before selector](https://www.w3schools.com/cssref/sel_before.asp) inserts something before the content of each selected element(s).
+
+```css
+.speakers::before {
+  position: absolute;
+  margin-top: -80px;
+  background: url("../assets/speakers-bg.svg");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+}
+```
