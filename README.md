@@ -199,3 +199,10 @@ Specifies named grid areas, which are not associated with any particular grid it
     "text ...";
 }
 ```
+
+## justify-items
+
+`justify-items: start;`
+Defines the default justify-self for all items of the box, given them the default way of justifying each box along the appropriate axi.
+The CSS justify-items property defines the default justify-self for all items of the box, giving them the default way of justifying each box along the appropriate axis.
+[source](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)

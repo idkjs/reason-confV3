@@ -97,9 +97,11 @@ Define background color, bgrd image and size
 see: https://alligator.io/css/css-grid-layout-repeat-notation/
 so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
 */
+
 /* Speakers list grid */
 .speaker-list {
   display: grid;
+  /* justify-items: start; */
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin: 0;
