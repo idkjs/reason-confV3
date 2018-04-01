@@ -54,6 +54,8 @@ Define background color, bgrd image and size
 */
 .teaser {
   /* background-color: #99d1de; */
+  padding-bottom: 120px;
+
   background: url(../assets/teaser-bg.png) no-repeat;
   background-size: cover;
 }
