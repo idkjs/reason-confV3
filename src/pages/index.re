@@ -12,7 +12,7 @@ let make = _children => {
         /* this div gets 70% of div teaser */
 
           <section className="teaser--wrapper container--centered">
-            <div>
+            <main className="teaser--main">
               <h1 className="teaser--logo">
                 <img
                   src=Assets.logo
@@ -33,98 +33,110 @@ let make = _children => {
                   |> str
                 )
               </p>
-            </div>
+            </main>
             /* this second div gets 30% of div teaser */
-            <div>
+            <aside className="teaser--aside">
               <p> ({j|11–13 May 2018|j} |> str) </p>
               <p> ("Vienna, Austria" |> str) </p>
               <a href="#tickets"> ("Buy Tickets" |> str) </a>
-            </div>
+            </aside>
           </section>
         </header>
       <section className="timeline">
-        <h2> ("Get productive with Reason in 3 days" |> str) </h2>
-        <div>
-          <div> (ste("Day 1")) </div>
-          <h3> ("Get started" |> str) </h3>
-          <p>
-            (
-              "Full day workshop to get every attendee into the language & platform."
-              |> str
-            )
-          </p>
-        </div>
-        <div>
-          <div> ("Day 2" |> str) </div>
-          <h3> ("Get inspired" |> str) </h3>
-          <p>
-            (
-              "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
-              |> str
-            )
-          </p>
-        </div>
-        <div>
-          <div> ("Day 3" |> str) </div>
-          <h3> ("Get productive" |> str) </h3>
-          <p>
-            (
-              "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
-              |> str
-            )
-          </p>
+        <div className="container--centered">
+          <h2> ("Get productive with Reason in 3 days" |> str) </h2>
+          <div>
+            <div> (ste("Day 1")) </div>
+            <h3> ("Get started" |> str) </h3>
+            <p>
+              (
+                "Full day workshop to get every attendee into the language & platform."
+                |> str
+              )
+            </p>
+          </div>
+          <div>
+            <div> ("Day 2" |> str) </div>
+            <h3> ("Get inspired" |> str) </h3>
+            <p>
+              (
+                "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
+                |> str
+              )
+            </p>
+          </div>
+          <div>
+            <div> ("Day 3" |> str) </div>
+            <h3> ("Get productive" |> str) </h3>
+            <p>
+              (
+                "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
+                |> str
+              )
+            </p>
+          </div>
         </div>
       </section>
       <section className="speakers">
-        <h2> ("Speakers" |> str) </h2>
-        <ul className="speaker-list">
-          <li className="speaker-list--item">
-            <figure className="speaker">
-              <img src=Assets.chengLou width="225" height="225" />
-              <figcaption>
-                <p className="speaker--name"> (ste("Cheng Lou")) </p>
-                <p className="speaker--company"> (ste("Facebook")) </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li className="speaker-list--item">
-            <figure className="speaker">
-              <img src=Assets.lauraGaetano width="225" height="225" />
-              <figcaption>
-                <p className="speaker--name"> (ste("Laura Gaetano")) </p>
-                <p className="speaker--company">
-                  (ste("Travis Foundation"))
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li className="speaker-list--item">
-            <figure className="speaker">
-              <img src=Assets.keiraHodgkison width="225" height="225" />
-              <figcaption>
-                <p className="speaker--name"> (ste("Keira")) </p>
-                <p className="speaker--company"> (ste("Culture Amp")) </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li className="speaker-list--item">
-            <figure className="speaker">
-              <img src=Assets.cristianoCalcagno width="225" height="225" />
-              <figcaption>
-                <p className="speaker--name"> (ste("Cristiano Calcagno")) </p>
-                <p className="speaker--company"> (ste("Facebook")) </p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div className="container--centered">
+          <h2> ("Speakers" |> str) </h2>
+          <ul className="speaker-list">
+            <li className="speaker-list--item">
+              <figure className="speaker">
+                <img src=Assets.chengLou width="225" height="225" />
+                <figcaption>
+                  <p className="speaker--name"> (ste("Cheng Lou")) </p>
+                  <p className="speaker--company"> (ste("Facebook")) </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li className="speaker-list--item">
+              <figure className="speaker">
+                <img src=Assets.lauraGaetano width="225" height="225" />
+                <figcaption>
+                  <p className="speaker--name"> (ste("Laura Gaetano")) </p>
+                  <p className="speaker--company">
+                    (ste("Travis Foundation"))
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li className="speaker-list--item">
+              <figure className="speaker">
+                <img src=Assets.keiraHodgkison width="225" height="225" />
+                <figcaption>
+                  <p className="speaker--name"> (ste("Keira")) </p>
+                  <p className="speaker--company"> (ste("Culture Amp")) </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li className="speaker-list--item">
+              <figure className="speaker">
+                <img src=Assets.cristianoCalcagno width="225" height="225" />
+                <figcaption>
+                  <p className="speaker--name">
+                    (ste("Cristiano Calcagno"))
+                  </p>
+                  <p className="speaker--company"> (ste("Facebook")) </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
       <section className="sponsors">
-        <h2> ("Sponsors" |> str) </h2>
-        <p> ({j|Reason Conf is looking for amazing sponsors...|j} |> str) </p>
+        <div className="container--centered">
+          <h2> ("Sponsors" |> str) </h2>
+          <p>
+            ({j|Reason Conf is looking for amazing sponsors...|j} |> str)
+          </p>
+        </div>
       </section>
       <section className="tickets">
-        <h2 id="tickets"> ("Tickets" |> str) </h2>
-        <p> ("Coming soon..." |> str) </p>
+        <div className="container--centered">
+          <h2 id="tickets"> ("Tickets" |> str) </h2>
+          <p> ("Coming soon..." |> str) </p>
+        </div>
       </section>
     </article>,
 };
