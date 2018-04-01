@@ -7,7 +7,7 @@ let str = Utils.s;
 let make = _children => {
   ...component,
   render: _self =>
-    <div>
+    <article>
       <div className="teaser">
         /* this div gets 70% of div teaser */
 
@@ -79,7 +79,7 @@ let make = _children => {
       <p> ({j|Reason Conf is looking for amazing sponsors...|j} |> str) </p>
       <h2 id="tickets"> ("Tickets" |> str) </h2>
       <p> ("Coming soon..." |> str) </p>
-    </div>,
+    </article>,
 };
 
 let default = ReasonReact.wrapReasonForJs(~component, _jsProps => make([||]));
