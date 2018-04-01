@@ -86,3 +86,18 @@ before the other elements in div like name and company, in this case.
   z-index: 1;
 }
 ```
+
+### FigCaption Styles
+
+Apply following style to figcaption nested in div with .speaker class.
+Also, this div will show after img because of img's z-index. This leaves a space
+
+```css
+.speaker > figcaption {
+  position: relative;
+  top: -2rem;
+  left: 20px;
+  padding: 2rem 20px 20px 20px;
+  background: #fff;
+}
+```
