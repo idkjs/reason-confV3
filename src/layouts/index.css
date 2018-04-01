@@ -47,12 +47,28 @@ and track sizing functions of the grid rows.
 gtc splits the component where applied into two columns, here o 70 and 30 %  of 
 available area.
 */
-/* home page header section */
+
+/* home page header section
+Define background color, bgrd image and size
+*/
 .teaser {
+  /* background-color: #99d1de; */
+  background: url(../assets/teaser-bg.jpg) no-repeat;
+  background-size: cover;
+}
+/* grid settings for .teaser */
+.teaser--wrapper {
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: auto;
 }
+
+.teaser--main {
+}
+
+.teaser--aside {
+  font-family: "Hammersmith One", Arial, sans-serif;
+}
+
 /* uses repeat
 see: https://alligator.io/css/css-grid-layout-repeat-notation/
 so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
