@@ -194,5 +194,11 @@ footer {
 }
 .copyright {
   grid-column-end: span 2;
+  align-self: end;
   text-align: right;
+  color: #888;
+}
+
+.copyright > p {
+  margin: 0;
 }
