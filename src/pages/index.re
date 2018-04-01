@@ -75,8 +75,8 @@ let make = _children => {
       </section>
       <section className="speakers">
         <h2> ("Speakers" |> str) </h2>
-        <ul>
-          <li className="speakers--item">
+        <ul className="speaker-list">
+          <li className="speaker-list--item">
             <figure className="speaker">
               <img src=Assets.chengLou width="225" height="225" />
               <figcaption>
@@ -85,7 +85,7 @@ let make = _children => {
               </figcaption>
             </figure>
           </li>
-          <li className="speakers--item">
+          <li className="speaker-list--item">
             <figure className="speaker">
               <img src=Assets.lauraGaetano width="225" height="225" />
               <figcaption>
@@ -96,7 +96,7 @@ let make = _children => {
               </figcaption>
             </figure>
           </li>
-          <li className="speakers--item">
+          <li className="speaker-list--item">
             <figure className="speaker">
               <img src=Assets.keiraHodgkison width="225" height="225" />
               <figcaption>
@@ -105,7 +105,7 @@ let make = _children => {
               </figcaption>
             </figure>
           </li>
-          <li className="speakers--item">
+          <li className="speaker-list--item">
             <figure className="speaker">
               <img src=Assets.cristianoCalcagno width="225" height="225" />
               <figcaption>
