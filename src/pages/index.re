@@ -12,15 +12,14 @@ let make = _children => {
         /* this div gets 70% of div teaser */
 
           <section className="teaser--wrapper container--centered">
+            <h1 className="teaser--logo"> <img src=Assets.logo /> </h1>
+            /* <img
+                 src=Assets.logo
+                 width="507"
+                 height="132"
+                 alt="Reason Conf Logo"
+               /> */
             <main className="teaser--main">
-              <h1 className="teaser--logo">
-                <img
-                  src=Assets.logo
-                  width="507"
-                  height="132"
-                  alt="Reason Conf Logo"
-                />
-              </h1>
               <h2 className="teaser--tagline">
                 (
                   "World's first Reason conference for web-developers & OCaml enthusiasts"
@@ -36,10 +35,16 @@ let make = _children => {
             </main>
             /* this second div gets 30% of div teaser */
             <aside className="teaser--aside">
-              <p> ({j|11–13 May 2018|j} |> str) </p>
-              <p> ("Vienna, Austria" |> str) </p>
-              <a href="#tickets"> ("Buy Tickets" |> str) </a>
+              <p className="teaser--dates">
+                ({j|11–13 May 2018|j} |> str)
+              </p>
+              <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
             </aside>
+            <nav>
+              <a className="teaser--button" href="#tickets">
+                ("Buy Tickets" |> str)
+              </a>
+            </nav>
           </section>
         </header>
       <section className="timeline">

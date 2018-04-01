@@ -183,3 +183,19 @@ The grid-gap CSS property is a shorthand property for grid-row-gap and grid-colu
 
 `grid-template-row: 260px auto;`, where auto is being used as max-content property. So telling grid to automatically determine the max content given the size of first variable.
 [source](https://www.quackit.com/css/css3/properties/css_grid-template-rows.cfm)
+
+## grid-template-areas
+
+Specifies named grid areas, which are not associated with any particular grid item, but can be referenced from the grid-placement properties.
+
+```css
+.teaser--wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 260px auto;
+  grid-template-areas:
+    "logo dates"
+    "text ...";
+}
+```

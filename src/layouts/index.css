@@ -65,7 +65,9 @@ Define background color, bgrd image and size
   grid-gap: 20px;
   grid-template-columns: 70% 30%;
   grid-template-rows: 260px auto;
-  grid-template-areas: "logo dates" "text ...";
+  grid-template-areas:
+    "logo dates"
+    "text ...";
 }
 /* push logo to so that aligns to end/rights side of div with no margin */
 .teaser--logo {
@@ -75,6 +77,8 @@ Define background color, bgrd image and size
 }
 
 .teaser--aside {
+  align-self: end;
+  grid-area: dates;
   font-family: "Hammersmith One", Arial, sans-serif;
 }
 
@@ -82,6 +86,8 @@ Define background color, bgrd image and size
   font-size: 1.5rem;
 }
 
+.teaser--button {
+}
 /* uses repeat
 see: https://alligator.io/css/css-grid-layout-repeat-notation/
 so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
