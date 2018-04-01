@@ -172,3 +172,9 @@ footer--about {
 ## container--centered
 
 Add container--centered to all sections and now becomes a bit simpler to adjust all sections by playing with properties of that property. Adding padding and max-width 1000 seems to have helped look some but not yet responsive.
+
+## grid-gap
+
+The grid-gap CSS property is a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns.
+[source](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap)
+`grid-gap: 20px;`
