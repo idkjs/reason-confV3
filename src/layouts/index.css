@@ -64,13 +64,22 @@ Define background color, bgrd image and size
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 70% 30%;
+  grid-template-rows: 260px auto;
+  grid-template-areas: "logo dates" "text ...";
 }
-
-.teaser--main {
+/* push logo to so that aligns to end/rights side of div with no margin */
+.teaser--logo {
+  grid-area: logo;
+  align-self: end;
+  margin: 0;
 }
 
 .teaser--aside {
   font-family: "Hammersmith One", Arial, sans-serif;
+}
+
+.teaser--text {
+  font-size: 1.5rem;
 }
 
 /* uses repeat

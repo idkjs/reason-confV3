@@ -178,3 +178,8 @@ Add container--centered to all sections and now becomes a bit simpler to adjust 
 The grid-gap CSS property is a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns.
 [source](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap)
 `grid-gap: 20px;`
+
+## grid template auto
+
+`grid-template-row: 260px auto;`, where auto is being used as max-content property. So telling grid to automatically determine the max content given the size of first variable.
+[source](https://www.quackit.com/css/css3/properties/css_grid-template-rows.cfm)
