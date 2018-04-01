@@ -101,3 +101,46 @@ Also, this div will show after img because of img's z-index. This leaves a space
   background: #fff;
 }
 ```
+
+## Font Family Names in Quotes
+
+see: https://stackoverflow.com/questions/13751412/why-would-font-names-need-quotes
+
+This is ok. Only CSS generic fonts dont need quotes.
+
+```css
+body {
+  font-family: "Assistant", sans-serif;
+  font-size: 16pt;
+}
+
+/* apply following font to all following tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hammersmith One", Arial, sans-serif;
+}
+```
+
+To use these fonts, import them where we are applying our css, in this case, in layouts/index.js.
+
+```js
+const TemplateWrapper = ({ children }) => (
+  <article className="container">
+    <Helmet
+      title="Demo 2018"
+      meta={[
+        { name: "description", content: "Demo 2018" },
+        { name: "keywords", content: "Gatsby, Conference, Reason, Reason Conf" }
+      ]}
+    >
+      <style type="text/css">{`@import url('https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One');`}</style>
+    </Helmet>
+    <main>{children()}</main>
+    <Footer />
+  </article>
+);
+```

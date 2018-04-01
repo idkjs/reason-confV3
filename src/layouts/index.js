@@ -13,7 +13,9 @@ const TemplateWrapper = ({ children }) => (
         { name: "description", content: "Demo 2018" },
         { name: "keywords", content: "Gatsby, Conference, Reason, Reason Conf" }
       ]}
-    />
+    >
+      <style type="text/css">{`@import url('https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One');`}</style>
+    </Helmet>
     <main>{children()}</main>
     <Footer />
   </article>
