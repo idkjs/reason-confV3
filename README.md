@@ -144,3 +144,27 @@ const TemplateWrapper = ({ children }) => (
   </article>
 );
 ```
+
+## Footer CSS
+
+After applying column grid to Footer, you will get the 4 section/divs we have defined there spread across the defined grid columns, side by side, as expected. Have to define addition grid properties specific to Footer to get additional formatting. Below we are using [grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area), shorthand for grid's grid-row start, grid-column-start, grid-row-end and grid-column-end properties to specify size and location within the footer grid-row.
+
+1.  define a name for the grid area.
+2.  g-column handles gc-start and end so `1/ span 2` says start at column 1 and go for 2 columns to the class footer--about.
+3.  For .copyright, put it at the end and make it take up the last two grid columns.
+
+```css
+footer {
+  grid-area: footer;
+  font-size: 0.9rem;
+}
+
+footer--about {
+  grid-column: 1 / span 2;
+}
+
+.copyright {
+  grid-column-end: span 2;
+  text-align: right;
+}
+```

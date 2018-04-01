@@ -109,3 +109,18 @@ Also, this div will show after img because of img's z-index.
   margin: 0;
   font-size: 0.75rem;
 }
+
+/* Footer */
+footer {
+  grid-area: footer;
+  font-size: 0.9rem;
+}
+
+.footer--about {
+  grid-column: 1 / span 2;
+}
+
+.copyright {
+  grid-column-end: span 2;
+  text-align: right;
+}
