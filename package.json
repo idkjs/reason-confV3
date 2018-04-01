@@ -19,7 +19,7 @@
     "re:build": "bsb -make-world",
     "re:start": "bsb -make-world -w",
     "re:clean": "bsb -clean-world",
-    "pre-commit": "lint-staged",
+    "precommit": "lint-staged",
     "prepare": "npm link bs-platform"
   },
   "lint-staged": {
