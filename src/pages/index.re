@@ -78,6 +78,7 @@ let make = _children => {
       <h2> ("Sponsors" |> str) </h2>
       <p> ({j|Reason Conf is looking for amazing sponsors...|j} |> str) </p>
       <h2 id="tickets"> ("Tickets" |> str) </h2>
+      <p> ("Coming soon..." |> str) </p>
       <div>
         <img src=Assets.patrick width="28" height="28" />
         ("Patrick" |> str)
