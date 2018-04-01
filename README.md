@@ -71,3 +71,18 @@ Adding css for each speaker block with position: relative renders the four items
   margin: 0;
 }
 ```
+
+### Nested Tag Styles
+
+In nested div, like our list of speakers,
+use '>' to apply img style to descendants of the div in which we call it, so, if we call this in speaker, find img tag nested in .speaker and apply this style. https://stackoverflow.com/questions/4459821/css-selector-what-is-it
+
+z-index: specify stack order of element, so within this div, always place the img div
+before the other elements in div like name and company, in this case.
+
+```css
+.speaker > img {
+  position: relative;
+  z-index: 1;
+}
+```
