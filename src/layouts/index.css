@@ -153,6 +153,15 @@ Also, this div will show after img because of img's z-index.
 }
 
 .speaker--name {
+  margin: 0.25em 0;
+  font-size: 1.25rem;
+}
+.speaker--company {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+/* .speaker--name {
   margin: 0.5em 0;
   font-size: 1rem;
 }
@@ -160,7 +169,7 @@ Also, this div will show after img because of img's z-index.
 .speaker--company {
   margin: 0;
   font-size: 0.75rem;
-}
+} */
 
 /* Footer */
 footer {
