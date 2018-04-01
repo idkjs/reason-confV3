@@ -79,36 +79,6 @@ let make = _children => {
       <p> ({j|Reason Conf is looking for amazing sponsors...|j} |> str) </p>
       <h2 id="tickets"> ("Tickets" |> str) </h2>
       <p> ("Coming soon..." |> str) </p>
-      <div>
-        <img src=Assets.patrick width="28" height="28" />
-        ("Patrick" |> str)
-        <img src=Assets.nik width="28" height="28" />
-        ("Nik" |> str)
-        <img src=Assets.andrey width="28" height="28" />
-        ("Andrey" |> str)
-        <p>
-          (
-            "ReasonConf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community."
-            |> str
-          )
-        </p>
-        <div>
-          <a href="https://www.example.com">
-            ("Subscribe to newsletter" |> str)
-          </a>
-          <Gatsby.Link to_="/coc/"> "Code of Conduct" </Gatsby.Link>
-          <a href="https://www.example.com"> ("Contact Us" |> str) </a>
-        </div>
-        <div>
-          <a href="https://www.twitter.com/reasonconf"> ("Twitter" |> str) </a>
-          <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
-          <a href="https://www.github.com"> ("Github" |> str) </a>
-        </div>
-        <div>
-          <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
-          <div> ({j|© Atrium, 2018|j} |> str) </div>
-        </div>
-      </div>
     </div>,
 };
 

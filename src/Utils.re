@@ -1,3 +1,3 @@
 let s = ReasonReact.stringToElement;
 
-let rrsc = ReasonReact.statelessComponent;
+let wrapIt = ReasonReact.wrapReasonForJs;
