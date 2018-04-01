@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import "./index.css";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <article className="container">
     <Helmet
       title="Demo 2018"
       meta={[
@@ -14,9 +14,9 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "Gatsby, Conference, Reason, Reason Conf" }
       ]}
     />
-    {children()}
+    <main>{children()}</main>
     <Footer />
-  </div>
+  </article>
 );
 
 export default TemplateWrapper;
