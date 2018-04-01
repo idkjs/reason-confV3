@@ -8,7 +8,7 @@ let make = _children => {
   ...component,
   render: _self =>
     <article>
-      <div className="teaser">
+      <header className="teaser">
         /* this div gets 70% of div teaser */
 
           <div>
@@ -32,7 +32,7 @@ let make = _children => {
             <div> ("Vienna, Austria" |> str) </div>
             <a href="#tickets"> ("Buy Tickets" |> str) </a>
           </div>
-        </div>
+        </header>
       <h2> ("Get productive with Reason in 3 days" |> str) </h2>
       <div>
         <div> (ste("Day 1")) </div>
