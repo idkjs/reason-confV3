@@ -27,7 +27,13 @@ yarn re:build && yarn build
 
 * see: https://github.com/okonet/lint-staged
 
+- not running from vs-code, only terminal.
+
 ### Why
 
 * from [docs](https://github.com/okonet/lint-staged#why)
   Linting makes more sense when running before committing your code. By doing that you can ensure no errors are going into repository and enforce code style. But running a lint process on a whole project is slow and linting results can be irrelevant. Ultimately you only want to lint files that will be committed.
+
+## Nik's CSS Tips
+
+1.  Write your tag names before writing the css then go write the css. Think ahead.
