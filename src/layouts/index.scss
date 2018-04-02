@@ -63,10 +63,12 @@ Define background color, bgrd image and size
 
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    align-self: end;
     margin: 0;
+    @media (min-width: 960px) {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      align-self: end;
+    }
   }
   &--main {
     grid-column: 1 / span 4;
