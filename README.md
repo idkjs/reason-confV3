@@ -264,3 +264,7 @@ Add browser targets for autoprefixer to package.json
 ```json
 "browserslist": ["> 1%", "last 2 versions", "IE 11"]
 ```
+
+## Convert to SCSS
+
+Add scss to lint-staged config, change css to scss filename, change syntax in css/scss file to use postcss. Now know why author was using empty rulesets in css and -- syntax. We can now copy the css rules we used into the empty rulesets and we are set for using postcss. Nice trick, Nik.
