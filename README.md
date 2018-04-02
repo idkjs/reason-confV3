@@ -222,3 +222,43 @@ The [::before selector](https://www.w3schools.com/cssref/sel_before.asp) inserts
   content: "";
 }
 ```
+
+## Adding AutoPrefixer
+
+`yarn add gatsby-plugin-postcss-sass autoprefixer -D`
+
+In gatsby config add gatsby-plugin-postcss-sass to make gatsby aware of it.
+
+```js
+module.exports = {
+  siteMetadata: {
+    title: `Gatsby Demo Mandalarian`
+  },
+  plugins: [`gatsby-plugin-react-helmet`]
+};
+```
+
+becomes:
+
+```js
+module.exports = {
+  siteMetadata: {
+    title: `Gatsby Demo Mandalarian`
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [autoprefixer()]
+      }
+    }
+  ]
+};
+```
+
+Add browser targets for autoprefixer to package.json
+
+```json
+"browserslist": ["> 1%", "last 2 versions", "IE 11"]
+```
