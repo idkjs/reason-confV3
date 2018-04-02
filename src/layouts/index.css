@@ -124,6 +124,10 @@ Define background color, bgrd image and size
   font-size: 0.9rem;
   text-align: right;
 }
+.timeline--date > time {
+  line-height: 2rem;
+  color: #888;
+}
 /* The ::before selector inserts something before the content of each selected element(s). */
 /* Speaker section */
 .speakers::before {
