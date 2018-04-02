@@ -268,3 +268,9 @@ Add browser targets for autoprefixer to package.json
 ## Convert to SCSS
 
 Add scss to lint-staged config, change css to scss filename, change syntax in css/scss file to use postcss. Now know why author was using empty rulesets in css and -- syntax. We can now copy the css rules we used into the empty rulesets and we are set for using postcss. Nice trick, Nik.
+
+## Tito ticketing
+
+[Tito](https://www.ti.to) is and event ticketing service.
+
+Import the script via head in layouts/index.js Helmut div. Use async to make sure script is loaded before we try to use it. [loading asynchronously](https://blog.theodo.fr/2017/07/load-scripts-react-bundle-asynchronously-win-seo/)
