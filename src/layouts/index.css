@@ -39,6 +39,7 @@ is applied, ignored if content is larger than min-width.
 /* main grid layout  */
 .grid {
   display: grid;
+  grid-gap: 20px;
 }
 
 .grid-4col {
