@@ -274,3 +274,11 @@ Add scss to lint-staged config, change css to scss filename, change syntax in cs
 [Tito](https://www.ti.to) is and event ticketing service.
 
 Import the script via head in layouts/index.js Helmut div. Use async to make sure script is loaded before we try to use it. [loading asynchronously](https://blog.theodo.fr/2017/07/load-scripts-react-bundle-asynchronously-win-seo/)
+
+Create a `src/titowidget.js` file:
+
+```js
+import React from "react";
+
+export const Widget = ({ event }) => <tito-widget event={event} />;
+```
