@@ -11,7 +11,7 @@ let make = _children => {
       <header className="teaser">
         /* this div gets 70% of div teaser */
 
-          <section className="container--centered">
+          <section className="container--centered grid grid-6col">
             <h1 className="teaser--logo"> <img src=Assets.logo /> </h1>
             /* <img
                  src=Assets.logo
