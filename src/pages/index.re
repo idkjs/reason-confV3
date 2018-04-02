@@ -49,59 +49,68 @@ let make = _children => {
         </header>
       <section className="offering">
         <div className="container--centered grid grid-col6">
-
-            <h2 className="offering--heading">
-              ("Get productive with Reason in 3 days" |> str)
-            </h2>
-            <p className="offering--text">
-              (
-                "We want to motivate you to introduce Reason & OCaml in your production environment and make you feel  comfortable with the existing tools. For that, the conference will be focused on practice rather than theory. Enjoy 3 days of workshop / hackathon style conference with the leading speakers from around the world.\n"
-                |> str
-              )
-            </p>
-            <dl className="timeline">
-              <dt className="timeline--date">
-                <time dateTime="2018-05-11">
-                  ("11" |> str)
-                  <sup> ("th" |> str) </sup>
-                  (" May, Friday" |> str)
-                </time>
-              </dt>
-              <h2> ("Get productive with Reason in 3 days" |> str) </h2>
-              <div>
-                <div> (ste("Day 1")) </div>
-                <h3> ("Get started" |> str) </h3>
-                <p>
-                  (
-                    "Full day workshop to get every attendee into the language & platform."
-                    |> str
-                  )
-                </p>
-              </div>
-              <div>
-                <div> ("Day 2" |> str) </div>
-                <h3> ("Get inspired" |> str) </h3>
-                <p>
-                  (
-                    "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
-                    |> str
-                  )
-                </p>
-              </div>
-              <div>
-                <div> ("Day 3" |> str) </div>
-                <h3> ("Get productive" |> str) </h3>
-                <p>
-                  (
-                    "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
-                    |> str
-                  )
-                </p>
-              </div>
-            </dl>
-          </div>
-          /* </div> */
+          <h2 className="offering--heading">
+            ("Get productive with Reason in 3 days" |> str)
+          </h2>
+          <p className="offering--text">
+            (
+              "We want to motivate you to introduce Reason & OCaml in your production environment and make you feel  comfortable with the existing tools. For that, the conference will be focused on practice rather than theory. Enjoy 3 days of workshop / hackathon style conference with the leading speakers from around the world.\n"
+              |> str
+            )
+          </p>
+          <dl className="timeline">
+            <dt className="timeline--date">
+              <time dateTime="2018-05-11">
+                ("11" |> str)
+                <sup> ("th" |> str) </sup>
+                (" May, Friday" |> str)
+              </time>
+            </dt>
+            <dd className="timeline--content">
+              <h3> ("Get started" |> str) </h3>
+              <p>
+                (
+                  "Full day workshop to get every attendee into the language & platform."
+                  |> str
+                )
+              </p>
+            </dd>
+            <dt className="timeline--date">
+              <time dateTime="2018-05-12">
+                ("12" |> str)
+                <sup> ("th" |> str) </sup>
+                (" May, Saturday" |> str)
+              </time>
+            </dt>
+            <dd className="timeline--content">
+              <h3> ("Get inspired" |> str) </h3>
+              <p>
+                (
+                  "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
+                  |> str
+                )
+              </p>
+            </dd>
+            <dt className="timeline--date">
+              <time dateTime="2018-05-13">
+                ("13" |> str)
+                <sup> ("th" |> str) </sup>
+                (" May, Sunday" |> str)
+              </time>
+            </dt>
+            <dd>
+              <h3> ("Get productive" |> str) </h3>
+              <p>
+                (
+                  "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
+                  |> str
+                )
+              </p>
+            </dd>
+          </dl>
+        </div>
       </section>
+      /* </div> */
       <section className="speakers">
         <div className="container--centered">
           <h2> ("Speakers" |> str) </h2>
