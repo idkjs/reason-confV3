@@ -15,9 +15,8 @@ let make = _children => {
             <h1 className="teaser--logo">
               <img
                 src=Assets.logo
-                width="507"
-                height="132"
                 alt="Reason Conf Logo"
+                className="teaser--image"
               />
             </h1>
             <main className="teaser--main">
@@ -40,12 +39,12 @@ let make = _children => {
                 ({j|11–13 May 2018|j} |> str)
               </p>
               <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
-              <nav>
-                <a className="teaser--button" href="#tickets">
-                  ("Buy Tickets" |> str)
-                </a>
-              </nav>
             </aside>
+            <nav>
+              <a className="teaser--button" href="#tickets">
+                ("Buy Tickets" |> str)
+              </a>
+            </nav>
           </section>
         </header>
       <section className="offering">
