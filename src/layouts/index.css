@@ -118,6 +118,12 @@ Define background color, bgrd image and size
   grid-template-columns: 157px auto;
   grid-gap: 20px;
 }
+
+.timeline--date {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: right;
+}
 /* The ::before selector inserts something before the content of each selected element(s). */
 /* Speaker section */
 .speakers::before {
