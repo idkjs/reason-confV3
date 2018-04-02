@@ -94,11 +94,30 @@ Define background color, bgrd image and size
 
 .teaser--button {
 }
-/* uses repeat
-see: https://alligator.io/css/css-grid-layout-repeat-notation/
-so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
-*/
 
+/* Offering & Timeline */
+
+.offering {
+}
+
+.offering--heading {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  margin: 0;
+}
+
+.offering--text {
+  grid-column: 1 span 2;
+  grid-row: 2;
+}
+
+.timeline {
+  grid-column: 3 / span 4;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: 157px auto;
+  grid-gap: 20px;
+}
 /* The ::before selector inserts something before the content of each selected element(s). */
 /* Speaker section */
 .speakers::before {
@@ -131,23 +150,14 @@ so gtc: 1fr, 1fr, 1fr 1fr becomes gtc: repeat(4, 1fr)
   position: relative;
   margin: 0;
 }
-/* in nested div, like our list of speakers, 
-use '>' to apply img style to descendants of the div in which we call it,
-so, if we call this in speaker, find img tag nested in .speaker 
-and apply this style. https://stackoverflow.com/questions/4459821/css-selector-what-is-it
 
-z-index: specify stack order of element, so within this div, always place the img div
-before the other elements in div like name and company, in this case
-*/
 .speaker > img {
   position: relative;
   width: 200px;
   height: 200px;
   filter: grayscale(1) drop-shadow(10px 75px white);
 }
-/* apply following style to figcaption nested in div with .speaker class.
-Also, this div will show after img because of img's z-index.
-*/
+
 .speaker > figcaption {
   position: relative;
   padding: 0 20px;
@@ -162,15 +172,6 @@ Also, this div will show after img because of img's z-index.
   font-size: 0.85rem;
   color: #888;
 }
-/* .speaker--name {
-  margin: 0.5em 0;
-  font-size: 1rem;
-}
-
-.speaker--company {
-  margin: 0;
-  font-size: 0.75rem;
-} */
 
 /* Footer */
 footer {
