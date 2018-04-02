@@ -22,7 +22,7 @@
   },
   "lint-staged": {
     "*.re": ["refmt --in-place", "git add"],
-    "*.{js,json,md,css}": ["prettier --write", "git add"]
+    "*.{js,json,md,css,scss}": ["prettier --write", "git add"]
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",

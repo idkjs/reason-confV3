@@ -3,7 +3,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import Footer from "../components/Footer";
-import "./index.css";
+import "./index.scss";
 
 const TemplateWrapper = ({ children }) => (
   <article className="container">
