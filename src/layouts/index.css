@@ -128,6 +128,13 @@ Define background color, bgrd image and size
   line-height: 2rem;
   color: #888;
 }
+
+.timeline--content {
+  margin: 0;
+}
+.timeline--content > h3 {
+  margin: 0;
+}
 /* The ::before selector inserts something before the content of each selected element(s). */
 /* Speaker section */
 .speakers::before {

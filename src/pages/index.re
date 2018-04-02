@@ -98,7 +98,7 @@ let make = _children => {
                 (" May, Sunday" |> str)
               </time>
             </dt>
-            <dd>
+            <dd className="timeline--content">
               <h3> ("Get productive" |> str) </h3>
               <p>
                 (
