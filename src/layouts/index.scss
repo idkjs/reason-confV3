@@ -57,18 +57,9 @@ Define background color, bgrd image and size
   background: url(../assets/teaser-bg.png) no-repeat;
   background-size: cover;
 
-  &--wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 260px auto;
-    grid-template-areas:
-      "logo dates"
-      "text ...";
-  }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
-    grid-area: logo;
+    grid-column: 1 / span 4;
     align-self: end;
     margin: 0;
   }
