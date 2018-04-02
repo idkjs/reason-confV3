@@ -3,6 +3,8 @@ let component = ReasonReact.statelessComponent("Home");
 /* let str = ReasonReact.stringToElement; */
 let str = Utils.s;
 
+module Tickets = Tito.Tickets;
+
 let make = _children => {
   ...component,
   render: _self =>
@@ -168,7 +170,7 @@ let make = _children => {
       <section className="tickets">
         <div className="container--centered">
           <h2 id="tickets"> ("Tickets" |> str) </h2>
-          <p> ("Coming soon..." |> str) </p>
+          <Tickets event="shing/demo-2018" />
         </div>
       </section>
     </article>,
