@@ -290,3 +290,9 @@ export const Widget = ({ event }) => <tito-widget event={event} />;
 This is a big refactor where we remove interop for gatsby files we convertered to reason. First step is to convert layouts/index.js to reason. Remember that gatsby still needs this so we have to pass it something. Do that by exporting the bucklescript index.re file from layouts/index.js after converting index.js => index.re.
 
 1.  Create a file `layouts/layoutIndex.re` which well contain conversions for the js we currently have in layouts/index.js. Then in `layouts/index.js` we will export the default object from `./layoutIndex` which is the wrapReasonForJs version of our index.re file. This should give gatsby what it wants.
+
+## Header with Nav Links
+
+1.  create gatsby-node.js to modify webpack config (for using sass?).
+2.  create header component
+3.  create header css
