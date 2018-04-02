@@ -1,5 +1,7 @@
 let component = ReasonReact.statelessComponent("Footer");
 
+[@bs.module] external style : Js.t({..}) = "./Footer.module.css";
+
 let str = Utils.s;
 
 let make = _children => {
