@@ -12,13 +12,14 @@ let make = _children => {
         /* this div gets 70% of div teaser */
 
           <section className="container--centered grid grid-6col">
-            <h1 className="teaser--logo"> <img src=Assets.logo /> </h1>
-            /* <img
-                 src=Assets.logo
-                 width="507"
-                 height="132"
-                 alt="Reason Conf Logo"
-               /> */
+            <h1 className="teaser--logo">
+              <img
+                src=Assets.logo
+                width="507"
+                height="132"
+                alt="Reason Conf Logo"
+              />
+            </h1>
             <main className="teaser--main">
               <h2 className="teaser--tagline">
                 (
