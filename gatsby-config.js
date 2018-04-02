@@ -1,3 +1,4 @@
+const autoprefixer = require("autoprefixer");
 module.exports = {
   siteMetadata: {
     title: `Gatsby Demo Mandalarian`
