@@ -15,6 +15,6 @@ let make = _children => {
       <li> <Link to_="/sponsors/"> (s("Sponsors")) </Link> </li>
       <li> <Link to_="/about/"> (s("About")) </Link> </li>
       <li> <Link to_="/blog/"> (s("Blog")) </Link> </li>
+      <li> <Button text="Buy A Ticket" /> </li>
     </ul>,
-  /* <li><Button to_="/schedule/">(s("Schedule"))</Button></li> */
 };
