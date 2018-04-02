@@ -11,10 +11,10 @@ let make = _children => {
   render: _self =>
     <ul className=style##header>
       <li> <Link to_="/schedule/"> (s("Schedule")) </Link> </li>
-      <li> <Link to_="/speakers/"> (s("speakers")) </Link> </li>
-      <li> <Link to_="/sponsors/"> (s("sponsors")) </Link> </li>
-      <li> <Link to_="/about/"> (s("about")) </Link> </li>
-      <li> <Link to_="/blog/"> (s("blog")) </Link> </li>
+      <li> <Link to_="/speakers/"> (s("Speakers")) </Link> </li>
+      <li> <Link to_="/sponsors/"> (s("Sponsors")) </Link> </li>
+      <li> <Link to_="/about/"> (s("About")) </Link> </li>
+      <li> <Link to_="/blog/"> (s("Blog")) </Link> </li>
     </ul>,
   /* <li><Button to_="/schedule/">(s("Schedule"))</Button></li> */
 };
