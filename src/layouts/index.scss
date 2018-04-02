@@ -52,6 +52,7 @@ is applied, ignored if content is larger than min-width.
 Define background color, bgrd image and size
 */
 .teaser {
+  padding-top: 60px;
   padding-bottom: 120px;
 
   background: url(../assets/teaser-bg.png) no-repeat;
@@ -60,20 +61,43 @@ Define background color, bgrd image and size
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     grid-column: 1 / span 4;
+    grid-row: 1;
     align-self: end;
     margin: 0;
   }
-
-  &--aside {
-    align-self: end;
-    grid-area: dates;
-    font-family: "Hammersmith One", Arial, sans-serif;
+  &--main {
+    grid-column: 1 / span 4;
   }
-
   &--text {
+    grid-row: 2;
     font-size: 1.5rem;
   }
+  &--aside {
+    grid-column: 5 / span 2;
+    grid-row: 1;
 
+    align-self: end;
+    position: relative;
+    font-family: "Hammersmith One", Arial, sans-serif;
+    // this draws a line to left side of main aside element
+    &::before {
+      position: absolute;
+      left: -20px;
+      width: 5px;
+      height: 100%;
+      background: #dd4b39;
+      content: "";
+    }
+  }
+  &--dates {
+    margin: 0;
+    font-size: 2.35rem;
+    letter-spacing: -2px;
+  }
+  &--location {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+  }
   &--button {
   }
 }

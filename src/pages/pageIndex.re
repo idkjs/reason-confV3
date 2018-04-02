@@ -39,12 +39,12 @@ let make = _children => {
                 ({j|11–13 May 2018|j} |> str)
               </p>
               <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
+              <nav>
+                <a className="teaser--button" href="#tickets">
+                  ("Buy Tickets" |> str)
+                </a>
+              </nav>
             </aside>
-            <nav>
-              <a className="teaser--button" href="#tickets">
-                ("Buy Tickets" |> str)
-              </a>
-            </nav>
           </section>
         </header>
       <section className="offering">
