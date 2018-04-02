@@ -1,6 +1,6 @@
 module Link = Gatsby.Link;
 
-[@bs.module] external style : Js.t({..}) = "./navigation.module.scss";
+[@bs.module] external style : Js.t({..}) = "./Navigation.module.scss";
 
 let component = ReasonReact.statelessComponent("Navigation");
 
