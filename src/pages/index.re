@@ -1,7 +1,6 @@
 let component = ReasonReact.statelessComponent("Home");
 
-let ste = ReasonReact.stringToElement;
-
+/* let str = ReasonReact.stringToElement; */
 let str = Utils.s;
 
 let make = _children => {
@@ -119,8 +118,8 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.chengLou width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (ste("Cheng Lou")) </p>
-                  <p className="speaker--company"> (ste("Facebook")) </p>
+                  <p className="speaker--name"> (str("Cheng Lou")) </p>
+                  <p className="speaker--company"> (str("Facebook")) </p>
                 </figcaption>
               </figure>
             </li>
@@ -128,9 +127,9 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.lauraGaetano width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (ste("Laura Gaetano")) </p>
+                  <p className="speaker--name"> (str("Laura Gaetano")) </p>
                   <p className="speaker--company">
-                    (ste("Travis Foundation"))
+                    (str("Travis Foundation"))
                   </p>
                 </figcaption>
               </figure>
@@ -139,8 +138,8 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.keiraHodgkison width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (ste("Keira")) </p>
-                  <p className="speaker--company"> (ste("Culture Amp")) </p>
+                  <p className="speaker--name"> (str("Keira")) </p>
+                  <p className="speaker--company"> (str("Culture Amp")) </p>
                 </figcaption>
               </figure>
             </li>
@@ -149,9 +148,9 @@ let make = _children => {
                 <img src=Assets.cristianoCalcagno width="225" height="225" />
                 <figcaption>
                   <p className="speaker--name">
-                    (ste("Cristiano Calcagno"))
+                    (str("Cristiano Calcagno"))
                   </p>
-                  <p className="speaker--company"> (ste("Facebook")) </p>
+                  <p className="speaker--company"> (str("Facebook")) </p>
                 </figcaption>
               </figure>
             </li>
