@@ -54,6 +54,7 @@ let make = children => {
     <article className="container">
       <Helmet title="Demo 2018" meta=metaData />
       <style _type="text/css"> styleImport </style>
+      <Header />
       <main> (children()) </main>
       <Footer />
     </article>,
