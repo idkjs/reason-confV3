@@ -282,3 +282,11 @@ import React from "react";
 
 export const Widget = ({ event }) => <tito-widget event={event} />;
 ```
+
+## Reasonify Layouts and Pages
+
+* `commit 692f197cd17f35bad8480009ce077fa0ab52878c`
+
+This is a big refactor where we remove interop for gatsby files we convertered to reason. First step is to convert layouts/index.js to reason. Remember that gatsby still needs this so we have to pass it something. Do that by exporting the bucklescript index.re file from layouts/index.js after converting index.js => index.re.
+
+1.  Create a file `layouts/layoutIndex.re` which well contain conversions for the js we currently have in layouts/index.js. Then in `layouts/index.js` we will export the default object from `./layoutIndex` which is the wrapReasonForJs version of our index.re file. This should give gatsby what it wants.

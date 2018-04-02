@@ -16,3 +16,5 @@ src/assets
 src/assets.js
 src/components
 src/Tito.js
+src/layouts/layoutIndex.js
+src/layouts/index.js

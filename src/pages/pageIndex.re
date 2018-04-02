@@ -1,6 +1,5 @@
 let component = ReasonReact.statelessComponent("Home");
 
-/* let str = ReasonReact.stringToElement; */
 let str = Utils.s;
 
 module Tickets = Tito.Tickets;
