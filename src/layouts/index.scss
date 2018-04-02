@@ -45,7 +45,7 @@ is applied, ignored if content is larger than min-width.
   grid-template-columns: repeat(4, 1fr);
 }
 .grid-6col {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 100%;
 }
 
 /* home page header section
