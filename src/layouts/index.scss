@@ -46,6 +46,9 @@ is applied, ignored if content is larger than min-width.
 }
 .grid-6col {
   grid-template-columns: 100%;
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 /* home page header section
