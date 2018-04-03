@@ -296,3 +296,8 @@ This is a big refactor where we remove interop for gatsby files we convertered t
 1.  create gatsby-node.js to modify webpack config (for using sass?).
 2.  create header component
 3.  create header css
+
+## componentNotNull
+
+This was not working because location was checking the path and the path for pageIndex in the browser was /pageIndex.
+Adding pages/index.js which exported default from pageIndex had the effect of rendering pageIndex on the "/" route so that when location##pathname was checked, we were on the root, '/', path. Function is working now.
