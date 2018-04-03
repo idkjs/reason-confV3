@@ -9,7 +9,7 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 html {
   font: 14px/1.3 "Assistant", sans-serif;
   color: #333;
-  @media (min-width: 960px) {
+  @media (min-width: 640px) {
     font-size: 18px;
     line-height: 1.5;
   }
@@ -53,14 +53,14 @@ is applied, ignored if content is larger than min-width.
 
 .grid-4col {
   grid-template-columns: 100%;
-  // @media (min-width: 960px) {
+  // @media (min-width: 640px) {
   //   grid-template-columns: repeat(4, 1fr);
   // }
 }
 .grid-6col {
   grid-template-columns: 100%;
 
-  @media (min-width: 960px) {
+  @media (min-width: 640px) {
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -77,7 +77,7 @@ Define background color, bgrd image and size
   clip-path: polygon(0 0, 100% 0, 100% 100%, 98%);
   text-align: center;
 
-  @media (min-width: 960px) {
+  @media (min-width: 640px) {
     padding-bottom: 120px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 88%);
@@ -85,7 +85,7 @@ Define background color, bgrd image and size
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     margin: 0;
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       grid-column: 1 / span 4;
       grid-row: 1;
       align-self: end;
@@ -98,7 +98,7 @@ Define background color, bgrd image and size
     }
   }
   &--main {
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       grid-column: 1 / span 4;
     }
   }
@@ -106,7 +106,7 @@ Define background color, bgrd image and size
     display: none;
 
     font-size: 1.5rem;
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       display: block;
       grid-row: 2;
     }
@@ -116,7 +116,7 @@ Define background color, bgrd image and size
     position: relative;
     font-family: "Hammersmith One", Arial, sans-serif;
 
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       grid-column: 5 / span 2;
       grid-row: 1;
       align-self: end;
@@ -151,14 +151,14 @@ Define background color, bgrd image and size
 .offering {
   &--heading {
     margin: 0;
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       grid-column: 1 / span 2;
       grid-row: 1;
     }
   }
 
   &--text {
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       grid-column: 1 / span 2;
       grid-row: 2;
     }
@@ -166,7 +166,7 @@ Define background color, bgrd image and size
 }
 
 .timeline {
-  @media (min-width: 960px) {
+  @media (min-width: 640px) {
     grid-column: 3 / span 4;
     grid-row: 1 / span 2;
   }
@@ -178,7 +178,7 @@ Define background color, bgrd image and size
     margin: 0.1em 0;
     font-size: 0.9rem;
     text-align: right;
-    @media (min-width: 960px) {
+    @media (min-width: 640px) {
       width: 157px;
     }
   }
