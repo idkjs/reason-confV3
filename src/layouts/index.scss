@@ -108,9 +108,7 @@ Define background color, bgrd image and size
     font-size: 1.5em;
   }
   &--text {
-    display: none;
-
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     @media (min-width: 768px) {
       display: block;
       grid-row: 2;
@@ -120,7 +118,11 @@ Define background color, bgrd image and size
   &--dates {
     position: relative;
     font-family: "Hammersmith One", Arial, sans-serif;
-
+    font-size: 1.5vmax;
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+      align-self: end;
+    }
     @media (min-width: 768px) {
       grid-column: 5 / span 2;
       grid-row: 1;
@@ -136,15 +138,19 @@ Define background color, bgrd image and size
         content: "";
       }
     }
+    @media (min-width: 767px) {
+      font-size: small;
+    }
   }
-  &--date {
-    margin: 0;
-    font-size: 2.35rem;
+  &--datetime {
+    display: block;
+    padding: 0.25em 0 0;
+    font-size: 2.35em;
     letter-spacing: -2px;
   }
   &--location {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
   &--button {
   }

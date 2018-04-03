@@ -20,7 +20,8 @@ let make = _children => {
               />
             </h1>
             <section className="teaser--datetime">
-              <time dateTime="2018-05-11/2018-05-13" className="teaser--date">
+              <time
+                dateTime="2018-05-11/2018-05-13" className="teaser--datetime">
                 ({j|11–13 May 2018|j} |> str)
               </time>
               <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
