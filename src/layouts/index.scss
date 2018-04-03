@@ -90,8 +90,10 @@ Define background color, bgrd image and size
   }
   &--image {
     width: 100%;
+    max-width: 400px;
     @media (min-width: 768px) {
       width: auto;
+      max-width: 100%;
     }
   }
   &--main {
