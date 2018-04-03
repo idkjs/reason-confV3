@@ -17,19 +17,12 @@ let metaData = [|
   {"name": "keywords", "content": "Reason, Demo 2018, Conference, ReasonML"},
 |];
 
-/* <style type="text/css">{`@import url('https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One');`}</style>*/
-let styleImport =
-  Utils.s(
-    "@import url('https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One');",
-  );
-
 let make = (~location, children) => {
   ...component,
   render: _self => {
     let isHomepage = location##pathname == "/";
     <article className="container">
       <Helmet title="Demo 2018" meta=metaData />
-      <style _type="text/css"> styleImport </style>
       (Utils.componentOrNull(! isHomepage, <Navigation />))
       <main> (children()) </main>
       <Footer />
