@@ -8,7 +8,7 @@ let make = _children => {
   ...component,
   render: _self =>
     <footer>
-      <div className="container--centered grid grid-6col">
+      <div className="container_centered grid grid-col6">
         <section className="footer--about">
           <p>
             (

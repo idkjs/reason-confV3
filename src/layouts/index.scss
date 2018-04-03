@@ -48,13 +48,13 @@ is applied, ignored if content is larger than min-width.
   grid-gap: 20px;
 }
 
-.grid-4col {
+.grid-col4 {
   grid-template-columns: 100%;
   // @media (min-width: 768px) {
   //   grid-template-columns: repeat(4, 1fr);
   // }
 }
-.grid-6col {
+.grid-col6 {
   grid-template-columns: 100%;
 
   @media (min-width: 768px) {
