@@ -4,8 +4,6 @@ let s = Utils.s;
 
 let component = ReasonReact.statelessComponent("SpeakerCard");
 
-let s = Utils.s;
-
 let make = (~speaker: Data.speakerData, _children) => {
   ...component,
   render: _self =>
