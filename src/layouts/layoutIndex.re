@@ -5,8 +5,6 @@
 %raw
 "require('./index.scss')";
 
-open Util;
-
 /* convert to using Helmut in Reason via Gatsby.re */
 module Helmet = Gatsby.Helmet;
 
@@ -32,7 +30,7 @@ let make = (~location, children) => {
     <article className="container">
       <Helmet title="Demo 2018" meta=metaData />
       <style _type="text/css"> styleImport </style>
-      (componentOrNull(! isHomepage, <Navigation />))
+      (Utils.componentOrNull(! isHomepage, <Navigation />))
       <main> (children()) </main>
       <Footer />
     </article>;
