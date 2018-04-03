@@ -81,17 +81,10 @@ Define background color, bgrd image and size
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     margin: 0;
-    // @media (min-width: 960px) {
-    //   grid-column: 1 / span 4;
-    //   grid-row: 1;
-    //   align-self: end;
-    // }
-  }
-  &--text {
-    font-size: 1.5rem;
     @media (min-width: 960px) {
-      display: none;
-      grid-row: 2;
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      align-self: end;
     }
   }
   &--image {
@@ -106,12 +99,16 @@ Define background color, bgrd image and size
     }
   }
   &--text {
+    display: none;
+
     font-size: 1.5rem;
     @media (min-width: 960px) {
+      display: block;
       grid-row: 2;
     }
   }
-  &--aside {
+
+  &--dates {
     position: relative;
     font-family: "Hammersmith One", Arial, sans-serif;
 
@@ -131,13 +128,13 @@ Define background color, bgrd image and size
       }
     }
   }
-  &--dates {
+  &--date {
     margin: 0;
     font-size: 2.35rem;
     letter-spacing: -2px;
   }
   &--location {
-    margin: 0 0 1rem;
+    margin: 0;
     font-size: 1.25rem;
   }
   &--button {
