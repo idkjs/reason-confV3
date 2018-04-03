@@ -184,7 +184,6 @@ Define background color, bgrd image and size
     }
   }
   &--date > time {
-    // line-height: 2rem;
     color: #888;
   }
 
@@ -203,19 +202,12 @@ Define background color, bgrd image and size
 .speakers::before,
 .speakers::after {
   position: absolute;
-  // margin-top: -150px;
-  // background: url("../assets/speakers-bg.svg");
-  // background-size: cover;
   width: 100%;
-  // height: 100%;
   content: "";
 
   z-index: -1;
   transform: rotate(6deg) scale(2);
   transform-origin: left top;
-  // @media (min-width: 768px) {
-  //   margin-top: -50px;
-  // }
 }
 .speakers::before {
   top: 50px;
@@ -229,7 +221,7 @@ Define background color, bgrd image and size
   opacity: 0.35;
   height: 150px;
   transform: rotate(9deg) scale(2);
-  @media (min-width: 768px) {
+  @media (min-width: 425px) {
     top: 150px;
   }
 }

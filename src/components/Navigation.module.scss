@@ -3,11 +3,12 @@
   justify-self: center;
   @media (min-width: 768px) {
     // start nav at gc 3 span 4
-    grid-column: 3 / span 4;
-    justify-self: end;
+    // grid-column: 3 / span 4;
+    // justify-self: end;
+    justify-self: start;
   }
   li {
     display: inline-block;
-    margin: 0 1em;
+    margin: 0 1em 0 0;
   }
 }
