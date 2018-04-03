@@ -92,13 +92,16 @@ Define background color, bgrd image and size
     width: 100%;
     max-width: 400px;
     @media (min-width: 768px) {
+      display: block;
       width: auto;
       max-width: 100%;
     }
   }
   &--main {
+    font-size: small;
     @media (min-width: 768px) {
       grid-column: 1 / span 4;
+      font-size: 1em;
     }
   }
   &--tagline {
