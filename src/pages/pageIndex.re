@@ -19,7 +19,7 @@ let make = _children => {
                 className="teaser--image"
               />
             </h1>
-            <section className="teaser--datetime">
+            <section className="teaser--dates">
               <time
                 dateTime="2018-05-11/2018-05-13" className="teaser--datetime">
                 ({j|11–13 May 2018|j} |> str)

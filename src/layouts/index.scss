@@ -29,7 +29,7 @@ h6 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 /* Main grid layout, we apply it in layouts/index.js on article 
 min-width: if the content is smaller than the minWidth, minWidth size
@@ -66,18 +66,18 @@ is applied, ignored if content is larger than min-width.
 Define background color, bgrd image and size
 */
 .teaser {
-  padding-top: 60px;
+  // padding-top: 30px;
   padding-bottom: 30px;
 
   background: url(../assets/teaser-bg.jpg) 25% top no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 92%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   text-align: center;
 
   @media (min-width: 768px) {
     padding-bottom: 120px;
     text-align: left;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 88%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
   }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
@@ -108,7 +108,7 @@ Define background color, bgrd image and size
     font-size: 1.5em;
   }
   &--text {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     @media (min-width: 768px) {
       display: block;
       grid-row: 2;
@@ -138,7 +138,7 @@ Define background color, bgrd image and size
         content: "";
       }
     }
-    @media (min-width: 767px) {
+    @media (max-width: 767px) {
       font-size: small;
     }
   }
@@ -181,7 +181,7 @@ Define background color, bgrd image and size
     grid-row: 1 / span 2;
   }
   display: grid;
-  grid-template-columns: ifr auto;
+  grid-template-columns: 1fr auto;
   grid-gap: 20px;
 
   &--date {
@@ -205,33 +205,16 @@ Define background color, bgrd image and size
 }
 
 /* Speaker section */
-.speakers {
-  position: relative;
-}
-.speakers::before,
-.speakers::after {
-  position: absolute;
-  width: 100%;
-  content: "";
-
-  z-index: -1;
-  transform: rotate(6deg) scale(2);
-  transform-origin: left top;
-}
 .speakers::before {
-  top: 50px;
-  background: #efd57a;
-  opacity: 0.5;
-  height: 150px;
-}
-.speakers::after {
-  top: 300px;
-  background: #da998b;
-  opacity: 0.35;
-  height: 150px;
-  transform: rotate(9deg) scale(2);
+  position: absolute;
+  background: url("../assets/speakers-bg.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
   @media (min-width: 425px) {
-    top: 150px;
+    margin-top: -50px;
   }
 }
 /* Speakers list grid */
