@@ -10,7 +10,7 @@ let make = _children => {
     <article>
       <header className="teaser">
         <Navigation />
-        <section className="container_centered grid grid-col6">
+        <section className="container_centered grid grid-6col">
           <h1 className="teaser--logo">
             <img
               src=Assets.logo
@@ -46,7 +46,7 @@ let make = _children => {
         </section>
       </header>
       <section className="offering">
-        <div className="container_centered grid grid-col6">
+        <div className="container_centered grid grid-6col">
           <h2 className="offering--heading">
             ("Get productive with Reason in 3 days" |> str)
           </h2>

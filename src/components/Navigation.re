@@ -9,7 +9,7 @@ let s = Utils.s;
 let make = _children => {
   ...component,
   render: _self =>
-    <nav className="container container_centered grid grid-col6">
+    <nav className="container container_centered grid grid-6col">
       <ul className=style##list>
         <li> <Link to_="/schedule/"> (s("Schedule")) </Link> </li>
         <li> <Link to_="/speakers/"> (s("Speakers")) </Link> </li>
