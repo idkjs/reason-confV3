@@ -66,12 +66,12 @@ Define background color, bgrd image and size
 */
 .teaser {
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 30px;
 
-  background: url(../assets/teaser-bg.jpg) no-repeat;
+  background: url(../assets/teaser-bg.jpg) 25% top no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
-
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 98%);
+  text-align: center;
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     margin: 0;
