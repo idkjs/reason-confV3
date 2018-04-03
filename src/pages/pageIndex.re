@@ -19,10 +19,10 @@ let make = _children => {
                 className="teaser--image"
               />
             </h1>
-            <aside className="teaser--aside">
-              <p className="teaser--dates">
+            <aside className="teaser--dates">
+              <time dateTime="2018-05-11/2018-05-13" className="teaser--date">
                 ({j|11–13 May 2018|j} |> str)
-              </p>
+              </time>
               <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
             </aside>
             <main className="teaser--main">
