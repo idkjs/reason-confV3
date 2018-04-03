@@ -139,7 +139,9 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.keiraHodgkison width="225" height="225" />
                 <figcaption>
-                  <h3 className="speaker--name"> (str("Keira")) </h3>
+                  <h3 className="speaker--name">
+                    (str("Keira Hodgkison"))
+                  </h3>
                   <p className="speaker--company"> (str("Culture Amp")) </p>
                 </figcaption>
               </figure>
