@@ -9,42 +9,43 @@ let make = _children => {
   render: _self =>
     <article>
       <header className="teaser">
-        <Navigation />
-        <section className="container_centered grid grid-6col">
-          <h1 className="teaser--logo">
-            <img
-              src=Assets.logo
-              alt="Reason Conf Logo"
-              className="teaser--image"
-            />
-          </h1>
-          <aside className="teaser--dates">
-            <time dateTime="2018-05-11/2018-05-13" className="teaser--date">
-              ({j|11–13 May 2018|j} |> str)
-            </time>
-            <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
-          </aside>
-          <main className="teaser--main">
-            <h2 className="teaser--tagline">
-              (
-                "World's first Reason conference for web-developers & OCaml enthusiasts"
-                |> str
-              )
-            </h2>
-            <p className="teaser--text">
-              (
-                "Reason is the next big thing and it is time to bring the community together. Come and learn about the language and get inspired for innovation.\n"
-                |> str
-              )
-            </p>
-          </main>
-          <nav>
-            <a className="teaser--button" href="#tickets">
-              ("Buy Tickets" |> str)
-            </a>
-          </nav>
-        </section>
-      </header>
+        /* <Navigation /> */
+
+          <section className="container_centered grid grid-6col">
+            <h1 className="teaser--logo">
+              <img
+                src=Assets.logo
+                alt="Reason Conf Logo"
+                className="teaser--image"
+              />
+            </h1>
+            <section className="teaser--datetime">
+              <time dateTime="2018-05-11/2018-05-13" className="teaser--date">
+                ({j|11–13 May 2018|j} |> str)
+              </time>
+              <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
+            </section>
+            <main className="teaser--main">
+              <h2 className="teaser--tagline">
+                (
+                  "World's first Reason conference for web-developers & OCaml enthusiasts"
+                  |> str
+                )
+              </h2>
+              <p className="teaser--text">
+                (
+                  "Reason is the next big thing and it is time to bring the community together. Come and learn about the language and get inspired for innovation.\n"
+                  |> str
+                )
+              </p>
+            </main>
+            <nav>
+              <a className="teaser--button" href="#tickets">
+                ("Buy Tickets" |> str)
+              </a>
+            </nav>
+          </section>
+        </header>
       <section className="offering">
         <div className="container_centered grid grid-6col">
           <h2 className="offering--heading">
