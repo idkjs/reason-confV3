@@ -119,7 +119,7 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.chengLou width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (str("Cheng Lou")) </p>
+                  <h3 className="speaker--name"> (str("Cheng Lou")) </h3>
                   <p className="speaker--company"> (str("Facebook")) </p>
                 </figcaption>
               </figure>
@@ -128,7 +128,7 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.lauraGaetano width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (str("Laura Gaetano")) </p>
+                  <h3 className="speaker--name"> (str("Laura Gaetano")) </h3>
                   <p className="speaker--company">
                     (str("Travis Foundation"))
                   </p>
@@ -139,7 +139,7 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.keiraHodgkison width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name"> (str("Keira")) </p>
+                  <h3 className="speaker--name"> (str("Keira")) </h3>
                   <p className="speaker--company"> (str("Culture Amp")) </p>
                 </figcaption>
               </figure>
@@ -148,9 +148,9 @@ let make = _children => {
               <figure className="speaker">
                 <img src=Assets.cristianoCalcagno width="225" height="225" />
                 <figcaption>
-                  <p className="speaker--name">
+                  <h3 className="speaker--name">
                     (str("Cristiano Calcagno"))
-                  </p>
+                  </h3>
                   <p className="speaker--company"> (str("Facebook")) </p>
                 </figcaption>
               </figure>
