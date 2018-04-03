@@ -23,8 +23,18 @@ let make = (~location, children) => {
     let isHomepage = location##pathname == "/";
     <article className="container">
       <Helmet title="Demo 2018" meta=metaData />
-      (Utils.componentOrNull(! isHomepage, <Navigation />))
-      <main> (children()) </main>
+      /* (Utils.componentOrNull(! isHomepage, <Navigation />)) */
+      /* <main> (children()) </main> */
+      (
+        if (isHomepage) {
+          <main> (children()) </main>;
+        } else {
+          <div className="container container_centered grid grid-col6">
+            <Navigation />
+            <main> (children()) </main>
+          </div>;
+        }
+      )
       <Footer />
     </article>;
   },
