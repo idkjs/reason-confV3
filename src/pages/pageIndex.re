@@ -19,6 +19,12 @@ let make = _children => {
                 className="teaser--image"
               />
             </h1>
+            <aside className="teaser--aside">
+              <p className="teaser--dates">
+                ({j|11–13 May 2018|j} |> str)
+              </p>
+              <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
+            </aside>
             <main className="teaser--main">
               <h2 className="teaser--tagline">
                 (
@@ -28,18 +34,11 @@ let make = _children => {
               </h2>
               <p className="teaser--text">
                 (
-                  "We believe Reason is the next big thing and we think it is time to bring the community together, learn about the language and talk about new innovations.\n"
+                  "Reason is the next big thing and it is time to bring the community together. Come and learn about the language and get inspired for innovation.\n"
                   |> str
                 )
               </p>
             </main>
-            /* this second div gets 30% of div teaser */
-            <aside className="teaser--aside">
-              <p className="teaser--dates">
-                ({j|11–13 May 2018|j} |> str)
-              </p>
-              <p className="teaser--location"> ("Vienna, Austria" |> str) </p>
-            </aside>
             <nav>
               <a className="teaser--button" href="#tickets">
                 ("Buy Tickets" |> str)
