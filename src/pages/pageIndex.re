@@ -116,58 +116,15 @@ let make = _children => {
       /* </div> */
       <section className="speakers">
         <div className="container_centered">
-
-            <h2> ("Speakers" |> str) </h2>
-            <ul className="speaker-list">
-              (
-                Data.speakers
-                |> Array.mapi(speakerColumn)
-                |> ReasonReact.arrayToElement
-              )
-            </ul>
-          </div>
-          /* <li className="speaker-list--item">
-               <figure className="speaker">
-                 <img src=Assets.chengLou width="225" height="225" />
-                 <figcaption>
-                   <h3 className="speaker--name"> (str("Cheng Lou")) </h3>
-                   <p className="speaker--company"> (str("Facebook")) </p>
-                 </figcaption>
-               </figure>
-             </li>
-             <li className="speaker-list--item">
-               <figure className="speaker">
-                 <img src=Assets.lauraGaetano width="225" height="225" />
-                 <figcaption>
-                   <h3 className="speaker--name"> (str("Laura Gaetano")) </h3>
-                   <p className="speaker--company">
-                     (str("Travis Foundation"))
-                   </p>
-                 </figcaption>
-               </figure>
-             </li>
-             <li className="speaker-list--item">
-               <figure className="speaker">
-                 <img src=Assets.keiraHodgkison width="225" height="225" />
-                 <figcaption>
-                   <h3 className="speaker--name">
-                     (str("Keira Hodgkison"))
-                   </h3>
-                   <p className="speaker--company"> (str("Culture Amp")) </p>
-                 </figcaption>
-               </figure>
-             </li>
-             <li className="speaker-list--item">
-               <figure className="speaker">
-                 <img src=Assets.cristianoCalcagno width="225" height="225" />
-                 <figcaption>
-                   <h3 className="speaker--name">
-                     (str("Cristiano Calcagno"))
-                   </h3>
-                   <p className="speaker--company"> (str("Facebook")) </p>
-                 </figcaption>
-               </figure>
-             </li> */
+          <h2> ("Speakers" |> str) </h2>
+          <ul className="speaker-list">
+            (
+              Data.speakers
+              |> Array.mapi(speakerColumn)
+              |> ReasonReact.arrayToElement
+            )
+          </ul>
+        </div>
       </section>
       <section className="sponsors">
         <div className="container_centered">
