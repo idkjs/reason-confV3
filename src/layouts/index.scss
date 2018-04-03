@@ -72,13 +72,26 @@ Define background color, bgrd image and size
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 98%);
   text-align: center;
+
+  @media (min-width: 960px) {
+    padding-bottom: 120px;
+    text-align: left;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 88%);
+  }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     margin: 0;
+    // @media (min-width: 960px) {
+    //   grid-column: 1 / span 4;
+    //   grid-row: 1;
+    //   align-self: end;
+    // }
+  }
+  &--text {
+    font-size: 1.5rem;
     @media (min-width: 960px) {
-      grid-column: 1 / span 4;
-      grid-row: 1;
-      align-self: end;
+      display: none;
+      grid-row: 2;
     }
   }
   &--image {
