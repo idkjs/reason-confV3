@@ -9,7 +9,7 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 html {
   font: 14px/1.3 "Assistant", sans-serif;
   color: #333;
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     font-size: 18px;
     // line-height: 1.5;
   }
@@ -39,7 +39,7 @@ min-width: if the content is smaller than the minWidth, minWidth size
 is applied, ignored if content is larger than min-width.
 */
 .container {
-  &--centered {
+  &_centered {
     margin: 0 auto;
     padding: 20px;
     max-width: 1080px;
@@ -53,14 +53,14 @@ is applied, ignored if content is larger than min-width.
 
 .grid-4col {
   grid-template-columns: 100%;
-  // @media (min-width: 640px) {
+  // @media (min-width: 768px) {
   //   grid-template-columns: repeat(4, 1fr);
   // }
 }
 .grid-6col {
   grid-template-columns: 100%;
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -77,7 +77,7 @@ Define background color, bgrd image and size
   clip-path: polygon(0 0, 100% 0, 100% 100%, 92%);
   text-align: center;
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     padding-bottom: 120px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 88%);
@@ -85,7 +85,7 @@ Define background color, bgrd image and size
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
     margin: 0;
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       grid-column: 1 / span 4;
       grid-row: 1;
       align-self: end;
@@ -93,12 +93,12 @@ Define background color, bgrd image and size
   }
   &--image {
     width: 100%;
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       width: auto;
     }
   }
   &--main {
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       grid-column: 1 / span 4;
     }
   }
@@ -109,7 +109,7 @@ Define background color, bgrd image and size
     display: none;
 
     font-size: 1.5rem;
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       display: block;
       grid-row: 2;
     }
@@ -119,7 +119,7 @@ Define background color, bgrd image and size
     position: relative;
     font-family: "Hammersmith One", Arial, sans-serif;
 
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       grid-column: 5 / span 2;
       grid-row: 1;
       align-self: end;
@@ -153,14 +153,14 @@ Define background color, bgrd image and size
 .offering {
   &--heading {
     margin: 0;
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       grid-column: 1 / span 2;
       grid-row: 1;
     }
   }
 
   &--text {
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       grid-column: 1 / span 2;
       grid-row: 2;
     }
@@ -168,7 +168,7 @@ Define background color, bgrd image and size
 }
 
 .timeline {
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     grid-column: 3 / span 4;
     grid-row: 1 / span 2;
   }
@@ -180,7 +180,7 @@ Define background color, bgrd image and size
     margin: 0.1em 0;
     font-size: 0.9rem;
     text-align: right;
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       width: 157px;
     }
   }
@@ -214,7 +214,7 @@ Define background color, bgrd image and size
   z-index: -1;
   transform: rotate(6deg) scale(2);
   transform-origin: left top;
-  // @media (min-width: 640px) {
+  // @media (min-width: 768px) {
   //   margin-top: -50px;
   // }
 }
@@ -230,7 +230,7 @@ Define background color, bgrd image and size
   opacity: 0.35;
   height: 150px;
   transform: rotate(9deg) scale(2);
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     top: 150px;
   }
 }
@@ -244,7 +244,7 @@ Define background color, bgrd image and size
   padding: 0;
   width: 100%;
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 60px;
   }
