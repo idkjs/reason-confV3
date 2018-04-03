@@ -5,10 +5,19 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 * {
   box-sizing: border-box;
 }
+
+html {
+  font: 14px/1.3 "Assistant", sans-serif;
+  color: #333;
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
 /* 16/1.3 = font-size and line-height together. */
 body {
-  font: 18px/1.5 "Assistant", sans-serif;
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 /* apply following font to all following tags */
