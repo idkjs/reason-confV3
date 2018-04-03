@@ -10,7 +10,7 @@ let make = _children => {
     <article>
       <header className="teaser">
         <Navigation />
-        <section className="container--centered grid grid-6col">
+        <section className="container_centered grid grid-6col">
           <h1 className="teaser--logo">
             <img
               src=Assets.logo
@@ -46,7 +46,7 @@ let make = _children => {
         </section>
       </header>
       <section className="offering">
-        <div className="container--centered grid grid-col6">
+        <div className="container_centered grid grid-col6">
           <h2 className="offering--heading">
             ("Get productive with Reason in 3 days" |> str)
           </h2>
@@ -110,7 +110,7 @@ let make = _children => {
       </section>
       /* </div> */
       <section className="speakers">
-        <div className="container--centered">
+        <div className="container_centered">
           <h2> ("Speakers" |> str) </h2>
           <ul className="speaker-list">
             <li className="speaker-list--item">
@@ -159,7 +159,7 @@ let make = _children => {
         </div>
       </section>
       <section className="sponsors">
-        <div className="container--centered">
+        <div className="container_centered">
           <h2> ("Sponsors" |> str) </h2>
           <p>
             ({j|Reason Conf is looking for amazing sponsors...|j} |> str)
@@ -167,7 +167,7 @@ let make = _children => {
         </div>
       </section>
       <section className="tickets">
-        <div className="container--centered">
+        <div className="container_centered">
           <h2 id="tickets"> ("Tickets" |> str) </h2>
           <Tickets event="shing/demo-2018" />
         </div>
