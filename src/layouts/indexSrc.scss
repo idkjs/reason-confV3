@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One");
-/* use "*" to set universal box-sizing
-https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
-*/
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +11,7 @@ html {
     font-size: 18px;
   }
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -31,10 +30,7 @@ h6 {
 h2 {
   font-size: 2rem;
 }
-/* Main grid layout, we apply it in layouts/index.js on article 
-min-width: if the content is smaller than the minWidth, minWidth size
-is applied, ignored if content is larger than min-width.
-*/
+
 .container {
   &_centered {
     margin: 0 auto;
@@ -42,46 +38,39 @@ is applied, ignored if content is larger than min-width.
     max-width: 1080px;
   }
 }
-/* main grid layout  */
+
+/* Main grid layout */
 .grid {
   display: grid;
+
   @media (min-width: 768px) {
     grid-gap: 25px;
   }
 }
-
 .grid-4col {
-  grid-template-columns: 100%;
-  // @media (min-width: 768px) {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .grid-6col {
-  // grid-template-columns: 100%;
-
   @media (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
-/* home page header section
-Define background color, bgrd image and size
-*/
+/* Home page header section */
 .teaser {
-  // padding-top: 30px;
   padding-bottom: 40px;
-
   background: url(../assets/teaser-bg.jpg) 25% top no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   text-align: center;
 
   @media (min-width: 768px) {
-    // padding-bottom: 120px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
   }
-  /* push logo to so that aligns to end/rights side of div with no margin */
+
   &--logo {
     margin: 40px 0 0;
     @media (min-width: 768px) {
@@ -111,16 +100,17 @@ Define background color, bgrd image and size
   }
   &--text {
     font-size: 1.25em;
+
     @media (min-width: 768px) {
       display: block;
       grid-row: 2;
     }
   }
-
   &--dates {
     position: relative;
     font-family: "Hammersmith One", Arial, sans-serif;
     font-size: 1.5vmax;
+
     @media (min-width: 1024px) {
       font-size: 1rem;
       align-self: end;
@@ -130,7 +120,6 @@ Define background color, bgrd image and size
       grid-row: 1;
       align-self: end;
 
-      // this draws a line to left side of main aside element
       &::before {
         position: absolute;
         left: -15px;
@@ -155,15 +144,57 @@ Define background color, bgrd image and size
     font-size: 1.25em;
   }
   &--navigation {
-    // grid-column: 5 / span 2;
     grid-row: 1;
     @media (min-width: 768px) {
       grid-column: 5 / span 2;
       grid-row: 2;
     }
   }
-  // &--button {
-  // }
+}
+
+/* Offering & Timeline */
+.offering {
+  &--heading {
+    margin: 0;
+    @media (min-width: 768px) {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+  }
+  &--text {
+    @media (min-width: 768px) {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+  }
+}
+
+.timeline {
+  @media (min-width: 768px) {
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 2;
+  }
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+
+  &--date {
+    margin: 0.1em 0;
+    font-size: 0.9rem;
+    text-align: right;
+    @media (min-width: 768px) {
+      width: 157px;
+    }
+  }
+  &--date > time {
+    color: #888;
+  }
+  &--content {
+    margin: 0;
+  }
+  &--content > h3 {
+    margin: 0;
+  }
 }
 
 /* Speakers section */
@@ -202,6 +233,7 @@ Define background color, bgrd image and size
     list-style: none;
   }
 }
+
 /* Single speaker block */
 .speaker {
   position: relative;
@@ -235,110 +267,27 @@ Define background color, bgrd image and size
     color: #888;
   }
 }
-/* Offering & Timeline */
-
-.offering {
-  &--heading {
-    margin: 0;
-    @media (min-width: 768px) {
-      grid-column: 1 / span 2;
-      grid-row: 1;
-    }
-  }
-
-  &--text {
-    @media (min-width: 768px) {
-      grid-column: 1 / span 2;
-      grid-row: 2;
-    }
-  }
-}
-
-.timeline {
-  @media (min-width: 768px) {
-    grid-column: 3 / span 4;
-    grid-row: 1 / span 2;
-  }
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: 20px;
-
-  &--date {
-    margin: 0.1em 0;
-    font-size: 0.9rem;
-    text-align: right;
-    @media (min-width: 768px) {
-      width: 157px;
-    }
-  }
-  &--date > time {
-    color: #888;
-  }
-
-  &--content {
-    margin: 0;
-  }
-  &--content > h3 {
-    margin: 0;
-  }
-}
-
-/* Speaker section */
-.speakers::before {
-  position: absolute;
-  background: url("../assets/speakers-bg.svg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  content: "";
-  @media (min-width: 425px) {
-    margin-top: -50px;
-  }
-}
-/* Speakers list grid */
-.speaker-list {
-  display: grid;
-  justify-items: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
-  @media (min-width: 425px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 60px;
-  }
-
-  &--item {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
 
 /* Footer */
 footer {
-  // grid-area: footer;
   font-size: 0.9rem;
+}
 
-  &--about {
-    grid-column: 1 / span 2;
-  }
-  &--creator {
-    display: inline-block;
-    white-space: nowrap;
-  }
+.footer--about {
+  grid-column: 1 / span 2;
+}
 
-  &--userpic {
-    margin: 0 0.25em;
-    width: 21px;
-    height: 21px;
-    vertical-align: -0.35em;
-    border-radius: 50%;
-  }
+.footer--creator {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.footer--userpic {
+  margin: 0 0.25em;
+  width: 21px;
+  height: 21px;
+  vertical-align: -0.35em;
+  border-radius: 50%;
 }
 
 .copyright {
@@ -346,8 +295,8 @@ footer {
   align-self: end;
   text-align: right;
   color: #888;
+}
 
-  & > p {
-    margin: 0;
-  }
+.copyright > p {
+  margin: 0;
 }
