@@ -222,13 +222,6 @@ Define background color, bgrd image and size
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 60px;
   }
-
-  &--item {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
 }
 /* Single speaker block */
 .speaker {
