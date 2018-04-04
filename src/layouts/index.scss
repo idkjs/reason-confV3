@@ -36,7 +36,7 @@ h2 {
 // define styles for a tag
 a {
   $linkColor: $accentColor;
-  $underlineColor: tranparentize(adjust_hue($accentColor, 0), 0.65);
+  $underlineColor: transparentize(adjust_hue($accentColor, 0), 0.65);
   color: $linkColor;
   text-decoration: none;
   background-image: linear-gradient(
