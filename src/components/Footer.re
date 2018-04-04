@@ -4,6 +4,12 @@ let component = ReasonReact.statelessComponent("Footer");
 
 let str = Utils.s;
 
+let organizerElWithPic = (organizer: Data.organizerData) =>
+  <a href=organizer.href className=style##creator key=organizer.name>
+    <img src=organizer.imgUrl alt=organizer.altText className=style##img />
+    (str(organizer.name))
+  </a>;
+
 let make = _children => {
   ...component,
   render: _self =>
@@ -16,6 +22,17 @@ let make = _children => {
               |> str
             )
           </p>
+          (
+            switch (Data.organizers) {
+            | (x, y, z) =>
+              <p>
+                (
+                  Array.map(organizerElWithPic, [|x, y|])
+                  |> ReasonReact.arrayToElement
+                )
+              </p>
+            }
+          )
         </section>
         <nav>
           <ul>
