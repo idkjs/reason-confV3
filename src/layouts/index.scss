@@ -180,69 +180,6 @@ Define background color, bgrd image and size
   }
 }
 
-/* Speakers section */
-.speakers::before {
-  position: absolute;
-  background: url("../assets/speakers-bg.svg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  content: "";
-  @media (min-width: 425px) {
-    margin-top: -50px;
-  }
-}
-
-/* Speakers list grid */
-.speaker-list {
-  display: grid;
-  justify-items: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
-  @media (min-width: 425px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 60px;
-  }
-}
-
-/* Single speaker block */
-.speaker {
-  position: relative;
-  margin: 0;
-  width: 100%;
-
-  & > img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(1);
-    z-index: 1;
-  }
-  & > figcaption {
-    position: relative;
-    top: -50px;
-    left: -10px;
-    padding: 50px 10px 10px;
-    background: #fff;
-    overflow: hidden;
-    z-index: 0;
-  }
-  &--name {
-    margin: 0.25em 0;
-    font-size: 1rem;
-    line-height: 1;
-  }
-  &--company {
-    margin: 0;
-    font-size: 0.75rem;
-    color: #888;
-  }
-}
 /* Offering & Timeline */
 
 .offering {
@@ -288,5 +225,35 @@ Define background color, bgrd image and size
   }
   &--content > h3 {
     margin: 0;
+  }
+}
+
+/* Speakers section */
+.speakers::before {
+  position: absolute;
+  background: url("../assets/speakers-bg.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  @media (min-width: 425px) {
+    margin-top: -50px;
+  }
+}
+
+/* Speakers list grid */
+.speaker-list {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: 425px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
   }
 }

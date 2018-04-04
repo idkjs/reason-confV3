@@ -1,3 +1,5 @@
+open Data;
+
 [@bs.module] external style : Js.t({..}) = "./Speakers.module.scss";
 
 let component = ReasonReact.statelessComponent("Speakers");
