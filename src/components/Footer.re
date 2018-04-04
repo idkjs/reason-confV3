@@ -4,9 +4,9 @@ let component = ReasonReact.statelessComponent("Footer");
 
 let str = Utils.s;
 
-let organizerElWithPic = ({imgUrl, name, href, altText}: Data.organizerData) =>
+let organizerElWithPic = ({imgUrl, name, href}: Data.organizerData) =>
   <a href className=style##creator key=name>
-    <img src=imgUrl alt=altText className=style##img />
+    <img src=imgUrl alt={j|Photo of $(name)|j} className=style##img />
     (str(name))
   </a>;
 
