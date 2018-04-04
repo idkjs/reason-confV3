@@ -9,7 +9,7 @@ let miscRow = (v: Schedule.misc) =>
 
 let breakRow = miscRow;
 
-let talkRow = (v: Schedule.talk) =>
+let talkRow = (v: Schedule.lecture) =>
   <tr>
     <td> (v.timeslot |> s) </td>
     <td>
