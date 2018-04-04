@@ -4,25 +4,37 @@
    */
 module Link = {
   [@bs.module "gatsby-link"]
-  external gatsbyLink : ReasonReact.reactClass = "default";
+  external linkClass : ReasonReact.reactClass = "default";
   let make =
       (
         ~to_: string,
         ~className: option(string)=?,
-        ~activeStyle: option(string)=?,
+        ~activeStyle: option(Js.t({..}))=?,
         ~activeClassName: option(string)=?,
         children,
-      ) =>
-    ReasonReact.wrapJsForReason(
-      ~reactClass=gatsbyLink,
-      ~props={
-        "to": to_,
-        "className": Js.Nullable.fromOption(className),
-        "activeStyle": Js.Nullable.fromOption(activeStyle),
-        "activeClassName": Js.Nullable.fromOption(activeClassName),
-      },
-      children,
-    );
+      ) => {
+    /*
+        React is complaining if activeStyle & activeClassName are translated
+        to e.g. activeClassName=undefined inside a JSX tag
+     */
+    let props =
+      {"to": to_, "className": Js.Nullable.fromOption(className)}
+      |> (
+        p =>
+          switch (activeStyle) {
+          | Some(v) => Js.Obj.assign(p, {"activeStyle": v})
+          | None => p
+          }
+      )
+      |> (
+        p =>
+          switch (activeClassName) {
+          | Some(v) => Js.Obj.assign(p, {"activeClassName": v})
+          | None => p
+          }
+      );
+    ReasonReact.wrapJsForReason(~reactClass=linkClass, ~props, children);
+  };
 };
 
 /* Helmut via bucklescript

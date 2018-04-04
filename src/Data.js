@@ -16,9 +16,9 @@ var headlineSpeakers = /* array */ [
     /* name */ "Cheng Lou",
     /* company */ "Facebook",
     /* imgUrl */ ChengLouJpg,
-    /* description */ "test",
+    /* description */ "I work on Reason and Facebook Messenger",
     /* talk : Some */ [
-      /* record */ [/* title */ "Some Talk Name", /* abstract */ "Foo"]
+      /* record */ [/* title */ "This is a Test title", /* abstract */ "Foo"]
     ],
     /* social : record */ [
       /* twitterUser : Some */ ["_chenglou"],
@@ -30,27 +30,23 @@ var headlineSpeakers = /* array */ [
     /* name */ "Laura Gaetano",
     /* company */ "Travis Foundation",
     /* imgUrl */ LauraGaetanoJpg,
-    /* description */ "test",
-    /* talk : Some */ [
-      /* record */ [/* title */ "Some Talk Name", /* abstract */ "Foo"]
-    ],
+    /* description */ "Laura is a manager at Travis Foundation and the organiser of Rails Girls Summer of Code (https://railsgirlssummerofcode.org/) — a 3-month scholarship program to support women in the Open Source community. With a background in the visual arts and a non-traditional career path, she landed in tech as a web developer somewhat by accident. Laura is passionate about making things, coaching at programming workshops, Open Source software, feminism, music and space (as in rockets).",
+    /* talk : None */ 0,
     /* social : record */ [
-      /* twitterUser : Some */ ["_chenglou"],
-      /* githubUser : Some */ ["chenglou"],
-      /* website : None */ 0
+      /* twitterUser : Some */ ["alicetragedy"],
+      /* githubUser : Some */ ["alicetragedy"],
+      /* website : Some */ ["http://www.alicetragedy.org/"]
     ]
   ],
   /* record */ [
     /* name */ "Keira Hodgkison",
     /* company */ "Culture Amp",
     /* imgUrl */ KeiraHodgkisonJpg,
-    /* description */ "test",
-    /* talk : Some */ [
-      /* record */ [/* title */ "Some Talk Name", /* abstract */ "Foo"]
-    ],
+    /* description */ "Keira is a developer at Culture Amp, the world's leading culture analytics platform. She works with React, Flow, and Rails on solutions to help customers share, and act upon company employee engagement data. Keira is an advocate for using functional programming techniques to improve the JavaScript coding and refactoring experience. When she's not writing code, she can be found under a large cat.",
+    /* talk : None */ 0,
     /* social : record */ [
-      /* twitterUser : Some */ ["_chenglou"],
-      /* githubUser : Some */ ["chenglou"],
+      /* twitterUser : Some */ ["keirasaid"],
+      /* githubUser : Some */ ["keirah"],
       /* website : None */ 0
     ]
   ],
@@ -58,13 +54,11 @@ var headlineSpeakers = /* array */ [
     /* name */ "Cristiano Calcagno",
     /* company */ "Facebook",
     /* imgUrl */ CristianoCalcagnoJpg,
-    /* description */ "test",
-    /* talk : Some */ [
-      /* record */ [/* title */ "Some Talk Name", /* abstract */ "Foo"]
-    ],
+    /* description */ "Engineer at Facebook.\nCo-creator of @fbinfer, founder of Monoidics, reformed academic.\nInto developer experience, front-end, static analysis, language design.\nEarly @reasonml adopter, co-creator of ReasonReact.",
+    /* talk : None */ 0,
     /* social : record */ [
-      /* twitterUser : Some */ ["_chenglou"],
-      /* githubUser : Some */ ["chenglou"],
+      /* twitterUser : Some */ ["ccrisccris"],
+      /* githubUser : Some */ ["cristianoc"],
       /* website : None */ 0
     ]
   ]
