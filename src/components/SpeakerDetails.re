@@ -1,5 +1,9 @@
 [@bs.module] external style : Js.t({..}) = "./SpeakerDetails.module.scss";
 
+open Utils;
+
+open Data;
+
 let s = Utils.s;
 
 let component = ReasonReact.statelessComponent("SpeakerDetails");
