@@ -132,7 +132,36 @@ let otherSpeakers = [|
 let speakers: array(speakerData) =
   Array.concat([headlineSpeakers, otherSpeakers]);
 
-/* Js.log(speakers); */
+let find_opt = (fn, l) =>
+  try (List.find(fn, l) |> (r => Some(r))) {
+  | Not_found => None
+  };
+
+let findSpeaker = (name: string) =>
+  Array.to_list(speakers) |> find_opt(s => s.name == name);
+
+let schedule: array(Schedule.t) = [|
+  Misc({timeslot: "09:00", description: "Doors open & Registration"}),
+  Talk({timeslot: "10:00", speaker: findSpeaker("Cheng Lou")}),
+  Break({timeslot: "10:45", description: "30 min break"}),
+  Misc({timeslot: "11:15", description: "Talk 2"}),
+  Break({timeslot: "12:00", description: "15 min break"}),
+  Talk({timeslot: "12:15", speaker: findSpeaker("Laura Gaetano")}),
+  Break({timeslot: "13:00", description: "2 hour lunch break"}),
+  Misc({timeslot: "15:00", description: "Talk 4"}),
+  Break({timeslot: "15:45", description: "30 min break"}),
+  Talk({timeslot: "16:15", speaker: findSpeaker("Sander Spies")}),
+  Break({timeslot: "17:00", description: "15 min break"}),
+  Misc({timeslot: "17:15", description: "Talk 6"}),
+  Break({timeslot: "18:00", description: "1.5 hour break"}),
+  Misc({timeslot: "19:30", description: "Talk 7"}),
+  Misc({timeslot: "20:30", description: "Open End / Party"}),
+|];
+
+Js.log(schedule);
+
+Js.log(speakers);
+
 let organizers = (
   {
     name: "Nik",

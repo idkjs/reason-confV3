@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Schedule");
 
-let s = Utils.s;
+let s = ReasonReact.stringToElement;
 
 let make = _children => {
   ...component,
