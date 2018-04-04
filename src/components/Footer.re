@@ -14,44 +14,6 @@ let make = _children => {
               "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
               |> str
             )
-            /* </p>
-               <p> */
-            <a
-              href="https://www.twitter.com/ryyppy"
-              className="footer--creator">
-              <img
-                src=Assets.patrick
-                width="28"
-                height="28"
-                alt="Patrick Photo"
-                className="footer--userpic"
-              />
-              ("Patrick" |> str)
-            </a>
-            <a
-              href="https://www.twitter.com/nikgraf"
-              className="footer--creator">
-              <img
-                src=Assets.nik
-                width="28"
-                height="28"
-                alt="Nik Photo"
-                className="footer--userpic"
-              />
-              ("Nik &" |> str)
-            </a>
-            <a
-              href="https://www.twitter.com/okonetchnikov"
-              className="footer--creator">
-              <img
-                src=Assets.andrey
-                width="28"
-                height="28"
-                alt="Andrey Photo"
-                className="footer--userpic"
-              />
-              ("Andrey" |> str)
-            </a>
           </p>
         </section>
         <nav>

@@ -75,12 +75,11 @@ a {
   }
 }
 
-.grid-4col {
-  grid-template-columns: 100%;
-  // @media (min-width: 768px) {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
-}
+// .grid-4col {
+//   @media (min-width: 768px) {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }
 .grid-6col {
   // grid-template-columns: 100%;
 
@@ -157,16 +156,6 @@ Define background color, bgrd image and size
       grid-column: 5 / span 2;
       grid-row: 1;
       align-self: end;
-
-      // this draws a line to left side of main aside element
-      // &::before {
-      //   position: absolute;
-      //   left: -15px;
-      //   width: 5px;
-      //   height: 100%;
-      //   background: $primaryColor;
-      //   content: "";
-      // }
     }
     @media (max-width: 767px) {
       font-size: small;
@@ -183,15 +172,12 @@ Define background color, bgrd image and size
     font-size: 1.25em;
   }
   &--navigation {
-    // grid-column: 5 / span 2;
     grid-row: 1;
     margin-bottom: 20px;
     @media (min-width: 768px) {
       grid-column: 1 / span 6;
     }
   }
-  // &--button {
-  // }
 }
 
 /* Speakers section */
@@ -223,6 +209,7 @@ Define background color, bgrd image and size
     grid-gap: 60px;
   }
 }
+
 /* Single speaker block */
 .speaker {
   position: relative;
@@ -300,75 +287,6 @@ Define background color, bgrd image and size
     margin: 0;
   }
   &--content > h3 {
-    margin: 0;
-  }
-}
-
-/* Speaker section */
-.speakers::before {
-  position: absolute;
-  background: url("../assets/speakers-bg.svg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  content: "";
-  @media (min-width: 425px) {
-    margin-top: -50px;
-  }
-}
-/* Speakers list grid */
-.speaker-list {
-  display: grid;
-  justify-items: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
-  @media (min-width: 425px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 60px;
-  }
-
-  &--item {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
-/* Footer */
-.footer {
-  // grid-area: footer;
-  font-size: 0.9rem;
-
-  &--about {
-    grid-column: 1 / span 2;
-  }
-  &--creator {
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  &--userpic {
-    margin: 0 0.25em;
-    width: 21px;
-    height: 21px;
-    vertical-align: -0.35em;
-    border-radius: 50%;
-  }
-}
-
-.copyright {
-  grid-column-end: span 2;
-  align-self: end;
-  text-align: right;
-  color: #888;
-
-  & > p {
     margin: 0;
   }
 }
