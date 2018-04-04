@@ -14,7 +14,7 @@ let make = _children => {
   render: _self =>
     <div className=style##root>
       <h1> ("Speakers" |> s) </h1>
-      <section className=style##speaker_rows>
+      <section className=style##speaker_details>
         (
           Data.speakers
           |> Array.map(toSpeakerDetail)
