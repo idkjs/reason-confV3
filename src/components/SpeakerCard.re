@@ -8,7 +8,7 @@ let make = (~speaker: Data.speakerData, _children) => {
   ...component,
   render: _self =>
     <figure className=style##root>
-      <img src=speaker.imgUrl />
+      <img src=speaker.imgUrl alt=speaker.name />
       <figcaption>
         <h3 className=style##name> (s(speaker.name)) </h3>
         <p> (s(speaker.company)) </p>
