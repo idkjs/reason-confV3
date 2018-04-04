@@ -14,7 +14,7 @@ let make = (~speaker: Data.speakerData, _children) => {
     <div className=style##root key=speaker.name>
       <img src=speaker.imgUrl />
       <div>
-        <h3> (s(speaker.name)) </h3>
+        <h2> (s(speaker.name)) </h2>
         <p> (s(speaker.description)) </p>
         (
           switch (speaker.talk) {
