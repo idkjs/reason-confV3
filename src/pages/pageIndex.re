@@ -4,9 +4,11 @@ let str = Utils.s;
 
 module Tickets = Tito.Tickets;
 
-let speakerColumn = (i, speaker) =>
-  <SpeakerCard speaker key=(string_of_int(i)) />;
+let speakerColumn = (speaker: Data.speakerData) =>
+  <SpeakerCard speaker key=speaker.name />;
 
+/* let speakerColumn = (i, speaker) =>
+   <SpeakerCard speaker key=(string_of_int(i)) />; */
 let make = _children => {
   ...component,
   render: _self =>
@@ -116,7 +118,7 @@ let make = _children => {
           <ul className="speaker-list">
             (
               Data.speakers
-              |> Array.mapi(speakerColumn)
+              |> Array.map(speakerColumn)
               |> ReasonReact.arrayToElement
             )
           </ul>
