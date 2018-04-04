@@ -1,11 +1,13 @@
 .root {
-  background-color: #dd4c39;
   display: inline-block;
   padding: 0.25em 0.5em;
   color: white;
   text-decoration: none;
   text-align: center;
+  background-color: #dd4c39;
+
   &:hover {
-    background-color: darken(#dd4c39, 10%);
+    color: white;
+    background: darken(#dd4c39, 10%);
   }
 }
