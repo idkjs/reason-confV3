@@ -45,7 +45,9 @@ is applied, ignored if content is larger than min-width.
 /* main grid layout  */
 .grid {
   display: grid;
-  grid-gap: 25px;
+  @media (min-width: 768px) {
+    grid-gap: 25px;
+  }
 }
 
 .grid-4col {
@@ -55,7 +57,7 @@ is applied, ignored if content is larger than min-width.
   // }
 }
 .grid-6col {
-  grid-template-columns: 100%;
+  // grid-template-columns: 100%;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
@@ -67,7 +69,7 @@ Define background color, bgrd image and size
 */
 .teaser {
   // padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   background: url(../assets/teaser-bg.jpg) 25% top no-repeat;
   background-size: cover;
@@ -75,13 +77,13 @@ Define background color, bgrd image and size
   text-align: center;
 
   @media (min-width: 768px) {
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
   }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
-    margin: 0;
+    margin: 40px 0 0;
     @media (min-width: 768px) {
       grid-column: 1 / span 4;
       grid-row: 1;
@@ -152,8 +154,16 @@ Define background color, bgrd image and size
     margin: 0;
     font-size: 1.25em;
   }
-  &--button {
+  &--navigation {
+    // grid-column: 5 / span 2;
+    grid-row: 1;
+    @media (min-width: 768px) {
+      grid-column: 5 / span 2;
+      grid-row: 2;
+    }
   }
+  // &--button {
+  // }
 }
 
 /* Offering & Timeline */
