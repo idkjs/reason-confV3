@@ -1,6 +1,7 @@
 let component = ReasonReact.statelessComponent("Footer");
 
-/* [@bs.module] external style : Js.t({..}) = "./Footer.module.css"; */
+[@bs.module] external style : Js.t({..}) = "./Footer.module.scss";
+
 let str = Utils.s;
 
 let make = _children => {
@@ -8,7 +9,7 @@ let make = _children => {
   render: _self =>
     <footer>
       <div className="container_centered grid grid-6col">
-        <section className="footer--about">
+        <section className=style##about>
           <p>
             (
               "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
@@ -44,7 +45,7 @@ let make = _children => {
             <li> <a href="https://www.github.com"> ("Github" |> str) </a> </li>
           </ul>
         </nav>
-        <section className="copyright">
+        <section className=style##copyright>
           <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
           <p> ({j|© Atrium, 2018|j} |> str) </p>
         </section>
