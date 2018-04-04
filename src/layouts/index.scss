@@ -185,12 +185,10 @@ Define background color, bgrd image and size
   &--navigation {
     // grid-column: 5 / span 2;
     grid-row: 1;
-    grid-column: 1 / span 6;
     margin-bottom: 20px;
-    // @media (min-width: 768px) {
-    //   grid-column: 5 / span 2;
-    //   grid-row: 2;
-    // }
+    @media (min-width: 768px) {
+      grid-column: 1 / span 6;
+    }
   }
   // &--button {
   // }
