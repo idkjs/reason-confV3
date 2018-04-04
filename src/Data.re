@@ -22,7 +22,6 @@ type organizerData = {
   name: string,
   imgUrl: string,
   href: string,
-  altText: string,
 };
 
 type social = {
@@ -163,22 +162,11 @@ Js.log(schedule);
 Js.log(speakers);
 
 let organizers = (
-  {
-    name: "Nik",
-    imgUrl: nikImg,
-    href: "https://twitter.com/nikgraf",
-    altText: "Photo of Nik",
-  },
+  {name: "Nik", imgUrl: nikImg, href: "https://twitter.com/nikgraf"},
   {
     name: "Andrey",
     imgUrl: andreyImg,
     href: "https://twitter.com/okonetchnikov",
-    altText: "Photo of Andrey",
   },
-  {
-    name: "Patrick",
-    imgUrl: patrickImg,
-    href: "https://twitter.com/ryyppy",
-    altText: "Photo of Patrick",
-  },
+  {name: "Patrick", imgUrl: patrickImg, href: "https://twitter.com/ryyppy"},
 );
