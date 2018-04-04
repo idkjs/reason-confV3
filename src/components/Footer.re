@@ -24,14 +24,14 @@ let make = _children => {
           </p>
           (
             switch (Data.organizers) {
-            | (x, y, z) =>
+            | (o1, o2, o3) =>
               <p>
                 (
-                  Array.map(organizerElWithPic, [|x, y|])
+                  Array.map(organizerElWithPic, [|o1, o2|])
                   |> ReasonReact.arrayToElement
                 )
                 (str(" & "))
-                (organizerElWithPic(z))
+                (organizerElWithPic(o3))
               </p>
             }
           )
