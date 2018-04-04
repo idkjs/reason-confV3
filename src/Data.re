@@ -114,4 +114,24 @@ let otherSpeakers = [|
 let speakers: array(speakerData) =
   Array.concat([headlineSpeakers, otherSpeakers]);
 
-Js.log(speakers);
+/* Js.log(speakers); */
+let organizers = (
+  {
+    name: "Nik",
+    imgUrl: nikImg,
+    href: "https://twitter.com/nikgraf",
+    altText: "Photo of Nik",
+  },
+  {
+    name: "Andrey",
+    imgUrl: andreyImg,
+    href: "https://twitter.com/okonetchnikov",
+    altText: "Photo of Andrey",
+  },
+  {
+    name: "Patrick",
+    imgUrl: patrickImg,
+    href: "https://twitter.com/ryyppy",
+    altText: "Photo of Patrick",
+  },
+);
