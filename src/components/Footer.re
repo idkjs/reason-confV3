@@ -1,7 +1,6 @@
 let component = ReasonReact.statelessComponent("Footer");
 
-[@bs.module] external style : Js.t({..}) = "./Footer.module.css";
-
+/* [@bs.module] external style : Js.t({..}) = "./Footer.module.css"; */
 let str = Utils.s;
 
 let make = _children => {
@@ -15,8 +14,8 @@ let make = _children => {
               "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
               |> str
             )
-          </p>
-          <p>
+            /* </p>
+               <p> */
             <a
               href="https://www.twitter.com/ryyppy"
               className="footer--creator">
