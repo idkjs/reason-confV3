@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js start
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js re:start
 
 PATH: 
-  /Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/prisc_000/.config/yarn/global/node_modules/.bin:/Users/prisc_000/code/flutter/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/prisc_000/.config/yarn/global/node_modules/.bin:/Users/prisc_000/code/flutter/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/prisc_000/.config/yarn/global/node_modules/.bin:/Users/prisc_000/code/flutter/bin:/usr/local/sbin:~/bin
 
 Yarn version: 
   1.5.1
@@ -9428,9 +9428,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 2
   Command: sh
-  Arguments: -c gatsby develop
+  Arguments: -c bsb -make-world -w
   Directory: /Users/prisc_000/code/REASON/RECONF/reason-confV3
   Output:
   
