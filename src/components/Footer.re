@@ -30,6 +30,8 @@ let make = _children => {
                   Array.map(organizerElWithPic, [|x, y|])
                   |> ReasonReact.arrayToElement
                 )
+                (str(" & "))
+                (organizerElWithPic(z))
               </p>
             }
           )
