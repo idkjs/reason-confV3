@@ -45,6 +45,22 @@ type speakerData = {
   social,
 };
 
+module Schedule = {
+  type timeslot = string;
+  type lecture = {
+    timeslot,
+    speaker: option(speakerData),
+  };
+  type misc = {
+    timeslot,
+    description: string,
+  };
+  type t =
+    | Talk(lecture)
+    | Misc(misc)
+    | Break(misc);
+};
+
 let headlineSpeakers = [|
   {
     name: "Cheng Lou",
