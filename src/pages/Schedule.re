@@ -4,17 +4,20 @@ open Data;
 
 let s = Utils.s;
 
-let miscRow = (v: Schedule.misc) =>
-  <tr> <td> (v.timeslot |> s) </td> <td> (v.description |> s) </td> </tr>;
+let miscRow = (misc: Schedule.misc) =>
+  <tr>
+    <td> (misc.timeslot |> s) </td>
+    <td> (misc.description |> s) </td>
+  </tr>;
 
 let breakRow = miscRow;
 
-let talkRow = (v: Schedule.lecture) =>
+let talkRow = (lecture: Schedule.lecture) =>
   <tr>
-    <td> (v.timeslot |> s) </td>
+    <td> (lecture.timeslot |> s) </td>
     <td>
       (
-        switch (v.speaker) {
+        switch (lecture.speaker) {
         | Some(speaker) =>
           <div>
             (
