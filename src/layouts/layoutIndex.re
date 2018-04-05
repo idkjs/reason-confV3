@@ -22,9 +22,15 @@ let make = (~location, children) => {
   render: _self => {
     let isHomepage = location##pathname == "/";
     <article className="container">
-      <Helmet title="Demo 2018" meta=metaData />
-      /* (Utils.componentOrNull(! isHomepage, <Navigation />)) */
-      /* <main> (children()) </main> */
+      <Helmet title="Demo 2018" meta=metaData>
+        /* get tito service css stylesheet */
+
+          <link
+            rel="stylesheet"
+            _type="text/css"
+            href="https://css.tito.io/v1.1"
+          />
+        </Helmet>
       (
         if (isHomepage) {
           <main> (children()) </main>;
