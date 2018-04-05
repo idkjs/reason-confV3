@@ -24,6 +24,7 @@ let make = _children => {
         <div className=style##formRow>
           <input
             _type="email"
+            name="email"
             id="email"
             placeholder="name@domain.com"
             className=style##input
