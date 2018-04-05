@@ -5,8 +5,8 @@
   color: lighten($color, 50);
   text-decoration: none;
   text-align: center;
-  font-family: "Assistant", sans-serif;
-  background-color: #dd4c39;
+  font-family: -apple-system, "Assistant", sans-serif;
+  background-color: $color;
   border: none;
 
   &:hover {
