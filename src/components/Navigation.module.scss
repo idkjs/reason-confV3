@@ -14,17 +14,24 @@ $primaryColor: #dd4b39;
     "Assistant", sans-serif;
 }
 .link_active {
+  composes: link;
   background: darken(#99d1de, 5%);
-  color: #000;
+  color: #633;
+  background-image: linear-gradient(transparentize($primaryColor, 0.5), 10px);
+  background-size: 1px 10px;
+  background-position: 0 90%;
   &:hover {
-    background: darken(#99d1de, 5%) !important;
-    color: #000;
+    color: #633;
+    background-image: linear-gradient(transparentize($primaryColor, 0.5), 10px);
+    background-size: 1px 10px;
+    background-position: 0 90%;
     cursor: default;
   }
 }
 
 .link_home {
   flex: 0 auto;
+  display: block;
 }
 .list {
   margin: 0;
@@ -41,6 +48,9 @@ $primaryColor: #dd4b39;
   }
 }
 
+.logo {
+  height: 1.5em;
+}
 .ticketsButton {
   display: inline-block;
   padding: 0.25em 0.5em;
