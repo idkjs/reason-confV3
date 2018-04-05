@@ -17,7 +17,9 @@
     border-radius: 50%;
   }
 }
-
+.subscribe {
+  grid-column: span 2;
+}
 .copyright {
   grid-column-end: span 2;
   align-self: end;

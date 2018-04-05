@@ -13,29 +13,9 @@ let organizerElWithPic = ({imgUrl, name, href}: Data.organizerData) =>
 let make = _children => {
   ...component,
   render: _self =>
-    <footer>
+    <footer className=style##root>
       <div className="container_centered grid grid-6col">
-        <section className=style##about>
-          <p>
-            (
-              "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
-              |> str
-            )
-          </p>
-          (
-            switch (Data.organizers) {
-            | (o1, o2, o3) =>
-              <p>
-                (
-                  Array.map(organizerElWithPic, [|o1, o2|])
-                  |> ReasonReact.arrayToElement
-                )
-                (str(" & "))
-                (organizerElWithPic(o3))
-              </p>
-            }
-          )
-        </section>
+        <section className=style##subscribe> <SubscribeForm /> </section>
         <nav>
           <ul>
             <li>
@@ -65,6 +45,25 @@ let make = _children => {
           </ul>
         </nav>
         <section className=style##copyright>
+          <p className=style##about>
+            (
+              "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
+              |> str
+            )
+            (
+              switch (Data.organizers) {
+              | (o1, o2, o3) =>
+                <p>
+                  (
+                    Array.map(organizerElWithPic, [|o1, o2|])
+                    |> ReasonReact.arrayToElement
+                  )
+                  (str(" & "))
+                  (organizerElWithPic(o3))
+                </p>
+              }
+            )
+          </p>
           <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
           <p> ({j|© Atrium, 2018|j} |> str) </p>
         </section>
