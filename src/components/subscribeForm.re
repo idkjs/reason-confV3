@@ -29,9 +29,7 @@ let make = _children => {
             className=style##input
           />
         </div>
-        <Button _type="submit" className=style##button>
-          ("Subscribe" |> str)
-        </Button>
+        <Button _type="submit"> ("Subscribe" |> str) </Button>
       </form>;
     ReasonReact.cloneElement(formEl, ~props={"data-netlify": true}, [||]);
   },
