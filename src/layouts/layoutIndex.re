@@ -27,6 +27,7 @@ let make = (~location, children) => {
       <Helmet title="Demo 2018" meta=metaData>
         /* get tito service css stylesheet */
 
+          <script src="https://js.tito.io/v1" async=Js.true_ />
           <link
             rel="stylesheet"
             _type="text/css"
