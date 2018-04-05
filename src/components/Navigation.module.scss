@@ -32,6 +32,11 @@ $primaryColor: #dd4b39;
 .link_home {
   flex: 0 auto;
   display: block;
+  margin-bottom: 1em;
+  background: none;
+  &:hover {
+    background: none;
+  }
 }
 .list {
   margin: 0;
