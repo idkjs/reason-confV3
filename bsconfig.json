@@ -1,9 +1,19 @@
 {
   "name": "re",
-  "reason": { "react-jsx": 2 },
+  "reason": {
+    "react-jsx": 2
+  },
   "refmt": 3,
-  "bs-dependencies": ["reason-react"],
-  "sources": [{ "dir": "src", "subdirs": true }],
-  "package-specs": { "module": "commonjs", "in-source": true },
+  "bs-dependencies": ["reason-react", "re-classnames"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
   "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"]
 }
