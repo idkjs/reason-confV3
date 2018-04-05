@@ -50,7 +50,7 @@ let make = _children => {
             )
             (
               switch (Data.organizers) {
-              /* | [] => ReasonReact.nullElement */
+              | [] => ReasonReact.nullElement
               | [o3, ...rest] =>
                 <span>
                   (

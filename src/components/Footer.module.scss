@@ -1,9 +1,18 @@
 /* Footer */
 .root {
-  font-size: 0.9rem;
+  font-size: smaller;
+  color: #888;
+}
+.nav > ul {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+  > li {
+    margin-bottom: 1.5em;
+  }
 }
 .about {
-  grid-column: 1 / span 2;
+  grid-column: span 2;
 }
 .creator {
   display: inline-block;
@@ -21,12 +30,7 @@
   grid-column: span 2;
 }
 .copyright {
-  grid-column-end: span 2;
+  grid-column: span 2;
   align-self: end;
   text-align: right;
-  color: #888;
-
-  & > p {
-    margin: 0;
-  }
 }
