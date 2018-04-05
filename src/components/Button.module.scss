@@ -11,6 +11,6 @@
 
   &:hover {
     color: white;
-    background: darken(#dd4c39, 10%);
+    background: lighten($color, 5);
   }
 }
