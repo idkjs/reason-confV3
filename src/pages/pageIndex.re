@@ -125,11 +125,6 @@ let make = _children => {
           </ul>
         </div>
       </section>
-      /* (
-           Data.speakers
-           |> Array.mapi(speakerColumn)
-           |> ReasonReact.arrayToElement
-         ) */
       <section className="sponsors">
         <div className="container_centered">
           <h2> ("Sponsors" |> str) </h2>
@@ -146,11 +141,17 @@ let make = _children => {
       </section>
       <section className="subscribe">
         <div className="container_centered">
-          <h2 id="tickets"> ("Subscribe to Newsletter" |> str) </h2>
+          <h2 id="tickets"> (str("Subscribe to Newsletter")) </h2>
           <SubscribeForm />
         </div>
       </section>
     </article>,
+  /* <section className="subscribe">
+       <div className="container_centered">
+         <h2 id="tickets"> ("Subscribe to Newsletter" |> str) </h2>
+         <SubscribeForm />
+       </div>
+     </section> */
 };
 
 let default = ReasonReact.wrapReasonForJs(~component, _jsProps => make([||]));

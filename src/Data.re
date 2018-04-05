@@ -157,10 +157,9 @@ let schedule: array(Schedule.t) = [|
   Misc({timeslot: "20:30", description: "Open End / Party"}),
 |];
 
-Js.log(schedule);
+/* Js.log(schedule);
 
-Js.log(speakers);
-
+   Js.log(speakers); */
 let organizers = (
   {name: "Nik", imgUrl: nikImg, href: "https://twitter.com/nikgraf"},
   {
