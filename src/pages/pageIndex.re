@@ -144,6 +144,12 @@ let make = _children => {
           <Tickets event="shing/demo-2018" />
         </div>
       </section>
+      <section className="subscribe">
+        <div className="container_centered">
+          <h2 id="tickets"> ("Subscribe to Newsletter" |> str) </h2>
+          <SubscribeForm />
+        </div>
+      </section>
     </article>,
 };
 
