@@ -7,14 +7,13 @@ $primaryColor: #dd4b39;
     text-align: right;
   }
 }
-.root_home {
-  composes: root;
 
-  .linkHome {
-    display: none;
-  }
+.link {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+    "Assistant", sans-serif;
 }
-:global(.active) {
+.link_active {
   background: darken(#99d1de, 5%);
   color: #000;
   &:hover {
@@ -24,6 +23,9 @@ $primaryColor: #dd4b39;
   }
 }
 
+.link_home {
+  flex: 0 auto;
+}
 .list {
   margin: 0;
   padding: 0;
