@@ -2,6 +2,8 @@ let component = ReasonReact.statelessComponent("Footer");
 
 [@bs.module] external style : Js.t({..}) = "./Footer.module.scss";
 
+module Link = Gatsby.Link;
+
 let str = Utils.s;
 
 let organizerElWithPic = ({imgUrl, name, href}: Data.organizerData) =>
@@ -16,22 +18,16 @@ let make = _children => {
     <footer className=style##root>
       <div className="container_centered grid grid-6col">
         <section className=style##subscribe> <SubscribeForm /> </section>
-        <nav>
+        <nav className=style##additional>
           <ul>
-            <li>
-              <a href="https://www.example.com">
-                ("Subscribe to newsletter" |> str)
-              </a>
-            </li>
-            <li>
-              <Gatsby.Link to_="/coc/"> "Code of Conduct" </Gatsby.Link>
-            </li>
+            <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
             <li>
               <a href="https://www.example.com"> ("Contact Us" |> str) </a>
             </li>
+            <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
           </ul>
         </nav>
-        <nav>
+        <nav className=style##social>
           <ul>
             <li>
               <a href="https://www.twitter.com/reasonconf">
@@ -64,12 +60,10 @@ let make = _children => {
               }
             )
           </p>
-          <Gatsby.Link to_="/imprint/"> ("Imprint" |> str) </Gatsby.Link>
           <p> ({j|© Atrium, 2018|j} |> str) </p>
         </section>
       </div>
     </footer>,
-  /* create new div to apply container grid styles */
 };
 
 let default = Utils.wrapIt(~component, _jsProps => make([||]));
