@@ -1,3 +1,5 @@
+open Data;
+
 let component = ReasonReact.statelessComponent("Footer");
 
 [@bs.module] external style : Js.t({..}) = "./Footer.module.scss";
@@ -48,15 +50,17 @@ let make = _children => {
             )
             (
               switch (Data.organizers) {
-              | (o1, o2, o3) =>
-                <p>
+              /* | [] => ReasonReact.nullElement */
+              | [o3, ...rest] =>
+                <span>
                   (
-                    Array.map(organizerElWithPic, [|o1, o2|])
+                    Array.of_list(rest)
+                    |> Array.map(organizerElWithPic)
                     |> ReasonReact.arrayToElement
                   )
                   (str(" & "))
                   (organizerElWithPic(o3))
-                </p>
+                </span>
               }
             )
           </p>
