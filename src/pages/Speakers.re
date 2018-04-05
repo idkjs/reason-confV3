@@ -7,20 +7,20 @@ let component = ReasonReact.statelessComponent("Speakers");
 let s = Utils.s;
 
 let toSpeakerDetail = (speaker: Data.speakerData) =>
-  <div key=speaker.name> <SpeakerDetails speaker /> </div>;
+  <li key=speaker.name> <SpeakerDetails speaker /> </li>;
 
 let make = _children => {
   ...component,
   render: _self =>
     <div className=style##root>
       <h1> ("Speakers" |> s) </h1>
-      <section className=style##speaker_details>
+      <ul className=style##speaker_details>
         (
           Data.speakers
           |> Array.map(toSpeakerDetail)
           |> ReasonReact.arrayToElement
         )
-      </section>
+      </ul>
     </div>,
 };
 
