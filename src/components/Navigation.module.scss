@@ -1,6 +1,9 @@
+$primaryColor: #dd4b39;
 .root {
-  display: block;
+  text-align: left;
+  line-height: 1.5;
   @media (min-width: 768px) {
+    display: flex;
     text-align: right;
   }
 }
