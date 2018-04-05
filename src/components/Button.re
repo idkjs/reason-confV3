@@ -4,7 +4,7 @@ let component = ReasonReact.statelessComponent("Button");
 
 let s = Utils.s;
 
-let make = (~_type, ~className, _children) => {
+let make = (~_type, ~className, children) => {
   ...component,
   render: _self => {
     let classNames = Cn.make([style##root, Some(className) |> Cn.ifOpt]);
