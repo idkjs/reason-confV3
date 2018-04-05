@@ -36,6 +36,13 @@ $primaryColor: #dd4b39;
   background: none;
   &:hover {
     background: none;
+    filter: brightness(110%);
+  }
+}
+.root_home {
+  composes: root;
+  .link_home {
+    display: none;
   }
 }
 .list {
