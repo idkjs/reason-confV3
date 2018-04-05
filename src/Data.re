@@ -131,6 +131,16 @@ let otherSpeakers = [|
 let speakers: array(speakerData) =
   Array.concat([headlineSpeakers, otherSpeakers]);
 
+let organizers = [
+  {name: "Nik", imgUrl: nikImg, href: "https://twitter.com/nikgraf"},
+  {
+    name: "Andrey",
+    imgUrl: andreyImg,
+    href: "https://twitter.com/okonetchnikov",
+  },
+  {name: "Patrick", imgUrl: patrickImg, href: "https://twitter.com/ryyppy"},
+];
+
 let find_opt = (fn, l) =>
   try (List.find(fn, l) |> (r => Some(r))) {
   | Not_found => None
@@ -156,16 +166,6 @@ let schedule: array(Schedule.t) = [|
   Misc({timeslot: "19:30", description: "Talk 7"}),
   Misc({timeslot: "20:30", description: "Open End / Party"}),
 |];
-
 /* Js.log(schedule);
 
    Js.log(speakers); */
-let organizers = (
-  {name: "Nik", imgUrl: nikImg, href: "https://twitter.com/nikgraf"},
-  {
-    name: "Andrey",
-    imgUrl: andreyImg,
-    href: "https://twitter.com/okonetchnikov",
-  },
-  {name: "Patrick", imgUrl: patrickImg, href: "https://twitter.com/ryyppy"},
-);
