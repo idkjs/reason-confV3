@@ -1,8 +1,17 @@
 /* Footer */
+// .root {
+//   font-size: smaller;
+//   color: #859ca6;
+//   padding-top: 2em;
+//   background: rgb(35, 50, 57);
+//   clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0 100%);
+// }
 .root {
-  font-size: smaller;
+  padding-top: 2em;
   color: #859ca6;
+  font-size: smaller;
   background: rgb(35, 50, 57);
+  clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0 100%);
 }
 nav > ul {
   margin: 0;
@@ -29,8 +38,8 @@ nav > ul {
   grid-column: span 3;
   align-self: end;
   text-align: right;
-}
 
-p {
-  margin-top: 0;
+  p {
+    margin-top: 0;
+  }
 }
