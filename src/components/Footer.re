@@ -19,54 +19,58 @@ let make = _children => {
   render: _self =>
     <footer className=style##root>
       <div className="container_centered grid grid-6col">
-        <section className=style##subscribe> <SubscribeForm /> </section>
-        <nav className=style##additional>
-          <ul>
-            <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
-            <li>
-              <a href="https://www.example.com"> ("Contact Us" |> str) </a>
-            </li>
-            <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
-          </ul>
-        </nav>
-        <nav className=style##social>
-          <ul>
-            <li>
-              <a href="https://www.twitter.com/reasonconf">
-                ("Twitter" |> str)
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
-            </li>
-            <li> <a href="https://www.github.com"> ("Github" |> str) </a> </li>
-          </ul>
-        </nav>
-        <section className=style##copyright>
-          <p className=style##about>
-            (
-              "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
-              |> str
-            )
-            (
-              switch (Data.organizers) {
-              | [] => ReasonReact.nullElement
-              | [o3, ...rest] =>
-                <span>
-                  (
-                    Array.of_list(rest)
-                    |> Array.map(organizerElWithPic)
-                    |> ReasonReact.arrayToElement
-                  )
-                  (str(" & "))
-                  (organizerElWithPic(o3))
-                </span>
-              }
-            )
-          </p>
-          <p> ({j|© Atrium, 2018|j} |> str) </p>
-        </section>
-      </div>
+        /* <section className=style##subscribe> <SubscribeForm /> </section> */
+
+          <Navigation pathName="/" navigationLocation=Footer />
+          <nav className=style##additional>
+            <ul>
+              <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
+              <li>
+                <a href="https://www.example.com"> ("Contact Us" |> str) </a>
+              </li>
+              <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
+            </ul>
+          </nav>
+          <nav className=style##social>
+            <ul>
+              <li>
+                <a href="https://www.twitter.com/reasonconf">
+                  ("Twitter" |> str)
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
+              </li>
+              <li>
+                <a href="https://www.github.com"> ("Github" |> str) </a>
+              </li>
+            </ul>
+          </nav>
+          <section className=style##copyright>
+            <p className=style##about>
+              (
+                "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
+                |> str
+              )
+              (
+                switch (Data.organizers) {
+                | [] => ReasonReact.nullElement
+                | [o3, ...rest] =>
+                  <span>
+                    (
+                      Array.of_list(rest)
+                      |> Array.map(organizerElWithPic)
+                      |> ReasonReact.arrayToElement
+                    )
+                    (str(" & "))
+                    (organizerElWithPic(o3))
+                  </span>
+                }
+              )
+            </p>
+            <p> ({j|© Atrium, 2018|j} |> str) </p>
+          </section>
+        </div>
     </footer>,
 };
 
