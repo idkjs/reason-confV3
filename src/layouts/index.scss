@@ -112,11 +112,8 @@ a {
   }
 
   &--navigation {
-    grid-row: 2;
     margin-bottom: 20px;
     @media (min-width: 768px) {
-      grid-column: 1 / span 6;
-      grid-row: 1;
       position: absolute;
       top: 0;
       right: 0;
