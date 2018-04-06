@@ -259,7 +259,7 @@ a {
   // grid-column: 2 / span 4;
   padding: 5vmin 0 7vmin;
   margin-bottom: -6vmin;
-  background-color: $secondaryColor;
+  background-color: transparentize($secondaryColor, 0.5);
   clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0 100%);
   h2 {
     grid-column: span 2;
