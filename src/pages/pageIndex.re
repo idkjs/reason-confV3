@@ -132,12 +132,6 @@ let make = _children => {
           </p>
         </div>
       </section>
-      <section className="tickets">
-        <div className="container_centered">
-          <h2 id="tickets"> ("Tickets" |> str) </h2>
-          <Tickets event="shing/demo-2018" />
-        </div>
-      </section>
     </article>,
 };
 
