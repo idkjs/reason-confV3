@@ -3,16 +3,6 @@ $primaryColor: #dd4b39;
 .root {
   text-align: left;
   line-height: 1.5;
-  //   @media (min-width: 768px) {
-  //     display: flex;
-  //     text-align: right;
-  //   }
-  // }
-
-  // .link {
-  //   display: inline-block;
-  //   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
-  //     "Assistant", sans-serif;
 }
 .link_active {
   // composes: link;
@@ -49,9 +39,7 @@ $primaryColor: #dd4b39;
 }
 .root_header {
   composes: root;
-  // .link_home {
-  //   display: none;
-  // }
+
   @media (min-width: 768px) {
     display: flex;
     text-align: right;
