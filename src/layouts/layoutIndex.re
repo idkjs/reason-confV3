@@ -43,7 +43,7 @@ let make = (~location, children) => {
         }
       )
       <section className="subscribe">
-        <div className="container_centered">
+        <div className="container_centered  grid grid-6col">
           <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
           <SubscribeForm />
         </div>

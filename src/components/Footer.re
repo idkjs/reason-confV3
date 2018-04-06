@@ -49,7 +49,7 @@ let make = _children => {
           <section className=style##copyright>
             <p className=style##about>
               (
-                "Reason Conf is the not-for-profit conference\norganized by community efforts by people\nbehind React Vienna community:"
+                "Reason Conf is the not-for-profit conference organized by React Vienna organizers:"
                 |> str
               )
               (
