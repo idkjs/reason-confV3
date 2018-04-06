@@ -10,7 +10,11 @@ let make = _children => {
   ...component,
   render: _self => {
     let formEl =
-      <form name="newsletter" action="/speakers" className=style##root>
+      <form
+        name="newsletter"
+        action="/speakers"
+        className=style##root
+        method="post">
         <p className=style##text>
           (
             str(
@@ -31,6 +35,7 @@ let make = _children => {
           />
           <Button _type="submit"> ("Subscribe" |> str) </Button>
         </div>
+        <input _type="hidden" name="form-name" value="newsletter" />
       </form>;
     ReasonReact.cloneElement(formEl, ~props={"data-netlify": true}, [||]);
   },
