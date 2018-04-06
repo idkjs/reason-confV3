@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant");
 @import "../assets/variables";
 
-font-face {
+@font-face {
   font-family: "Trueno";
   src: url("../assets/truenosbd-webfont.woff2") format("woff2"),
     url("../assets/truenosbd-webfont.woff") format("woff");
@@ -97,7 +97,7 @@ a {
   background-size: cover;
   color: transparentize(darken($secondaryColor, 55%), 0.1);
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100%8vmin));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vmin));
   min-height: 34vmin;
 
   @media (min-width: 768px) {
@@ -201,13 +201,13 @@ a {
       margin-top: 0.5rem;
     }
   }
-  &--navigation {
-    grid-row: 1;
-    margin-bottom: 20px;
-    @media (min-width: 768px) {
-      grid-column: 1 / span 6;
-    }
-  }
+  // &--navigation {
+  //   grid-row: 1;
+  //   margin-bottom: 20px;
+  //   @media (min-width: 768px) {
+  //     grid-column: 1 / span 6;
+  //   }
+  // }
 }
 
 /* Offering & Timeline */
