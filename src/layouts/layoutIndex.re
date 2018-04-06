@@ -21,6 +21,8 @@ let make = (~location, children) => {
   ...component,
   render: _self => {
     let isHomepage = location##pathname == "/";
+    /* check if on thanks page, if so dont render */
+    let isThanksPage = location##pathname == "/thanks/";
     <article className="page">
       <Helmet title="Demo 2018" meta=metaData>
         /* get tito service css stylesheet */
@@ -42,12 +44,17 @@ let make = (~location, children) => {
           </div>;
         }
       )
-      <section className="subscribe">
-        <div className="container_centered  grid grid-6col">
-          <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
-          <SubscribeForm />
-        </div>
-      </section>
+      (
+        Utils.componentOrNull(
+          ! isThanksPage,
+          <section className="subscribe">
+            <div className="container_centered  grid grid-6col">
+              <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
+              <SubscribeForm />
+            </div>
+          </section>,
+        )
+      )
       <Footer />
     </article>;
   },
