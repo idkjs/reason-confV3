@@ -30,7 +30,7 @@
 .link_home {
   flex: 0 auto;
   display: block;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
   background: none;
   &:hover {
     background: none;
@@ -39,7 +39,7 @@
 }
 .root_header {
   composes: root;
-
+  align-items: center;
   @media (min-width: 768px) {
     display: flex;
     text-align: right;
@@ -69,7 +69,7 @@
 }
 
 .logo {
-  height: 1.5em;
+  height: 2em;
 }
 .ticketsButton {
   composes: root from "./button.module.scss";
