@@ -11,10 +11,7 @@ let make = _children => {
   render: _self => {
     let formEl =
       <form
-        name="newsletter"
-        action="/speakers"
-        className=style##root
-        method="post">
+        name="newsletter" action="/thanks" className=style##root method="post">
         <p className=style##text>
           (
             str(
