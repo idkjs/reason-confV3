@@ -119,14 +119,8 @@ a {
   &--main {
     margin-top: 1em;
     font-size: small;
-    // @media (min-width: 768px) {
-    //   grid-column: 1 / span 4;
-    //   font-size: 1em;
-    // }
   }
   &--tagline {
-    // margin: 0;
-    // font-size: 1.5em;
     margin-top: 0.5rem;
     font-size: xx-large;
     @media (min-width: 768px) {
@@ -134,24 +128,11 @@ a {
       margin: 0.5rem 0 2rem;
     }
   }
-  // &--text {
-  //   font-size: 1.25em;
-  //   @media (min-width: 768px) {
-  //     display: block;
-  //     grid-row: 2;
-  //   }
-  // }
 
   &--dates {
-    // position: relative;
-    // font-family: "Hammersmith One", Arial, sans-serif;
-    // font-size: 1.5vmax;
     margin: 0;
     white-space: nowrap;
-    // @media (min-width: 1024px) {
-    //   font-size: 1rem;
-    //   align-self: end;
-    // }
+
     @media (min-width: 768px) {
       grid-column: 5 / span 2;
       grid-row: 1;
