@@ -5,8 +5,8 @@ let component = ReasonReact.statelessComponent("Thanks");
 let make = _children => {
   ...component,
   render: _self =>
-    <section>
-      <div>
+    <section className="thanks grid grid-6col">
+      <div className="thanks--grid">
         <h1> ("Thank you for your interest" |> Utils.s) </h1>
         <p>
           (
