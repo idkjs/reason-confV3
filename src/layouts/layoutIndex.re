@@ -44,10 +44,10 @@ let make = (~location, children) => {
           </div>;
         }
       )
-      <section className="tickets">
+      <section className="subcribe">
         <div className="container_centered">
-          <h2 id="tickets"> ("Tickets" |> Utils.s) </h2>
-          <Tickets event="shing/demo-2018" />
+          <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
+          <SubscribeForm />
         </div>
       </section>
       <Footer />
