@@ -139,11 +139,12 @@ a {
     }
   }
   &--main {
+    margin-top: 1em;
     font-size: small;
-    @media (min-width: 768px) {
-      grid-column: 1 / span 4;
-      font-size: 1em;
-    }
+    // @media (min-width: 768px) {
+    //   grid-column: 1 / span 4;
+    //   font-size: 1em;
+    // }
   }
   &--tagline {
     margin: 0;
