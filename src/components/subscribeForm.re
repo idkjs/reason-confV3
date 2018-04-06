@@ -11,17 +11,17 @@ let make = _children => {
   render: _self => {
     let formEl =
       <form name="newsletter" className=style##root>
-        <p>
+        <p className=style##text>
           (
             str(
               "Get Reason Conf news straight to your inbox. No spam, we promise!",
             )
           )
         </p>
-        <label htmlFor="email" className=style##label>
-          ("Email: " |> str)
-        </label>
         <div className=style##formRow>
+          <label htmlFor="email" className=style##label>
+            ("Email: " |> str)
+          </label>
           <input
             _type="email"
             name="email"
