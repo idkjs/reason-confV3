@@ -84,31 +84,31 @@ a {
 //   }
 // }
 .grid-6col {
-  // grid-template-columns: 100%;
-
   @media (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
-/* home page header section
-Define background color, bgrd image and size
-*/
+/* home page header section */
 .teaser {
-  // padding-top: 30px;
   padding-bottom: 30px;
 
   background: url(../assets/teaser-bg.jpg) 25% top no-repeat;
   background-size: cover;
   color: transparentize(darken($secondaryColor, 55%), 0.1);
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
-  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vmin));
+  min-height: 34vmin;
 
   @media (min-width: 768px) {
     // padding-bottom: 120px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+  }
+
+  .grid {
+    position: relative;
+    grid-gap: 10px;
   }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
