@@ -3,19 +3,19 @@ $primaryColor: #dd4b39;
 .root {
   text-align: left;
   line-height: 1.5;
-  @media (min-width: 768px) {
-    display: flex;
-    text-align: right;
-  }
-}
+  //   @media (min-width: 768px) {
+  //     display: flex;
+  //     text-align: right;
+  //   }
+  // }
 
-.link {
-  display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
-    "Assistant", sans-serif;
+  // .link {
+  //   display: inline-block;
+  //   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+  //     "Assistant", sans-serif;
 }
 .link_active {
-  composes: link;
+  // composes: link;
   color: #633;
   background-image: linear-gradient(
     transparentize($primaryColor, 0.5),
@@ -47,10 +47,19 @@ $primaryColor: #dd4b39;
     filter: brightness(110%);
   }
 }
-.root_home {
+.root_header {
   composes: root;
-  .link_home {
-    display: none;
+  // .link_home {
+  //   display: none;
+  // }
+  @media (min-width: 768px) {
+    display: flex;
+    text-align: right;
+  }
+  .link {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+      "Assistant", sans-serif;
   }
 }
 .list {
@@ -62,11 +71,14 @@ $primaryColor: #dd4b39;
   @media (min-width: 768px) {
     justify-self: start;
   }
+}
+.listItem {
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
 
-  li {
-    display: inline-block;
-    margin: 0 1em 0 0;
-  }
+.listItemBuy {
+  composes: listItem;
 }
 
 .logo {
@@ -75,4 +87,19 @@ $primaryColor: #dd4b39;
 .ticketsButton {
   composes: root from "./Button.module.scss";
   line-height: 1.3;
+}
+
+.root_footer {
+  .link_home {
+    display: none;
+  }
+  .list {
+    line-height: 1.5;
+  }
+  .listItem {
+    display: block;
+  }
+  .listItemBuy {
+    display: none;
+  }
 }
