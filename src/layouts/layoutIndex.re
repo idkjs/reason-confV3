@@ -8,8 +8,6 @@
 /* convert to using Helmut in Reason via Gatsby.re */
 module Helmet = Gatsby.Helmet;
 
-module Tickets = Tito.Tickets;
-
 /* reason version of templatewrapper component */
 let component = ReasonReact.statelessComponent("TemplateWrapper");
 
@@ -44,7 +42,7 @@ let make = (~location, children) => {
           </div>;
         }
       )
-      <section className="subcribe">
+      <section className="subscribe">
         <div className="container_centered">
           <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
           <SubscribeForm />
