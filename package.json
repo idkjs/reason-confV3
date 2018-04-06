@@ -18,14 +18,14 @@
     "re:build": "bsb -make-world",
     "re:start": "bsb -make-world -w",
     "re:clean": "bsb -clean-world",
-    "precommit": "lint-staged",
-    "prepare": "npm link bs-platform"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.re": ["refmt --in-place", "git add"],
     "*.{js,json,md,css,scss}": ["prettier --write", "git add"]
   },
   "devDependencies": {
+    "bs-platform": "^2.1.0",
     "autoprefixer": "^8.2.0",
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
