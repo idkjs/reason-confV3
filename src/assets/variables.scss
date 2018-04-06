@@ -22,7 +22,7 @@ $displayFontFamily: Trueno, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
 
   &:hover {
     $linkColor: lighten(adjust_hue($linkColor, 0), 10%);
-    $underlineColor: transparentize(adjust_hue($linkColor, 0) 0, 5);
+    $underlineColor: transparentize(adjust_hue($linkColor, 0), 0.5);
     color: $linkColor;
     background-image: linear-gradient(
       $underlineColor,
