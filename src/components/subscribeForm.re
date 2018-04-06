@@ -29,8 +29,8 @@ let make = _children => {
             placeholder="name@domain.com"
             className=style##input
           />
+          <Button _type="submit"> ("Subscribe" |> str) </Button>
         </div>
-        <Button _type="submit"> ("Subscribe" |> str) </Button>
       </form>;
     ReasonReact.cloneElement(formEl, ~props={"data-netlify": true}, [||]);
   },
