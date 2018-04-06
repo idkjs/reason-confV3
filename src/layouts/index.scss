@@ -122,11 +122,11 @@ a {
   }
   /* push logo to so that aligns to end/rights side of div with no margin */
   &--logo {
-    margin: 40px 0 0;
+    margin: 10px 0 0;
     @media (min-width: 768px) {
       grid-column: 1 / span 4;
       grid-row: 1;
-      align-self: end;
+      align-self: start;
     }
   }
   &--image {
