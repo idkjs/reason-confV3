@@ -8,11 +8,6 @@ module Link = Gatsby.Link;
 
 let str = Utils.s;
 
-/* let organizerElWithPic = ({imgUrl, name, href}: Data.organizerData) =>
-   <a href className=style##creator key=name>
-     <img src=imgUrl alt={j|Photo of $(name)|j} className=style##img />
-     (str(name))
-   </a>; */
 let make = _children => {
   ...component,
   render: _self =>
@@ -35,10 +30,15 @@ let make = _children => {
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com"> ("Facebook" |> str) </a>
+                <a
+                  href="https://www.facebook.com/ReasonConf-1334078980027448/">
+                  ("Facebook" |> str)
+                </a>
               </li>
               <li>
-                <a href="https://www.github.com"> ("Github" |> str) </a>
+                <a href="https://www.github.com/reasonvienna">
+                  ("Github" |> str)
+                </a>
               </li>
             </ul>
           </nav>

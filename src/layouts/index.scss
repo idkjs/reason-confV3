@@ -245,17 +245,21 @@ a {
     padding: 0;
   }
 }
-.speakerTeaser {
+.extraText {
   font-weight: bolder;
 }
 .partners {
   a:link {
     text-decoration: none;
   }
+  & > img {
+    margin: 10px;
+  }
 }
-.scriptConf {
+img.reasonVienna,
+img.reactVienna,
+img.scriptConf {
   width: 300px;
-  border: none;
 }
 .tickets {
   // background: #284ba6;

@@ -2,6 +2,12 @@ let component = ReasonReact.statelessComponent("Home");
 
 [@bs.module] external scriptLogo : string = "../assets/script18-logo.svg";
 
+[@bs.module]
+external reasonViennaLogo : string = "../assets/reasonvienna-logo.svg";
+
+[@bs.module]
+external reactViennaLogo : string = "../assets/reactvienna-logo.svg";
+
 let str = Utils.s;
 
 module Tickets = Tito.Tickets;
@@ -153,7 +159,7 @@ let make = _children => {
               |> ReasonReact.arrayToElement
             )
           </ul>
-          <p className="speakerTeaser">
+          <p className="extraText">
             (
               {j|... and many more to come. The finale schedule will be announced soon.|j}
               |> str
@@ -165,9 +171,17 @@ let make = _children => {
         <div className="container_centered">
           <h2> ("Sponsors & Partners" |> str) </h2>
           <div className="partners">
+            <img src=reactViennaLogo className="reactVienna" />
             <img src=scriptLogo className="scriptConf" />
+            <img src=reasonViennaLogo className="reasonVienna" />
+            <p className="extraText">
+              (
+                "We are happily collaborating with research institutes and businesses. "
+                |> str
+              )
+              <a href="/contact"> ("Get in touch!" |> str) </a>
+            </p>
           </div>
-          <p> ({j||j} |> str) </p>
         </div>
       </section>
     </article>,
