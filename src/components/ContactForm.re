@@ -20,6 +20,7 @@ let make = _children => {
             id="name"
             placeholder="Johnny Appleseed"
             className=style##input
+            required=Js.true_
           />
         </div>
         <div className=style##formRow>
@@ -32,6 +33,7 @@ let make = _children => {
             id="email"
             placeholder="name@domain.com"
             className=style##input
+            required=Js.true_
           />
         </div>
         <div className=style##formRow>
@@ -43,6 +45,7 @@ let make = _children => {
             id="message"
             placeholder="message"
             className=style##testarea
+            required=Js.true_
           />
           <Button _type="submit" className=style##submit>
             ("Submit" |> s)
