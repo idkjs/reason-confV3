@@ -16,23 +16,17 @@ let organizerElWithPic = ({imgUrl, name, href, twitter}: Data.organizerData) =>
     </figcaption>
   </figure>;
 
-let make = (~organizers: list(Data.organizerData), ~className, _children) => {
+let make = (~organizers: list(Data.organizerData), _children) => {
   ...component,
   render: _self =>
-    <div className>
+    <div className=style##root>
       (
         switch (organizers) {
         | [] => ReasonReact.nullElement
-        | [o3, ...rest] =>
-          <span>
-            (
-              Array.of_list(rest)
-              |> Array.map(organizerElWithPic)
-              |> ReasonReact.arrayToElement
-            )
-            (" & " |> Utils.s)
-            (organizerElWithPic(o3))
-          </span>
+        | orgs =>
+          Array.of_list(orgs)
+          |> Array.map(organizerElWithPic)
+          |> ReasonReact.arrayToElement
         }
       )
     </div>,

@@ -5,7 +5,6 @@
   line-height: 1.5;
 }
 .link_active {
-  // composes: link;
   color: #633;
   background-image: linear-gradient(
     transparentize($primaryColor, 0.5),
@@ -37,9 +36,11 @@
     filter: brightness(110%);
   }
 }
+
 .root_header {
   composes: root;
   align-items: center;
+
   @media (min-width: 768px) {
     display: flex;
     text-align: right;
@@ -49,12 +50,14 @@
     font-family: $displayFontFamily;
   }
 }
+
 .list {
   flex: 1 auto;
   margin: 0;
   padding: 0;
   list-style-type: none;
   justify-self: center;
+
   @media (min-width: 768px) {
     justify-self: start;
   }
@@ -72,7 +75,7 @@
   height: 2em;
 }
 .ticketsButton {
-  composes: root from "./button.module.scss";
+  composes: root from "./Button.module.scss";
   composes: link;
   line-height: 1.3;
 }

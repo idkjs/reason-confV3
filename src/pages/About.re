@@ -78,9 +78,7 @@ let make = _children => {
           </a>
         </section>
       </div>
-      <div>
-        <Organizers organizers=Data.organizers className=style##creator />
-      </div>
+      <div> <Organizers organizers=Data.organizers /> </div>
     </section>,
 };
 
