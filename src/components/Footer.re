@@ -52,21 +52,7 @@ let make = _children => {
                 "Reason Conf is the not-for-profit conference organized by React Vienna organizers:"
                 |> str
               )
-              (
-                switch (Data.organizers) {
-                | [] => ReasonReact.nullElement
-                | [o3, ...rest] =>
-                  <span>
-                    (
-                      Array.of_list(rest)
-                      |> Array.map(organizerElWithPic)
-                      |> ReasonReact.arrayToElement
-                    )
-                    (str(" & "))
-                    (organizerElWithPic(o3))
-                  </span>
-                }
-              )
+              <Organizers organizers=Data.organizers />
             </p>
             <p> ({j|© Atrium, 2018|j} |> str) </p>
           </section>
