@@ -44,7 +44,7 @@ let make = _children => {
             name="message"
             id="message"
             placeholder="message"
-            className=style##testarea
+            className=style##textarea
             required=Js.true_
           />
           <Button _type="submit" className=style##submit>

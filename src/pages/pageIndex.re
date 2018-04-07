@@ -24,9 +24,9 @@ let make = _children => {
               className="teaser--image"
             />
           </h1>
-          <nav className="teaser--navigation">
-            <Navigation pathName="/" />
-          </nav>
+          /* <nav className="teaser--navigation">
+               <Navigation pathName="/" />
+             </nav> */
           <h2 className="teaser--dates">
             <time dateTime="2018-05-11/2018-05-13">
               ({j|11–13 May 2018|j} |> str)
