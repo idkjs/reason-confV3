@@ -13,46 +13,44 @@ let make = _children => {
   render: _self =>
     <footer className=style##root>
       <div className="container_centered grid grid-6col">
-        /* <Navigation pathName="/" navigationLocation=Footer /> */
-
-          <nav className=style##additional>
-            <ul>
-              <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
-              <li> <a href="/contact/"> ("Contact Us" |> str) </a> </li>
-              <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
-            </ul>
-          </nav>
-          <nav className=style##social>
-            <ul>
-              <li>
-                <a href="https://www.twitter.com/reasonconf">
-                  ("Twitter" |> str)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/ReasonConf-1334078980027448/">
-                  ("Facebook" |> str)
-                </a>
-              </li>
-              <li>
-                <a href="https://www.github.com/reasonvienna">
-                  ("Github" |> str)
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <section className=style##copyright>
-            <p className=style##about>
-              <a href="/about">
-                ("Reason Conf is the not-for-profit conference." |> str)
+        <Navigation pathName="/" navigationLocation=Footer />
+        <nav className=style##additional>
+          <ul>
+            <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
+            <li> <a href="/contact/"> ("Contact Us" |> str) </a> </li>
+            <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
+          </ul>
+        </nav>
+        <nav className=style##social>
+          <ul>
+            <li>
+              <a href="https://www.twitter.com/reasonconf">
+                ("Twitter" |> str)
               </a>
-              <br />
-              <span> ("by developers for developers" |> str) </span>
-            </p>
-            <p> ({j|© Atrium, 2018|j} |> str) </p>
-          </section>
-        </div>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ReasonConf-1334078980027448/">
+                ("Facebook" |> str)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com/reasonvienna">
+                ("Github" |> str)
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section className=style##copyright>
+          <p className=style##about>
+            <a href="/about">
+              ("Reason Conf is the not-for-profit conference." |> str)
+            </a>
+            <br />
+            <span> ("by developers for developers" |> str) </span>
+          </p>
+          <p> ({j|© Atrium, 2018|j} |> str) </p>
+        </section>
+      </div>
     </footer>,
 };
 
