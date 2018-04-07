@@ -38,17 +38,22 @@ let make = _children => {
           <label htmlFor="message" className=style##label>
             ("Message: " |> s)
           </label>
-          <input
-            _type="message"
+          <textarea
             name="message"
             id="message"
-            placeholder="name@domain.com"
-            className=style##input
+            placeholder="message"
+            className=style##testarea
           />
-          <Button _type="submit"> ("Subscribe" |> s) </Button>
+          <Button _type="submit" className=style##submit>
+            ("Submit" |> s)
+          </Button>
+          <input _type="hidden" name="form-name" value="contact" />
         </div>
-        <input _type="hidden" name="form-name" value="contact" />
       </form>;
-    ReasonReact.cloneElement(formEl, ~props={"data-netlify": true}, [||]);
+    ReasonReact.cloneElement(
+      formEl,
+      ~props={"data-netlify": Js.true_},
+      [||],
+    );
   },
 };

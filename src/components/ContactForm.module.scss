@@ -16,10 +16,15 @@
   margin-right: 0.5em;
   line-height: 2;
   font-weight: bold;
+  width: 5em;
 }
 .input {
   display: inline-block;
   flex: 1 auto;
   margin-right: 0.25em;
   padding: 0.25em;
+}
+
+.submit {
+  margin-left: 5.5em;
 }
