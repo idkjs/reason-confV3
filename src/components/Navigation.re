@@ -34,37 +34,38 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
         )
       )
       <ul className=style##list>
-        <li className=style##listItem>
-          <Link to_="/schedule/" className=style##link activeClassName>
-            (s("Schedule"))
-          </Link>
-        </li>
-        <li className=style##listItem>
-          <Link to_="/speakers/" className=style##link activeClassName>
-            (s("Speakers"))
-          </Link>
-        </li>
-        <li className=style##listItem>
-          <Link to_="/sponsors/" className=style##link activeClassName>
-            (s("Sponsors"))
-          </Link>
-        </li>
-        <li className=style##listItem>
-          <Link to_="/about/" className=style##link activeClassName>
-            (s("About"))
-          </Link>
-        </li>
-        <li className=style##listItem>
-          <Link to_="/blog/" className=style##link activeClassName>
-            (s("Blog"))
-          </Link>
-        </li>
-        <li className=style##listItemBuy>
-          <a href="/tickets" className=style##ticketsButton>
-            (s("Buy A Ticket"))
-          </a>
-        </li>
-      </ul>
+        /* <li className=style##listItem>
+             <Link to_="/schedule/" className=style##link activeClassName>
+               (s("Schedule"))
+             </Link>
+           </li>
+           <li className=style##listItem>
+             <Link to_="/speakers/" className=style##link activeClassName>
+               (s("Speakers"))
+             </Link>
+           </li>
+           <li className=style##listItem>
+             <Link to_="/sponsors/" className=style##link activeClassName>
+               (s("Sponsors"))
+             </Link>
+           </li> */
+
+          <li className=style##listItem>
+            <Link to_="/about/" className=style##link activeClassName>
+              (s("About"))
+            </Link>
+          </li>
+          /* <li className=style##listItem>
+               <Link to_="/blog/" className=style##link activeClassName>
+                 (s("Blog"))
+               </Link>
+             </li> */
+          <li className=style##listItemBuy>
+            <a href="/tickets" className=style##ticketsButton>
+              (s("Buy A Ticket"))
+            </a>
+          </li>
+        </ul>
     </nav>;
   },
 };
