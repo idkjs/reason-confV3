@@ -4,6 +4,8 @@ external reasonViennaLogo : string = "../assets/reasonvienna-logo.svg";
 [@bs.module]
 external reactViennaLogo : string = "../assets/reactvienna-logo.svg";
 
+[@bs.module] external style : Js.t({..}) = "./About.module.scss";
+
 let component = ReasonReact.statelessComponent("About");
 
 let s = Utils.s;
@@ -70,7 +72,9 @@ let make = _children => {
         <img src=reasonViennaLogo alt="ReasonVienna Logo" />
         <img src=reactViennaLogo alt="ReactVienna Logo" />
       </div>
-      <div> <Organizers organizers=Data.organizers /> </div>
+      <div>
+        <Organizers organizers=Data.organizers className=style##creator />
+      </div>
     </section>,
 };
 
