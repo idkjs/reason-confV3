@@ -26,9 +26,9 @@ let make = _children => {
               className="teaser--image"
             />
           </h1>
-          /* <nav className="teaser--navigation">
-               <Navigation pathName="/" />
-             </nav> */
+          <nav className="teaser--navigation">
+            <Navigation pathName="/" />
+          </nav>
           <h2 className="teaser--dates">
             <time dateTime="2018-05-11/2018-05-13">
               ({j|11–13 May 2018|j} |> str)
@@ -55,10 +55,24 @@ let make = _children => {
             ("Get productive with Reason in 3 days" |> str)
           </h2>
           <section className="offering--text">
-            (
-              "We want to motivate you to introduce Reason & OCaml in your production environment and make you feel  comfortable with the existing tools. For that, the conference will be focused on practice rather than theory. Enjoy 3 days of workshop / hackathon style conference with the leading speakers from around the world.\n"
-              |> str
-            )
+            <p>
+              (
+                "Reason is the next big thing and it is time to bring the community together. Come and learn about the language and get inspired for innovation."
+                |> str
+              )
+            </p>
+            <p>
+              (
+                "We want to motivate you to add Reason & OCaml to your professional toolbelt and make you feel comfortable in the ecosystem."
+                |> str
+              )
+            </p>
+            <p>
+              (
+                "This conference is aiming for a well-balanced schedule with a practical, social and theoretical context."
+                |> str
+              )
+            </p>
           </section>
           <dl className="timeline">
             <dt className="timeline--date">
@@ -69,10 +83,14 @@ let make = _children => {
               </time>
             </dt>
             <dd className="timeline--content">
-              <h3> ("Get started" |> str) </h3>
+              <h3> ("Day 1: Get started" |> str) </h3>
               <p>
                 (
-                  "Full day workshop to get every attendee into the language & platform."
+                  {js|
+                    An optional workshop day to get every beginner and
+                    intermediate attendee into the language &
+                    platform.
+                  |js}
                   |> str
                 )
               </p>
@@ -85,10 +103,15 @@ let make = _children => {
               </time>
             </dt>
             <dd className="timeline--content">
-              <h3> ("Get inspired" |> str) </h3>
+              <h3> ("Day 2: Get inspired" |> str) </h3>
               <p>
                 (
-                  "Great speakers & trainers of the Reason community with special guests of the Reason & ReasonReact project team will inspire attendees about more advanced topics.\n"
+                  {js|
+                    This is the main conference day with lectures and talks.
+                    Speakers of the Reason / OCaml community (with special guests
+                    from the Reason & ReasonReact project) will inspire attendees for
+                    more advanced topics.
+                  |js}
                   |> str
                 )
               </p>
@@ -101,10 +124,16 @@ let make = _children => {
               </time>
             </dt>
             <dd className="timeline--content">
-              <h3> ("Get productive" |> str) </h3>
+              <h3> ("Day 3: Get productive" |> str) </h3>
               <p>
                 (
-                  "Attendees apply their learnings in a hackathon, working on a project they are interested in, aided by our mentors, speakers and volunteers."
+                  {js|
+                    On the last day we encourage attendees to start
+                    their first Reason projects, aided by our mentors,
+                    speakers and volunteers. Alternatively for those
+                    who want to relax, we offer a local-guided tour
+                    through the beautiful city Vienna!
+                  |js}
                   |> str
                 )
               </p>
