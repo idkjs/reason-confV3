@@ -132,6 +132,7 @@ let make = _children => {
           <div className="partners">
             <img src=scriptLogo className="scriptConf" />
           </div>
+          <p> ({j||j} |> str) </p>
         </div>
       </section>
     </article>,
