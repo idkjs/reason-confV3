@@ -1,5 +1,7 @@
 let component = ReasonReact.statelessComponent("Home");
 
+[@bs.module] external scriptLogo : string = "../assets/script18-logo.svg";
+
 let str = Utils.s;
 
 module Tickets = Tito.Tickets;
@@ -126,10 +128,10 @@ let make = _children => {
       </section>
       <section className="sponsors">
         <div className="container_centered">
-          <h2> ("Sponsors" |> str) </h2>
-          <p>
-            ({j|Reason Conf is looking for amazing sponsors...|j} |> str)
-          </p>
+          <h2> ("Sponsors & Partners" |> str) </h2>
+          <div className="partners">
+            <img src=scriptLogo className="scriptConf" />
+          </div>
         </div>
       </section>
     </article>,
