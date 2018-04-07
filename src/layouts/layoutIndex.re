@@ -38,7 +38,7 @@ let make = (~location, children) => {
         if (isHomepage) {
           <main> (children()) </main>;
         } else {
-          <div className="container container_centered grid grid-6col">
+          <div className="container container_centered grid">
             <Navigation pathName=location##pathname />
             <main> (children()) </main>
           </div>;
