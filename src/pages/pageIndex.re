@@ -174,14 +174,14 @@ let make = _children => {
             <img src=reactViennaLogo className="reactVienna" />
             <img src=scriptLogo className="scriptConf" />
             <img src=reasonViennaLogo className="reasonVienna" />
-            <p className="extraText">
-              (
-                "We are happily collaborating with research institutes and businesses. "
-                |> str
-              )
-              <a href="/contact"> ("Get in touch!" |> str) </a>
-            </p>
           </div>
+          <p className="extraText">
+            (
+              "We are happily collaborating with research institutes and businesses. "
+              |> str
+            )
+            <a href="/contact"> ("Get in touch!" |> str) </a>
+          </p>
         </div>
       </section>
     </article>,
