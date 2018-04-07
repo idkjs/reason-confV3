@@ -115,7 +115,7 @@ let make = _children => {
       /* </div> */
       <section className="speakers">
         <div className="container_centered">
-          <h2> ("Speakers" |> str) </h2>
+          <h2> ("Featured Speakers" |> str) </h2>
           <ul className="speaker-list">
             (
               /* Data.speakers */
@@ -124,6 +124,12 @@ let make = _children => {
               |> ReasonReact.arrayToElement
             )
           </ul>
+          <p className="speakerTeaser">
+            (
+              {j|... and many more to come. The finale schedule will be announced soon.|j}
+              |> str
+            )
+          </p>
         </div>
       </section>
       <section className="sponsors">
