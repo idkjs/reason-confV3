@@ -22,6 +22,7 @@ type organizerData = {
   name: string,
   imgUrl: string,
   href: string,
+  twitter: string,
 };
 
 type social = {
@@ -132,13 +133,24 @@ let speakers: array(speakerData) =
   Array.concat([headlineSpeakers, otherSpeakers]);
 
 let organizers = [
-  {name: "Nik", imgUrl: nikImg, href: "https://twitter.com/nikgraf"},
   {
-    name: "Andrey",
+    name: "Patrick Stapfer",
+    imgUrl: patrickImg,
+    href: "https://twitter.com/ryyppy",
+    twitter: "ryyppy",
+  },
+  {
+    name: "Nik Graf",
+    imgUrl: nikImg,
+    href: "https://twitter.com/nikgraf",
+    twitter: "nikgraf",
+  },
+  {
+    name: "Andrey Okonetchnikov",
     imgUrl: andreyImg,
     href: "https://twitter.com/okonetchnikov",
+    twitter: "okonetchnikov",
   },
-  {name: "Patrick", imgUrl: patrickImg, href: "https://twitter.com/ryyppy"},
 ];
 
 let find_opt = (fn, l) =>
