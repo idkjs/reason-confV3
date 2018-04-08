@@ -307,3 +307,9 @@ Adding pages/index.js which exported default from pageIndex had the effect of re
 * Css modules is a way to create locally scoped css. Need some processor, like webpack via gatsby being used here. Processing our scss file returns css and js files that show up with unique names in dev tools so that even if some class is re-used, whatever is in the local css, about.module.scss for About.re, will end up unique to About.re. Have to have the .module.scss filename for it to work.
 
 * Full disclosure. I had no idea this is what i was doing by following this repo. So learned css modules by accident.
+
+## Git Reset
+
+* see: [SO](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
+
+* run `git reset --soft HEAD@{1}` to undo immediately preceding commit.
