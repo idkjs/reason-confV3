@@ -152,7 +152,7 @@ let make = _children => {
       /* </div> */
       <section className="speakers">
         <div className="container_centered">
-          <h2> ("Featured Speakers" |> str) </h2>
+          <h2> ("Speakers" |> str) </h2>
           <ul className="speaker-list">
             (
               /* Data.speakers */
@@ -173,20 +173,30 @@ let make = _children => {
         <div className="container_centered">
           <h2> ("Sponsors & Partners" |> str) </h2>
           <div className="partners grid grid-6col">
-            <a
-              href="https://www.meetup.com/ReactVienna/"
-              className="partners--logo">
-              <img src=reactViennaLogo />
-            </a>
-            <a href="https://scriptconf.org" className="partners--logo">
-              <img src=scriptLogo />
-            </a>
-            <a href="" className="partners--logo">
-              <img src=reasonViennaLogo />
-            </a>
-            <a href="https://www.agent.sh/" className="partners--agentlogo">
-              <img src=agentLogo />
-            </a>
+            <ul className="partners">
+              <li className="partners--listItem">
+                <a href="https://www.agent.sh/" className="partners--logo">
+                  <img src=agentLogo />
+                </a>
+              </li>
+              <li className="partners--listItem">
+                <a
+                  href="https://www.meetup.com/ReactVienna/"
+                  className="partners--logo">
+                  <img src=reactViennaLogo />
+                </a>
+              </li>
+              <li className="partners--listItem">
+                <a href="https://scriptconf.org" className="partners--logo">
+                  <img src=scriptLogo />
+                </a>
+              </li>
+              <li className="partners--listItem">
+                <a href="" className="partners--logo">
+                  <img src=reasonViennaLogo />
+                </a>
+              </li>
+            </ul>
           </div>
           <p className="extraText">
             (
