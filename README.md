@@ -301,3 +301,9 @@ This is a big refactor where we remove interop for gatsby files we convertered t
 
 This was not working because location was checking the path and the path for pageIndex in the browser was /pageIndex.
 Adding pages/index.js which exported default from pageIndex had the effect of rendering pageIndex on the "/" route so that when location##pathname was checked, we were on the root, '/', path. Function is working now.
+
+## CSS Modules
+
+* Css modules is a way to create locally scoped css. Need some processor, like webpack via gatsby being used here. Processing our scss file returns css and js files that show up with unique names in dev tools so that even if some class is re-used, whatever is in the local css, about.module.scss for About.re, will end up unique to About.re. Have to have the .module.scss filename for it to work.
+
+* Full disclosure. I had no idea this is what i was doing by following this repo. So learned css modules by accident.
