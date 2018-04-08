@@ -12,9 +12,11 @@ let make = (~speaker: Data.speakerData, _children) => {
   ...component,
   render: _self =>
     <div className=style##root>
-      <img src=speaker.imgUrl />
+      <figure className=style##figure>
+        <img src=speaker.imgUrl className=style##image />
+      </figure>
       <div>
-        <h2> (s(speaker.name)) </h2>
+        <h2 className=style##name> (s(speaker.name)) </h2>
         <p> (s(speaker.description)) </p>
         (
           switch (speaker.talk) {

@@ -1,12 +1,16 @@
 .root {
-  // display: flex;
-  // flex-wrap: wrap;
+}
 
-  & > img {
-    width: 200px;
-    height: 200px;
-  }
-  & > p {
-    float: right;
-  }
+.figure {
+  margin: 0;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  filter: grayscale(1);
+}
+
+.name {
+  font-size: 1.5em;
 }
