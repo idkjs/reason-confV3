@@ -2,17 +2,28 @@ open Data;
 
 let component = ReasonReact.statelessComponent("Footer");
 
+module SocialIcons = Gatsby.SocialIcons;
+
+module SocialIcon = Gatsby.SocialIcon;
+
 [@bs.module] external style : Js.t({..}) = "./Footer.module.scss";
 
 module Link = Gatsby.Link;
 
 let str = Utils.s;
 
+/* create list of social icons */
+let socialUrls = [|
+  "https://www.twitter.com/reasonconf",
+  "https://www.facebook.com/ReasonConf-1334078980027448/",
+  "https://www.github.com/reasonvienna",
+|];
+
 let make = _children => {
   ...component,
   render: _self =>
     <footer className=style##root>
-      <div className="container_centered grid grid-6col">
+      <div className="container_centered grid">
         <Navigation pathName="/" navigationLocation=Footer />
         <nav className=style##additional>
           <ul>
@@ -22,23 +33,11 @@ let make = _children => {
           </ul>
         </nav>
         <nav className=style##social>
-          <ul>
-            <li>
-              <a href="https://www.twitter.com/reasonconf">
-                ("Twitter" |> str)
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ReasonConf-1334078980027448/">
-                ("Facebook" |> str)
-              </a>
-            </li>
-            <li>
-              <a href="https://www.github.com/reasonvienna">
-                ("Github" |> str)
-              </a>
-            </li>
-          </ul>
+          <SocialIcons
+            urls=socialUrls
+            color="#8eaeb6"
+            className=style##socialIcon
+          />
         </nav>
         <section className=style##copyright>
           <p className=style##about>

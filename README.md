@@ -313,3 +313,7 @@ Adding pages/index.js which exported default from pageIndex had the effect of re
 See: [SO](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
 
 Run `git reset --soft HEAD@{1` to undo immediately preceding commit.
+
+## react social icons
+
+The arg svg passed to :global is telling css where to find the mask property so Im guessing the svg is in the global scope/ the image we are running mask on, then get the social svg icon from the path. This must be part of [react-social-icons](https://github.com/jaketrent/react-social-icons)
