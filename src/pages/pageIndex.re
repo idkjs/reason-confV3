@@ -1,5 +1,7 @@
 let component = ReasonReact.statelessComponent("Home");
 
+[@bs.module] external agentLogo : string = "../assets/agent-logo.svg";
+
 [@bs.module] external scriptLogo : string = "../assets/script18-logo.svg";
 
 [@bs.module]
@@ -171,9 +173,20 @@ let make = _children => {
         <div className="container_centered">
           <h2> ("Sponsors & Partners" |> str) </h2>
           <div className="partners grid grid-6col">
-            <img src=reactViennaLogo className="partners--logo" />
-            <img src=scriptLogo className="partners--logo" />
-            <img src=reasonViennaLogo className="partners--logo" />
+            <a
+              href="https://www.meetup.com/ReactVienna/"
+              className="partners--logo">
+              <img src=reactViennaLogo />
+            </a>
+            <a href="https://scriptconf.org" className="partners--logo">
+              <img src=scriptLogo />
+            </a>
+            <a href="" className="partners--logo">
+              <img src=reasonViennaLogo />
+            </a>
+            <a href="https://www.agent.sh/" className="partners--agentlogo">
+              <img src=agentLogo />
+            </a>
           </div>
           <p className="extraText">
             (
