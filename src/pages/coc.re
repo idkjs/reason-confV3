@@ -15,9 +15,7 @@ let make = _children => {
         )
       </p>
       <h2> (ste("Need Help?")) </h2>
-      <p>
-        (ste("You have our contact details in the emails we&#39;ve sent."))
-      </p>
+      <p> (ste("You have our contact details in the emails we've sent.")) </p>
       <h2> (ste("The Quick Version")) </h2>
       <p>
         (
@@ -58,7 +56,7 @@ let make = _children => {
       <p>
         (
           ste(
-            "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they&#39;ll be wearing branded clothing and/or badges.",
+            "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded clothing and/or badges.",
           )
         )
       </p>
