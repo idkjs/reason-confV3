@@ -10,6 +10,13 @@ module.exports = {
       options: {
         postCssPlugins: [autoprefixer()]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "",
+        anonymize: true
+      }
     }
   ]
 };

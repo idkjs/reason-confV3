@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Alain Armand <aarmand.inbox@gmail.com",
   "dependencies": {
+    "gatsby-plugin-google-analytics": "^1.0.28",
     "normalize.css": "^8.0.0",
     "re-classnames": "^1.0.0",
     "react-helmet": "^5.2.0",
@@ -25,8 +26,8 @@
     "*.{js,json,md,css,scss}": ["prettier --write", "git add"]
   },
   "devDependencies": {
-    "bs-platform": "^2.1.0",
     "autoprefixer": "^8.2.0",
+    "bs-platform": "^2.1.0",
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-postcss-sass": "^1.0.19",
