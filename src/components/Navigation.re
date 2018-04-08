@@ -61,9 +61,9 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
                </Link>
              </li> */
           <li className=style##listItemBuy>
-            <a href="/tickets" className=style##ticketsClassName>
+            <Link to_="/tickets/" className=style##ticketsClassName>
               (s("Buy A Ticket"))
-            </a>
+            </Link>
           </li>
         </ul>
     </nav>;
