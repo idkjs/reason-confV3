@@ -310,6 +310,6 @@ Adding pages/index.js which exported default from pageIndex had the effect of re
 
 ## Git Reset
 
-* see: [SO](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
+See: [SO](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
 
-* run `git reset --soft HEAD@{1}` to undo immediately preceding commit.
+Run `git reset --soft HEAD@{1` to undo immediately preceding commit.
