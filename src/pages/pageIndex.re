@@ -7,8 +7,7 @@ let component = ReasonReact.statelessComponent("Home");
 [@bs.module]
 external reasonViennaLogo : string = "../assets/reasonvienna-logo.svg";
 
-[@bs.module]
-external reactViennaLogo : string = "../assets/reactvienna-logo.svg";
+[@bs.module] external reactViennaLogo : string = "../assets/React-Vienna.svg";
 
 let str = Utils.s;
 
@@ -175,24 +174,31 @@ let make = _children => {
           <div className="partners grid grid-6col">
             <ul className="partners">
               <li className="partners--listItem">
-                <a href="https://www.agent.sh/" className="partners--logo">
+                <a
+                  href="https://www.agent.sh/"
+                  className="partners--logo"
+                  title="Agent Conf">
                   <img src=agentLogo />
                 </a>
               </li>
               <li className="partners--listItem">
                 <a
                   href="https://www.meetup.com/ReactVienna/"
-                  className="partners--logo">
+                  className="partners--logo"
+                  title="ReactViena">
                   <img src=reactViennaLogo />
                 </a>
               </li>
               <li className="partners--listItem">
-                <a href="https://scriptconf.org" className="partners--logo">
+                <a
+                  href="https://scriptconf.org"
+                  className="partners--logo"
+                  title="ScriptConf">
                   <img src=scriptLogo />
                 </a>
               </li>
               <li className="partners--listItem">
-                <a href="" className="partners--logo">
+                <a href="" className="partners--logo" title="ReasonVienna">
                   <img src=reasonViennaLogo />
                 </a>
               </li>
