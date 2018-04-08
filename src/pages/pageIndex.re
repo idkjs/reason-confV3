@@ -18,8 +18,13 @@ let speakerColumn = (speaker: Data.speakerData) =>
     <SpeakerCard speaker key=speaker.name />
   </li>;
 
-/* let speakerColumn = (i, speaker) =>
-   <SpeakerCard speaker key=(string_of_int(i)) />; */
+let partnerCard = (partner: Partners.partnerT) =>
+  <li className="partner--listItem">
+    <a href=partner.href className="partners--logo" title=partner.name>
+      <img src=partner.logoUrl alt=partner.name />
+    </a>
+  </li>;
+
 let make = _children => {
   ...component,
   render: _self =>
@@ -50,12 +55,6 @@ let make = _children => {
           </p>
         </section>
       </header>
-      /* <p className="teaser--text">
-           (
-             "Reason is the next big thing and it is time to bring the community together. Come and learn about the language and get inspired for innovation.\n"
-             |> str
-           )
-         </p> */
       <section className="offering">
         <div className="container_centered grid grid-6col">
           <h2 className="offering--heading">
@@ -177,39 +176,13 @@ let make = _children => {
       <section className="sponsors">
         <div className="container_centered">
           <h2> ("Sponsors & Partners" |> str) </h2>
-          <div className="partners grid grid-6col">
-            <ul className="partners">
-              <li className="partners--listItem">
-                <a
-                  href="https://www.agent.sh/"
-                  className="partners--logo"
-                  title="Agent Conf">
-                  <img src=agentLogo />
-                </a>
-              </li>
-              <li className="partners--listItem">
-                <a
-                  href="https://www.meetup.com/ReactVienna/"
-                  className="partners--logo"
-                  title="ReactViena">
-                  <img src=reactViennaLogo />
-                </a>
-              </li>
-              <li className="partners--listItem">
-                <a
-                  href="https://scriptconf.org"
-                  className="partners--logo"
-                  title="ScriptConf">
-                  <img src=scriptLogo />
-                </a>
-              </li>
-              <li className="partners--listItem">
-                <a href="" className="partners--logo" title="ReasonVienna">
-                  <img src=reasonViennaLogo />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul className="partners">
+            (
+              Partners.partners
+              |> Array.map(partnerCard)
+              |> ReasonReact.arrayToElement
+            )
+          </ul>
           <p className="extraText">
             (
               "We are happily collaborating with research institutes and businesses. "
