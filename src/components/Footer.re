@@ -42,7 +42,7 @@ let make = _children => {
         <section className=style##copyright>
           <p className=style##about>
             <a href="/about">
-              ("Reason Conf is the not-for-profit conference." |> str)
+              ("Reason Conf is a not-for-profit conference." |> str)
             </a>
             <br />
             <span> ("by developers for developers" |> str) </span>
