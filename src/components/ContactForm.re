@@ -2,7 +2,7 @@ module Link = Gatsby.Link;
 
 let s = Utils.s;
 
-[@bs.module] external style : Js.t({..}) = "./ContactForm.module.scss";
+[@bs.module] external style : Js.t({..}) = "./contactForm.module.scss";
 
 let component = ReasonReact.statelessComponent("ContactForm");
 

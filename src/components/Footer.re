@@ -6,7 +6,7 @@ module SocialIcons = Gatsby.SocialIcons;
 
 module SocialIcon = Gatsby.SocialIcon;
 
-[@bs.module] external style : Js.t({..}) = "./Footer.module.scss";
+[@bs.module] external style : Js.t({..}) = "./footer.module.scss";
 
 module Link = Gatsby.Link;
 

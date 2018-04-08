@@ -1,6 +1,6 @@
 module Link = Gatsby.Link;
 
-[@bs.module] external style : Js.t({..}) = "./SubscribeForm.module.scss";
+[@bs.module] external style : Js.t({..}) = "./subscribeForm.module.scss";
 
 let component = ReasonReact.statelessComponent("SubscribeForm");
 

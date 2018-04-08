@@ -4,6 +4,7 @@
   text-align: left;
   line-height: 1.5;
 }
+
 .link_active {
   color: #633;
   background-image: linear-gradient(
@@ -29,7 +30,6 @@
 .link_home {
   flex: 0 auto;
   display: block;
-  // margin-bottom: 1em;
   background: none;
   &:hover {
     background: none;
@@ -40,11 +40,11 @@
 .root_header {
   composes: root;
   align-items: center;
-
   @media (min-width: 768px) {
     display: flex;
     text-align: right;
   }
+
   .link {
     display: inline-block;
     font-family: $displayFontFamily;
@@ -57,11 +57,11 @@
   padding: 0;
   list-style-type: none;
   justify-self: center;
-
   @media (min-width: 768px) {
     justify-self: start;
   }
 }
+
 .listItem {
   display: inline-block;
   margin: 0 1em 0 0;
@@ -74,22 +74,26 @@
 .logo {
   height: 2em;
 }
+
 .ticketsButton {
-  composes: root from "./Button.module.scss";
+  composes: root from "./button.module.scss";
   composes: link;
-  line-height: 1.3;
+  line-height: 1.9;
 }
 
 .root_footer {
   .link_home {
     display: none;
   }
+
   .list {
     line-height: 1.5;
   }
+
   .listItem {
     display: block;
   }
+
   .listItemBuy {
     display: none;
   }

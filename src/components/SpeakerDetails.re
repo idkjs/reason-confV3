@@ -1,4 +1,4 @@
-[@bs.module] external style : Js.t({..}) = "./SpeakerDetails.module.scss";
+[@bs.module] external style : Js.t({..}) = "./speakerDetails.module.scss";
 
 open Utils;
 

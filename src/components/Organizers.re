@@ -1,6 +1,6 @@
 open Data;
 
-[@bs.module] external style : Js.t({..}) = "./Organizers.module.scss";
+[@bs.module] external style : Js.t({..}) = "./organizers.module.scss";
 
 let component = ReasonReact.statelessComponent("Organizers");
 
