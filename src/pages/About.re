@@ -1,8 +1,8 @@
 [@bs.module]
-external reasonViennaLogo : string = "../assets/reasonvienna-logo.svg";
+external reasonViennaLogo : string = "../assets/partners/reasonvienna.svg";
 
 [@bs.module]
-external reactViennaLogo : string = "../assets/reactvienna-logo.svg";
+external reactViennaLogo : string = "../assets//partners/reactvienna-logo.svg";
 
 [@bs.module] external style : Js.t({..}) = "./about.module.scss";
 
