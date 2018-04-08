@@ -5,12 +5,14 @@ let component = ReasonReact.statelessComponent("Contact");
 let make = _children => {
   ...component,
   render: _self =>
-    <div className="thanks--grid">
-      <h1> ("Contact us" |> Utils.s) </h1>
-      <section className="thanks grid grid-6col">
-        <div className="thanks--grid"> <ContactForm /> </div>
-      </section>
-    </div>,
+    <section className="thanks grid grid-6col">
+      <div className="thanks--grid">
+        <h1> ("Contact us" |> Utils.s) </h1>
+        <section className="thanks grid grid-6col">
+          <div className="thanks--grid"> <ContactForm /> </div>
+        </section>
+      </div>
+    </section>,
 };
 
 let default =

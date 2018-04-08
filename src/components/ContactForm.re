@@ -47,11 +47,11 @@ let make = _children => {
             className=style##textarea
             required=Js.true_
           />
-          <Button _type="submit" className=style##submit>
-            ("Submit" |> s)
-          </Button>
-          <input _type="hidden" name="form-name" value="contact" />
         </div>
+        <Button _type="submit" className=style##submit>
+          ("Submit" |> s)
+        </Button>
+        <input _type="hidden" name="form-name" value="contact" />
       </form>;
     ReasonReact.cloneElement(
       formEl,

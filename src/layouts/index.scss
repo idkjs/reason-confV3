@@ -268,10 +268,6 @@ footer.subscribe {
     padding: 0;
   }
   &--logo {
-    // grid-column: span 2;
-    // margin: 10px;
-    // width: 300px;
-    // max-width: 100%;
     display: block;
     text-align: center;
     background: none !important;
@@ -280,12 +276,6 @@ footer.subscribe {
       display: inline-block;
       height: 80px;
     }
-  }
-  &--agentlogo {
-    grid-column: span 2;
-    margin: 10px;
-    height: 100px;
-    max-width: 100%;
   }
 }
 
