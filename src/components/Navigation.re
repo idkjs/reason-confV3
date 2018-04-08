@@ -24,6 +24,9 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
     /* we dont need the activeClassName in the footer so check for it */
     let activeClassName =
       navigationLocation == Header ? style##link_active : "";
+    /* Use link style for tickets link in the footer */
+    let ticketsClassName =
+      navigationLocation == Header ? style##ticketsButton : "";
     <nav className=rootClassName>
       (
         componentOrNull(
@@ -55,17 +58,25 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
               (s("About"))
             </Link>
           </li>
-          /* <li className=style##listItem>
-               <Link to_="/blog/" className=style##link activeClassName>
-                 (s("Blog"))
-               </Link>
-             </li> */
-          <li className=style##listItemBuy>
-            <Link to_="/tickets/" className=style##ticketsClassName>
-              (s("Buy A Ticket"))
-            </Link>
-          </li>
         </ul>
+      /* <li className=style##listItem>
+           <Link to_="/blog/" className=style##link activeClassName>
+             (s("Blog"))
+           </Link>
+         </li> */
+      <li className=style##listItemBuy>
+        <a
+          href="https://ti.to/shing/demo-2018"
+          target="_blank"
+          className=ticketsClassName>
+          (s("Buy a ticket"))
+        </a>
+      </li>
     </nav>;
+    /* <li className=style##listItemBuy>
+         <Link to_="/tickets/" className=style##ticketsClassName>
+           (s("Buy A Ticket"))
+         </Link>
+       </li> */
   },
 };

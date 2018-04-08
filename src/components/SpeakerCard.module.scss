@@ -3,18 +3,9 @@
   position: relative;
   margin: 0;
   padding: 0;
+  border: 1px solid transparent;
 
   & > img {
-    // width: 200px;
-    // height: 200px;
-    // @media (min-width: 468px) {
-    //   width: 200px;
-    //   height: 200px;
-    // }
-    // @media (min-width: 768px) {
-    //   width: 225px;
-    //   height: 225px;
-    // }
     position: relative;
     filter: grayscale(1);
     z-index: 1;

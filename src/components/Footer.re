@@ -44,7 +44,7 @@ let make = _children => {
             <a href="/about"> ("not-for-profit conference " |> str) </a>
             ("by developers for developers" |> str)
           </p>
-          <p> ({j|© Atrium, 2018|j} |> str) </p>
+          <p> ({j|© DemoConf, 2018|j} |> str) </p>
         </section>
       </div>
     </footer>,
