@@ -11,11 +11,7 @@ module Helmet = Gatsby.Helmet;
 /* reason version of templatewrapper component */
 let component = ReasonReact.statelessComponent("TemplateWrapper");
 
-/* define metaData, object array/list of objects so we can pass it to expected meta labeled arg in Helmet */
-let metaData = [|
-  {"name": "description", "content": "Demo Conf"},
-  {"name": "keywords", "content": "Reason, Demo 2018, Conference, ReasonML"},
-|];
+let title = "DemoConf 2018";
 
 let make = (~location, children) => {
   ...component,
@@ -24,8 +20,7 @@ let make = (~location, children) => {
     /* check if on thanks page, if so dont render */
     let isThanksPage = location##pathname == "/thanks/";
     <article className="page">
-      <Helmet title="Demo 2018" meta=metaData>
-        /* get tito service css stylesheet */
+      <Helmet title>
 
           <script src="https://js.tito.io/v1" async=Js.true_ />
           <link
@@ -34,6 +29,7 @@ let make = (~location, children) => {
             href="https://css.tito.io/v1.1"
           />
         </Helmet>
+        /* get tito service css stylesheet */
       (
         if (isHomepage) {
           <main> (children()) </main>;
