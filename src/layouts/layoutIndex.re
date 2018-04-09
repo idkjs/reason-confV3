@@ -48,7 +48,7 @@ let make = (~location, children) => {
         Utils.componentOrNull(
           ! isThanksPage,
           <footer className="subscribe">
-            <div className="container_centered  grid grid-6col">
+            <div className="container_centered grid grid-6col">
               <h2> ("Subscribe to Newsletter" |> Utils.s) </h2>
               <SubscribeForm />
             </div>

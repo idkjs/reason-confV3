@@ -1,18 +1,16 @@
-module Link = Gatsby.Link;
+let component = ReasonReact.statelessComponent("Thanks");
 
-let component = ReasonReact.statelessComponent("Contact");
+open Utils;
 
 let make = _children => {
   ...component,
   render: _self =>
-    <section className="thanks grid grid-6col">
-      <div className="thanks--grid">
-        <h1> ("Contact us" |> Utils.s) </h1>
-        <section className="thanks grid grid-6col">
-          <div className="thanks--grid"> <ContactForm /> </div>
-        </section>
-      </div>
-    </section>,
+    <div>
+      <h1> ("Contact us" |> s) </h1>
+      <section className="thanks grid grid-6col">
+        <div className="thanks--grid"> <ContactForm /> </div>
+      </section>
+    </div>,
 };
 
 let default =
