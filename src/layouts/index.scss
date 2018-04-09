@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant|Montserrat:700");
-@import "../layouts/variables.scss";
+@import "./variables.scss";
+@import "./tickets.scss";
 
 * {
   box-sizing: border-box;
@@ -55,10 +56,10 @@ footer.subscribe {
   &_centered {
     margin: 0 auto;
     padding: 20px;
-    width: 1080px;
-    @media (max-width: 1080px) {
+    width: 900px;
+    @media (max-width: 900px) {
       width: auto;
-      max-width: 1080px;
+      max-width: 900px;
     }
   }
 }
@@ -138,6 +139,7 @@ footer.subscribe {
   &--tagline {
     margin-top: 0.5rem;
     font-size: xx-large;
+    font-weight: bold;
     @media (min-width: 768px) {
       grid-column: 1 / span 3;
       margin: 0.5rem 0 2rem;
@@ -152,7 +154,7 @@ footer.subscribe {
       grid-column: 5 / span 2;
       grid-row: 1;
       align-self: end;
-      font-size: 4.5vmin;
+      font-size: xx-large;
       line-height: 2.5rem;
     }
   }
@@ -279,9 +281,6 @@ footer.subscribe {
   }
 }
 
-.tickets {
-  // background: #284ba6;
-}
 .subscribe {
   // grid-column: 2 / span 4;
   padding: 5vmin 0 7vmin;
