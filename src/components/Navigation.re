@@ -59,11 +59,6 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
             </Link>
           </li>
         </ul>
-      /* <li className=style##listItem>
-           <Link to_="/blog/" className=style##link activeClassName>
-             (s("Blog"))
-           </Link>
-         </li> */
       <li className=style##listItemBuy>
         <a
           href="https://ti.to/shing/demo-2018"

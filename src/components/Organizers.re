@@ -8,7 +8,7 @@ let organizerElWithPic = ({imgUrl, name, href, twitter}: Data.organizerData) =>
   <figure key=name className=style##organizer>
     <img src=imgUrl className=style##photo alt={j|Photo of $(name)|j} />
     <figcaption className=style##info>
-      <p className=style##name> (name |> Utils.s) </p>
+      <h3 className=style##name> (name |> Utils.s) </h3>
       <a href className=style##twitter>
         ("@" |> Utils.s)
         (twitter |> Utils.s)
