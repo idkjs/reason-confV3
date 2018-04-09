@@ -1,35 +1,14 @@
-.root {
-  p {
-    max-width: 680px;
-  }
-}
-.about {
-  display: grid;
-  grid-gap: 20px;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  p {
-    grid-column: span 4;
-  }
-}
-
 .logos {
   display: flex;
   align-items: center;
   @media (min-width: 768px) {
     flex-wrap: wrap;
-    grid-column: 5 / span 2;
   }
   a {
-    background: none;
     margin: 10px;
     background: none !important;
   }
-}
-
-.organizers {
-  grid-column: span 4;
+  img {
+    height: 60px;
+  }
 }
