@@ -1,7 +1,13 @@
 const autoprefixer = require("autoprefixer");
+const { withPrefix } = require("gatsby-link");
+
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Demo Mandalarian"
+    title: "Gatsby Demo Mandalarian",
+    siteUrl: "https://demo-conf.netlify.com",
+    description: "Demo conference site for dev conference",
+    image: withPrefix("/open-graph.jpg"),
+    keywords: "Reason, ReasonML, Demo Conference, Vincennes, France"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
