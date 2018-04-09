@@ -1,4 +1,3 @@
-/* call all scripts/modules that we had in index.js */
 %raw
 "require('normalize.css')";
 
@@ -21,15 +20,14 @@ let make = (~location, children) => {
     let isThanksPage = location##pathname == "/thanks/";
     <article className="page">
       <Helmet title>
-
-          <script src="https://js.tito.io/v1" async=Js.true_ />
-          <link
-            rel="stylesheet"
-            _type="text/css"
-            href="https://css.tito.io/v1.1"
-          />
-        </Helmet>
-        /* get tito service css stylesheet */
+        <script src="https://js.tito.io/v1" async=Js.true_ />
+        <link
+          rel="stylesheet"
+          _type="text/css"
+          href="https://css.tito.io/v1.1"
+        />
+      </Helmet>
+      /* get tito service css stylesheet */
       (
         if (isHomepage) {
           <main> (children()) </main>;
