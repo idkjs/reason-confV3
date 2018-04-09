@@ -1,1 +1,1 @@
-[@bs.module] external logoImport : string = "./assets/logo.svg";
+[@bs.module] external logo : string = "../assets/logo.svg";
