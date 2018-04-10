@@ -40,12 +40,14 @@ let make = _children => {
           />
         </nav>
         <section className=style##copyright>
-          <p className=style##about>
-            ("DemoConf is a " |> s)
-            <Link to_="/about"> ("not-for-profit conference " |> s) </Link>
-            ("event by developers for developers." |> s)
-          </p>
-          <p> ({j|© DemoConf, 2018|j} |> s) </p>
+          (
+            {j|
+DemoConf is a not-for-profit conference event by developers for developers.
+
+Design by [Andrey Okonetchnikov](http://okonet.ru) with additional tweaks by [Alain Armand](https://twitter/_idkjs)
+          |j}
+            |> md
+          )
         </section>
       </div>
     </footer>,

@@ -1,7 +1,7 @@
 /* Footer */
 @import "../layouts/variables.scss";
-$footerTextColor: desaturate(darken($secondaryColor, 30), 30);
-$footerLinkColor: desaturate(darken($secondaryColor, 10), 30);
+$footerTextColor: desaturate(darken($secondaryColor, 35), 30);
+$footerLinkColor: desaturate(darken($secondaryColor, 20), 30);
 
 .root {
   padding-top: 2em;
