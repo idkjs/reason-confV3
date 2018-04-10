@@ -178,6 +178,27 @@ let schedule: array(Schedule.t) = [|
   Misc({timeslot: "19:30", description: "Talk 7"}),
   Misc({timeslot: "20:30", description: "Open End / Party"}),
 |];
+
+/* create data type for sponsor tiers and sponsor tiers defs list */
+type tierData = {
+  name: string,
+  amount: string,
+  description: string,
+};
+
+let sponsorTiers = [|
+  {name: "Bronze", amount: "2000", description: "2Ã\151 conference tickets,"},
+  {
+    name: "Silver",
+    amount: "5000",
+    description: "Logo on slides between the talks,",
+  },
+  {
+    name: "Gold",
+    amount: "10000",
+    description: "Visibility on social media and website",
+  },
+|];
 /* Js.log(schedule);
 
    Js.log(speakers); */
