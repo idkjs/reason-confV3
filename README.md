@@ -134,7 +134,7 @@ const TemplateWrapper = ({ children }) => (
       title="Demo 2018"
       meta={[
         { name: "description", content: "Demo 2018" },
-        { name: "keywords", content: "Gatsby, Conference, Reason, Reason Conf" }
+        { name: "keywords", content: "Gatsby, Conference, Reason, Demo Conf" }
       ]}
     >
       <style type="text/css">{`@import url('https://fonts.googleapis.com/css?family=Assistant|Hammersmith+One');`}</style>

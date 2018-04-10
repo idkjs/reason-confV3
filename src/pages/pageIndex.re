@@ -51,7 +51,7 @@ let make = _children => {
           <p className="teaser--location"> ("Vienna, Austria" |> s) </p>
           <p className="teaser--tagline">
             (
-              "World's first Reason conference for web-developers & OCaml enthusiasts"
+              "World's first Demo Conference for web-developers & OCaml enthusiasts"
               |> s
             )
           </p>

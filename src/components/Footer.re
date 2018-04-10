@@ -1,4 +1,4 @@
-open Data;
+open Utils;
 
 let component = ReasonReact.statelessComponent("Footer");
 
@@ -28,8 +28,8 @@ let make = _children => {
         <nav className=style##additional>
           <ul>
             <li> <Link to_="/coc/"> "Code of Conduct" </Link> </li>
-            <li> <a href="/contact/"> ("Contact Us" |> str) </a> </li>
-            <li> <Link to_="/imprint/"> ("Imprint" |> str) </Link> </li>
+            <li> <a href="/contact/"> ("Contact Us" |> s) </a> </li>
+            <li> <Link to_="/imprint/"> ("Imprint" |> s) </Link> </li>
           </ul>
         </nav>
         <nav className=style##social>
@@ -41,10 +41,11 @@ let make = _children => {
         </nav>
         <section className=style##copyright>
           <p className=style##about>
-            <a href="/about"> ("not-for-profit conference " |> str) </a>
-            ("by developers for developers" |> str)
+            ("DemoConf is a " |> s)
+            <Link to_="/about"> ("not-for-profit conference " |> s) </Link>
+            ("event by developers for developers." |> s)
           </p>
-          <p> ({j|© DemoConf, 2018|j} |> str) </p>
+          <p> ({j|© DemoConf, 2018|j} |> s) </p>
         </section>
       </div>
     </footer>,
