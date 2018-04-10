@@ -49,24 +49,24 @@ let make = (~pathName, ~navigationLocation=Header, _children) => {
             </Link>
           </li>
           <li className=style##listItem>
-            <Link to_="/sponsors/" className=style##link activeClassName>
-              (s("Sponsors"))
-            </Link>
-          </li>
-          <li className=style##listItem>
             <Link to_="/about/" className=style##link activeClassName>
               (s("About"))
             </Link>
           </li>
+          <li className=style##listItem>
+            <Link to_="/sponsors/" className=style##link activeClassName>
+              (s("Sponsors"))
+            </Link>
+          </li>
+          <li className=style##listItemBuy>
+            <a
+              href="https://ti.to/shing/demo-2018"
+              target="_blank"
+              className=ticketsClassName>
+              (s("Buy a ticket"))
+            </a>
+          </li>
         </ul>
-      <li className=style##listItemBuy>
-        <a
-          href="https://ti.to/shing/demo-2018"
-          target="_blank"
-          className=ticketsClassName>
-          (s("Buy a ticket"))
-        </a>
-      </li>
     </nav>;
     /* <li className=style##listItemBuy>
          <Link to_="/tickets/" className=style##ticketsClassName>
