@@ -22,10 +22,8 @@ let make = (~tier: Data.tierData, _children) => {
         <p className=style##amount>
           (tier.amount |> soi |> s)
           ({j| x |j} |> s)
-          <h4 className=style##cost>
-            (tier.cost |> soi |> s)
-            ({j|€|j} |> s)
-          </h4>
+          <h4 className=style##cost> (tier.cost |> soi |> s) </h4>
+          ({j|€|j} |> s)
         </p>
       </header>
       <section className=style##description>

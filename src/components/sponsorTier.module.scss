@@ -5,8 +5,9 @@ $regularColor: #f0a453;
 $supporterColor: #eec642;
 
 .root {
-  padding: 0;
   margin: 1rem 0;
+  padding: 0;
+
   background: white;
   border-radius: 3px;
   transition: 0.125s transform ease-in;
@@ -88,23 +89,3 @@ $supporterColor: #eec642;
     margin: 0.5rem 0;
   }
 }
-// .main,
-// .regular,
-// .supporter {
-//   composes: root;
-// }
-
-// .main {
-//   color: #e79a00;
-//   box-shadow: 0 10px 32px rgba(#e79a00, 0.25);
-// }
-
-// .regular {
-//   color: #333;
-//   box-shadow: 0 10px 32px rgba(#8f8f8f, 0.25);
-// }
-
-// .supporter {
-//   color: #932f00;
-//   box-shadow: 0 10px 32px rgba(#932f00, 0.25);
-// }

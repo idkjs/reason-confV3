@@ -195,12 +195,12 @@ let sponsorTiers = [|
     cost: 10000,
     amount: 1,
     description: {js|
-      - Banner next to the stage and entrance
-      - Headline your logo on the website
-      - Mention in every talk recording including voice over
-      - Tweet mention
-      - 5 tickets included
-      - Special cooperation with ideas on the Event
+- Banner next to the stage and entrance
+- Headline your logo on the website
+- Mention in every talk recording including voice over
+- Tweet mention
+- 5 tickets included
+- Special cooperation with ideas on the Event
         |js},
   },
   {
@@ -209,11 +209,11 @@ let sponsorTiers = [|
     cost: 2500,
     amount: 4,
     description: {js|
-      - Banner next to catering
-      - Logo on the Website
-      - Logo shown in every talk recording
-      - Tweet mention
-      - 2 tickets included
+- Banner next to catering
+- Logo on the Website
+- Logo shown in every talk recording
+- Tweet mention
+- 2 tickets included
           |js},
   },
   {
@@ -222,8 +222,8 @@ let sponsorTiers = [|
     cost: 500,
     amount: 10,
     description: {js|
-      - Logo on the Website
-      - 1 tickets included
+- Logo on the Website
+- 1 tickets included
           |js},
   },
 |];
