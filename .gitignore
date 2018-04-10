@@ -1,8 +1,8 @@
 node_modules
 .DS_Store
 .merlin
-lib/
 public/
+*.swp
 *.bs.js
 .cache/
 .bsb.lock
@@ -17,6 +17,8 @@ src/layouts/*.js
 src/Tito.js
 src/Data.js
 src/Partners.js
+
+lib/
 
 # These files are used for JS interop
 !src/layouts/index.js
