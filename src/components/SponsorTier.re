@@ -12,7 +12,7 @@ let make = (~tier: Data.tierData, _children) => {
       | "main" => style##main
       | "regular" => style##regular
       | "supporter" => style##supporter
-      | "" => style##root
+      | _ => style##root
       };
     let href = "mailto:admin@shing.co?subject=Sponsoring: " ++ tier.name;
     <a href className>
