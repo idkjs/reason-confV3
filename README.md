@@ -312,7 +312,7 @@ Adding pages/index.js which exported default from pageIndex had the effect of re
 
 See: [SO](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
 
-Run `git reset --soft HEAD@{1` to undo immediately preceding commit.
+Run `git reset --soft HEAD@{1}` to undo immediately preceding commit.
 
 ## react social icons
 
