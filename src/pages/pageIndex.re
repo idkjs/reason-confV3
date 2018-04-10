@@ -13,24 +13,6 @@ open Utils;
 
 open Data;
 
-/*
-
- let component = ReasonReact.statelessComponent("SpeakerCard");
-
- /* add ParallaxScroll as a wrapper to the whole element */
- let make = (~speaker: Data.Speaker.t, _children) => {
-   ...component,
-   render: _self =>
-     <ParallaxScroll
-       from="top-bottom"
-       to_="bottom-top"
-       props={
-         "--speaker-ty": {
-           "from": "100px",
-           "to": "-100px",
-         },
-       }>
- */
 module Link = Gatsby.Link;
 
 module ParallaxScroll = Gatsby.ParallaxScroll;
