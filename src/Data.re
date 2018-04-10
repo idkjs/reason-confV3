@@ -187,16 +187,32 @@ type tierData = {
 };
 
 let sponsorTiers = [|
-  {name: "Bronze", amount: "2000", description: "2�\151 conference tickets,"},
+  {
+    name: "Bronze",
+    amount: "2000",
+    description: {js|
+  2× conference tickets,
+  Logo on slides between the talks,
+  Visibility on social media and website
+  |js},
+  },
   {
     name: "Silver",
     amount: "5000",
-    description: "Logo on slides between the talks,",
+    description: {js|
+  4× conference tickets,
+  Item in the goodie bag,
+  Job announcements
+  |js},
   },
   {
     name: "Gold",
     amount: "10000",
-    description: "Visibility on social media and website",
+    description: {js|
+  6× conference tickets,
+  Banner on stage,
+  Branded booth
+  |js},
   },
 |];
 /* Js.log(schedule);
