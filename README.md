@@ -14,10 +14,6 @@
 yarn re:build && yarn build
 ```
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
 ## React Helmut
 
 * https://github.com/nfl/react-helmet
@@ -37,6 +33,11 @@ yarn re:build && yarn build
 ## Nik's CSS Tips
 
 1.  Write your tag names before writing the css then go write the css. Think ahead.
+
+## Nik/Andrey on Binding Patterns
+
+If you write your binding in a module the you can always use the same syntax and not worry about name clashes. This project seems to alway create a module for the binding then call name the bindings `external` name linkClass. So whenever they write a binding they dont have to think about how they are going to name it. Super huge reduction of cognitive load.
+See [src/Gatsby.re](src/Gatsby.re)
 
 ## speaker-list css
 
