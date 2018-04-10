@@ -1,23 +1,31 @@
-open Data;
+open Utils;
 
 let component = ReasonReact.statelessComponent("Speakers");
 
-let s = Utils.s;
-
-let toSpeakerDetail = (speaker: Speaker.t) =>
+let toSpeakerDetail = (speaker: Data.Speaker.t) =>
   <SpeakerDetails speaker key=speaker.name />;
 
 let make = _children => {
   ...component,
   render: _self =>
     <section>
-      <h1> ("Speakers" |> s) </h1>
       <main className="full">
-        (
-          Speaker.speakers
-          |> Array.map(toSpeakerDetail)
-          |> ReasonReact.arrayToElement
-        )
+        <h1> ("Speakers" |> s) </h1>
+        <section>
+          (
+            Data.Speaker.speakers
+            |> Array.map(toSpeakerDetail)
+            |> ReasonReact.arrayToElement
+          )
+        </section>
+        <section>
+          <h1> ("Workshop Leaders" |> s) </h1>
+          (
+            Data.Speaker.workshopLeaders
+            |> Array.map(toSpeakerDetail)
+            |> ReasonReact.arrayToElement
+          )
+        </section>
       </main>
     </section>,
 };
