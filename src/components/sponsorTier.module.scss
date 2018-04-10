@@ -1,26 +1,110 @@
+@import "../layouts/variables.scss";
+
+$mainColor: $primaryColor;
+$regularColor: #f0a453;
+$supporterColor: #eec642;
+
 .root {
-  padding: 0 1rem;
+  padding: 0;
+  margin: 1rem 0;
   background: white;
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  transition: 0.125s transform ease-in;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.125s transform ease-out;
+  }
+  .header {
+    border-radius: 3px 3px 0 0;
+  }
 }
 
-.bronze,
-.silver,
-.gold {
+.main,
+.regular,
+.supporter {
   composes: root;
 }
 
-.gold {
-  color: #e79a00;
-  box-shadow: 0 10px 32px rgba(#e79a00, 0.25);
+.main {
+  // box-shadow: 0 10px 32px rgba($mainColor, 0.25);
+  color: darken($mainColor, 10) !important;
+  border: 1px solid $mainColor;
+
+  .header {
+    background-color: $mainColor;
+    color: lighten($mainColor, 40);
+  }
+}
+.regular {
+  // box-shadow: 0 10px 32px rgba($regularColor, 0.25);
+  color: darken($regularColor, 20) !important;
+  border: 1px solid $regularColor;
+
+  .header {
+    background-color: $regularColor;
+    color: lighten($regularColor, 45);
+  }
 }
 
-.silver {
-  color: #333;
-  box-shadow: 0 10px 32px rgba(#8f8f8f, 0.25);
+.supporter {
+  // box-shadow: 0 10px 32px rgba($supporterColor, 0.25);
+  color: darken($supporterColor, 20) !important;
+  border: 1px solid $supporterColor;
+
+  .header {
+    background-color: $supporterColor;
+    color: lighten($supporterColor, 55);
+  }
 }
 
-.bronze {
-  color: #932f00;
-  box-shadow: 0 10px 32px rgba(#932f00, 0.25);
+.header {
+  padding: 1rem;
 }
+
+.name {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.amount {
+  margin: 0;
+}
+
+.cost {
+  display: inline-block;
+  margin: 0;
+  font-size: 150%;
+}
+
+.description {
+  ul {
+    margin: 1.5rem;
+    padding: 0 0 0 1rem;
+    list-style: square;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+}
+// .main,
+// .regular,
+// .supporter {
+//   composes: root;
+// }
+
+// .main {
+//   color: #e79a00;
+//   box-shadow: 0 10px 32px rgba(#e79a00, 0.25);
+// }
+
+// .regular {
+//   color: #333;
+//   box-shadow: 0 10px 32px rgba(#8f8f8f, 0.25);
+// }
+
+// .supporter {
+//   color: #932f00;
+//   box-shadow: 0 10px 32px rgba(#932f00, 0.25);
+// }

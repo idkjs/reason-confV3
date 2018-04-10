@@ -2,6 +2,8 @@
 
 let s = ReasonReact.stringToElement;
 
+let soi = string_of_int;
+
 let wrapIt = ReasonReact.wrapReasonForJs;
 
 let componentOrNull = (condition, component) =>
