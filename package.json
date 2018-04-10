@@ -28,15 +28,15 @@
     "*.{js,json,md,css,scss}": ["prettier --write", "git add"]
   },
   "devDependencies": {
-    "autoprefixer": "^8.2.0",
-    "bs-platform": "^2.1.0",
-    "gatsby": "^1.9.243",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-postcss-sass": "^1.0.19",
-    "gatsby-plugin-react-helmet": "^2.0.8",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.2",
-    "prettier": "^1.11.1"
+    "autoprefixer": "8.2.0",
+    "bs-platform": "2.2.3",
+    "gatsby": "1.9.243",
+    "gatsby-link": "1.6.40",
+    "gatsby-plugin-postcss-sass": "1.0.19",
+    "gatsby-plugin-react-helmet": "2.0.8",
+    "husky": "0.14.3",
+    "lint-staged": "7.0.2",
+    "prettier": "1.11.1"
   },
   "browserslist": ["> 1%", "last 2 versions", "IE 11"]
 }
