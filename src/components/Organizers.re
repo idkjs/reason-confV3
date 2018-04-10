@@ -4,7 +4,7 @@ open Data;
 
 let component = ReasonReact.statelessComponent("Organizers");
 
-let organizerElWithPic = ({imgUrl, name, href, twitter}: Data.organizerData) =>
+let organizerElWithPic = ({imgUrl, name, href, twitter}: Organizer.t) =>
   <figure key=name className=style##organizer>
     <img src=imgUrl className=style##photo alt={j|Photo of $(name)|j} />
     <figcaption className=style##info>
@@ -16,7 +16,7 @@ let organizerElWithPic = ({imgUrl, name, href, twitter}: Data.organizerData) =>
     </figcaption>
   </figure>;
 
-let make = (~organizers: list(Data.organizerData), _children) => {
+let make = (~organizers: list(Organizer.t), _children) => {
   ...component,
   render: _self =>
     <div className=style##root>

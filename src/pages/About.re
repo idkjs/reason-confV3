@@ -8,7 +8,9 @@ external reactViennaLogo : string = "../assets//partners/reactvienna-logo.svg";
 
 let component = ReasonReact.statelessComponent("About");
 
-let s = Utils.s;
+open Utils;
+
+open Data.Organizer;
 
 let make = _children => {
   ...component,
@@ -58,7 +60,7 @@ let make = _children => {
       </main>
       <h2> ("Organizers" |> s) </h2>
       <main>
-        <Organizers organizers=Data.organizers />
+        <Organizers organizers />
         <p>
           (
             {js|

@@ -42,7 +42,7 @@ let make = _children => {
         <section className=style##copyright>
           (
             {j|
-DemoConf is a not-for-profit conference event by developers for developers.
+DemoConf is a [not-for-profit conference](/about/) event by developers for developers.
 
 Design by [Andrey Okonetchnikov](http://okonet.ru) with additional tweaks by [Alain Armand](https://twitter/_idkjs)
           |j}
