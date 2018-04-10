@@ -10,14 +10,14 @@ let make = _children => {
       <main>
         (
           {js|
-ReasonConf is the **world's first** conference for [ReasonML](https://reasonml.github.io), a new language meant to replace JavaScript in developing ambitious web applications.
+DemoConf is the **world's first** conference for [ReasonML](https://reasonml.github.io), a new language meant to replace JavaScript in developing ambitious web applications.
 Despite the fact that ReasonML is young, the conference has gained attention and support from JavaScript community around the world:
 
 - The [announcement tweet](https://twitter.com/reasonconf/status/954084342086717441) received **143,581** impressions, **400** likes, and attracted **361** followers
 - All Early Bird Tickets were **sold out in two days**
 - The conference attracted multiple core members of ReasonML community as speakers and attendees
 
-## ReasonConf Facts
+## DemoConf Facts
 
 - **World’s first conference** about ReasonML
 - **Three day event** with practical workshops and a single track conference
@@ -26,7 +26,7 @@ Despite the fact that ReasonML is young, the conference has gained attention and
 - **International audience** with a strong focus on web-development
 - Part of [**Diversity Tickets**](https://diversitytickets.org) by Travis Foundation
 
-ReasonConf is a **not-for-profit** conference. [The goal of the event](/about/) is to bring the global community together. We are giving away half of the tickets to the international communities and notable members who work on the language.
+DemoConf is a **not-for-profit** conference. [The goal of the event](/about/) is to bring the global community together. We are giving away half of the tickets to the international communities and notable members who work on the language.
 
 ## 5 Reasons to Sponsor
 1. Connect with leading JavaScript, ReasonML and OCaml  developers and community drivers

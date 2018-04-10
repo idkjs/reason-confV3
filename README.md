@@ -317,3 +317,9 @@ Run `git reset --soft HEAD@{1}` to undo immediately preceding commit.
 ## react social icons
 
 The arg svg passed to :global is telling css where to find the mask property so Im guessing the svg is in the global scope/ the image we are running mask on, then get the social svg icon from the path. This must be part of [react-social-icons](https://github.com/jaketrent/react-social-icons)
+
+## marked markdown in react
+
+See: [marked](https://marked.js.org/#/USING_ADVANCED.md)
+
+Awesome project. Lets you use all the github syntax you might already know, example links to pages become dead simple. No href to write. You have to be patient and learn how to write it, spacing matters and you wont get errors(that i know of) but it will render. For lists, if you write a list with '1' as the first #, it will auto convert to sequential #'s. This might be effect of git-hub-flavored marked down or smartLists or smartypants or all of them. First time but so nice.

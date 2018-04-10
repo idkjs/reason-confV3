@@ -2,6 +2,8 @@
 
 let s = ReasonReact.stringToElement;
 
+let ate = ReasonReact.arrayToElement;
+
 let soi = string_of_int;
 
 let wrapIt = ReasonReact.wrapReasonForJs;
