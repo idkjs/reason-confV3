@@ -10,14 +10,18 @@ module SocialIcon = Gatsby.SocialIcon;
 
 module Link = Gatsby.Link;
 
-let str = Utils.s;
-
 /* create list of social icons */
 let socialUrls = [|
   "https://www.twitter.com/reasonconf",
   "https://www.facebook.com/ReasonConf-1334078980027448/",
   "https://www.github.com/reasonvienna",
 |];
+
+let organizerWithPic = ({imgUrl, name, href}: Data.Organizer.t) =>
+  <a href className=style##creator key=name>
+    <img src=imgUrl alt={j|Photo of $(name)|j} className=style##userpic />
+    (name |> s)
+  </a>;
 
 let make = _children => {
   ...component,
@@ -45,7 +49,7 @@ let make = _children => {
 DemoConf is a [not-for-profit conference](/about/) event by developers for developers.
 
 Design by [Andrey Okonetchnikov](http://okonet.ru) with additional tweaks by [Alain Armand](https://twitter/_idkjs)
-          |j}
+© DemoConf, 2018|j}
             |> md
           )
         </section>
