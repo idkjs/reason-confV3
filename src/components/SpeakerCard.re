@@ -2,20 +2,29 @@
 
 open Utils;
 
-open Data;
+module ParallaxScroll = Gatsby.ParallaxScroll;
 
 let component = ReasonReact.statelessComponent("SpeakerCard");
 
-let make = (~speaker: Speaker.t, _children) => {
+/* add ParallaxScroll as a wrapper to the whole element */
+let make = (~speaker: Data.Speaker.t, _children) => {
   ...component,
   render: _self =>
-    <figure className=style##root>
-      <img src=speaker.imgUrl alt=speaker.name />
-      <figcaption>
-        <h3 className=style##name> (s(speaker.name)) </h3>
-        <p> (s(speaker.company)) </p>
-      </figcaption>
-    </figure>,
+    <ParallaxScroll
+      from="top-bottom"
+      to_="bottom-top"
+      props={
+        "--speaker-ty": {
+          "from": "100px",
+          "to": "-100px",
+        },
+      }>
+      <figure className=style##root>
+        <img src=speaker.imgUrl alt=speaker.name />
+        <figcaption>
+          <h3 className=style##name> (s(speaker.name)) </h3>
+          <p> (s(speaker.company)) </p>
+        </figcaption>
+      </figure>
+    </ParallaxScroll>,
 };
-/* let default =
-   ReasonReact.wrapReasonForJs(~component, jsProps => make(jsProps##children)); */
