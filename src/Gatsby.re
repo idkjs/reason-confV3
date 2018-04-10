@@ -37,10 +37,15 @@ module Link = {
   };
 };
 
-/* Helmut via bucklescript
-   tell bs to use the react-helmut module, in reason call it "linkClass" with type
-   RRCC and use the react-helmut default version. define a make() to call it.
-   */
+module ParallaxScroll = {
+  [@bs.module "./components/ParallaxScroll"]
+  external linkClass : ReasonReact.reactClass = "ParallaxScroll";
+  let make = (~from: string, ~to_: string, ~props: Js.t({..}), children) => {
+    let props = {"from": from, "to": to_, "props": props};
+    ReasonReact.wrapJsForReason(~reactClass=linkClass, ~props, children);
+  };
+};
+
 module Helmet = {
   [@bs.module "react-helmet"]
   external linkClass : ReasonReact.reactClass = "default";
