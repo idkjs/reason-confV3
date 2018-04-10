@@ -16,13 +16,42 @@ external keiraHodgkisonImg : string = "./assets/keira-hodgkison.jpg";
 [@bs.module]
 external cristianoCalcagnoImg : string = "./assets/cristiano-calcagno.jpg";
 
-let s = Utils.s;
+[@bs.module] external seanImg : string = "./assets/sean-grove.jpg";
 
-type organizerData = {
-  name: string,
-  imgUrl: string,
-  href: string,
-  twitter: string,
+[@bs.module] external jaredImg : string = "./assets/jared-forsyth.jpg";
+
+let find_opt = (fn, l) =>
+  try (List.find(fn, l) |> (r => Some(r))) {
+  | Not_found => None
+  };
+
+module Organizer = {
+  type t = {
+    name: string,
+    imgUrl: string,
+    href: string,
+    twitter: string,
+  };
+  let organizers = [
+    {
+      name: "Patrick Stapfer",
+      imgUrl: patrickImg,
+      href: "https://twitter.com/ryyppy",
+      twitter: "ryyppy",
+    },
+    {
+      name: "Nik Graf",
+      imgUrl: nikImg,
+      href: "https://twitter.com/nikgraf",
+      twitter: "nikgraf",
+    },
+    {
+      name: "Andrey Okonetchnikov",
+      imgUrl: andreyImg,
+      href: "https://twitter.com/okonetchnikov",
+      twitter: "okonetchnikov",
+    },
+  ];
 };
 
 type social = {
@@ -131,32 +160,6 @@ let otherSpeakers = [|
 
 let speakers: array(speakerData) =
   Array.concat([headlineSpeakers, otherSpeakers]);
-
-let organizers = [
-  {
-    name: "Patrick Stapfer",
-    imgUrl: patrickImg,
-    href: "https://twitter.com/ryyppy",
-    twitter: "ryyppy",
-  },
-  {
-    name: "Nik Graf",
-    imgUrl: nikImg,
-    href: "https://twitter.com/nikgraf",
-    twitter: "nikgraf",
-  },
-  {
-    name: "Andrey Okonetchnikov",
-    imgUrl: andreyImg,
-    href: "https://twitter.com/okonetchnikov",
-    twitter: "okonetchnikov",
-  },
-];
-
-let find_opt = (fn, l) =>
-  try (List.find(fn, l) |> (r => Some(r))) {
-  | Not_found => None
-  };
 
 let findSpeaker = (name: string) =>
   Array.to_list(speakers) |> find_opt(s => s.name == name);
