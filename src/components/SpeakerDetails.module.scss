@@ -1,3 +1,5 @@
+@import "../layouts/variables.scss";
+
 .root {
   margin: 2rem 0;
   @media (min-width: 768px) {
@@ -21,16 +23,12 @@
   width: 150px;
   border-radius: 50%;
 }
-// .figure {
-//   margin: 0;
-// }
-
-// .image {
-//   display: block;
-//   width: 200px;
-//   filter: grayscale(1);
-// }
 
 .name {
-  font-size: 1.5em;
+  margin: 0;
+}
+
+.company {
+  margin: 0;
+  color: lighten($textColor, 40);
 }
