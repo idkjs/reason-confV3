@@ -4,8 +4,6 @@ open Utils;
 
 open Data;
 
-let s = Utils.s;
-
 let component = ReasonReact.statelessComponent("SpeakerDetails");
 
 let make = (~speaker: Speaker.t, _children) => {

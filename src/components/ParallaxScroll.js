@@ -1,6 +1,7 @@
 import React from "react";
-import { create } from "basicscroll";
+// import { create } from "basicscroll";
 
+const basicscroll = typeof window !== `undefined` ? require("basicscroll") : {};
 export class ParallaxScroll extends React.Component {
   componentDidMount() {
     this.initScroll();
@@ -15,7 +16,7 @@ export class ParallaxScroll extends React.Component {
   }
   initScroll = () => {
     const { from, to, props } = this.props;
-    this.instance = create({
+    this.instance = basicscroll.create({
       elem: this.element,
       from,
       to,

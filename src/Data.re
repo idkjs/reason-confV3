@@ -214,8 +214,8 @@ module Tier = {
   let sponsorTiers: array(t) = [|
     {
       id: "main",
-      name: "Main Sponsor",
-      cost: 10000,
+      name: "Gold Sponsor",
+      cost: 5000,
       amount: 1,
       description: {js|
 - Banner placement of your choice (stage, entrance and / or catering)
