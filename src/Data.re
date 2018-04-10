@@ -89,7 +89,6 @@ module Speaker = {
       name: "Keira Hodgkison",
       company: "Culture Amp",
       imgUrl: keiraHodgkisonImg,
-      /* TODO: CHECK BACK WITH KEIRA TO UPDATE THE DESCRIPTION */
       description: {j|Keira is a developer at Culture Amp, the world's leading culture analytics platform. She works with React, Flow, and Rails on solutions to help customers share, and act upon company employee engagement data. Keira is an advocate for using functional programming techniques to improve the JavaScript coding and refactoring experience. When she's not writing code, she can be found under a large cat.|j},
       talk: None,
       social: {
