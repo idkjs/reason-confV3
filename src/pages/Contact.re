@@ -1,4 +1,4 @@
-let component = ReasonReact.statelessComponent("Thanks");
+let component = ReasonReact.statelessComponent("Contact");
 
 open Utils;
 

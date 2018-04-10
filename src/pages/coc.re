@@ -18,28 +18,28 @@ let make = _children => {
       <p> (s("You have our contact details in the emails we've sent.")) </p>
       <h2> (s("The Quick Version")) </h2>
       <p>
-        <div> (s("Reason Team")) </div>
+        <div> (s("Demo Team")) </div>
         <div>
-          (s("Twitter "))
+          (s("Twitter: "))
           <a href="https://twitter.com/reasonconf" target="_blank">
             (s("@reasonconf"))
           </a>
         </div>
         <div>
-          (s("Email "))
+          (s("Email: "))
           <a href="mailto:admin@shing.co"> (s("admin@shing.co")) </a>
         </div>
       </p>
       <p>
         <div> (s("Alain Armand")) </div>
         <div>
-          (s("Twitter "))
+          (s("Twitter: "))
           <a href="https://twitter.com/_idkjs" target="_blank">
             (s("@_idkjs"))
           </a>
         </div>
         <div>
-          (s("Email "))
+          (s("Email: "))
           <a href="mailto:admin@shing.co"> (s("admin@shing.co")) </a>
         </div>
       </p>
