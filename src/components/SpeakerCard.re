@@ -1,10 +1,12 @@
 [@bs.module] external style : Js.t({..}) = "./speakerCard.module.scss";
 
-let s = Utils.s;
+open Utils;
+
+open Data;
 
 let component = ReasonReact.statelessComponent("SpeakerCard");
 
-let make = (~speaker: Data.speakerData, _children) => {
+let make = (~speaker: Speaker.t, _children) => {
   ...component,
   render: _self =>
     <figure className=style##root>

@@ -11,11 +11,13 @@ external reasonViennaLogo : string = "../assets/reasonvienna-logo.svg";
 
 open Utils;
 
+open Data;
+
 module Link = Gatsby.Link;
 
 module Tickets = Tito.Tickets;
 
-let speakerColumn = (speaker: Data.speakerData) =>
+let speakerColumn = (speaker: Speaker.t) =>
   <li className="speaker-list--item">
     <SpeakerCard speaker key=speaker.name />
   </li>;
@@ -156,7 +158,7 @@ let make = _children => {
           <ul className="speaker-list">
             (
               /* Data.speakers */
-              Data.headlineSpeakers
+              Speaker.headlineSpeakers
               |> Array.map(speakerColumn)
               |> ReasonReact.arrayToElement
             )

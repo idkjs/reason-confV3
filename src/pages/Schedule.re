@@ -53,7 +53,9 @@ let make = _children => {
       <table>
         <tbody>
           (
-            Data.schedule |> Array.map(createRow) |> ReasonReact.arrayToElement
+            Schedule.schedule
+            |> Array.map(createRow)
+            |> ReasonReact.arrayToElement
           )
         </tbody>
       </table>

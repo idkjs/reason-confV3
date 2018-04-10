@@ -8,7 +8,7 @@ let s = Utils.s;
 
 let component = ReasonReact.statelessComponent("SpeakerDetails");
 
-let make = (~speaker: Data.speakerData, _children) => {
+let make = (~speaker: Speaker.t, _children) => {
   ...component,
   render: _self =>
     <div className=style##root>

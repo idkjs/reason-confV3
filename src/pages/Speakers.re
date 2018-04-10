@@ -4,7 +4,7 @@ let component = ReasonReact.statelessComponent("Speakers");
 
 let s = Utils.s;
 
-let toSpeakerDetail = (speaker: Data.speakerData) =>
+let toSpeakerDetail = (speaker: Speaker.t) =>
   <SpeakerDetails speaker key=speaker.name />;
 
 let make = _children => {
@@ -14,7 +14,7 @@ let make = _children => {
       <h1> ("Speakers" |> s) </h1>
       <main className="full">
         (
-          Data.speakers
+          Speaker.speakers
           |> Array.map(toSpeakerDetail)
           |> ReasonReact.arrayToElement
         )
