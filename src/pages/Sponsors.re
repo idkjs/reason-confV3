@@ -1,17 +1,15 @@
 let component = ReasonReact.statelessComponent("Sponsors");
 
-let s = Utils.s;
+open Utils;
 
 let make = _children => {
   ...component,
   render: _self =>
     <section>
       <h1> (s("Sponsors")) </h1>
-      <h2> (s("Why sponsoring")) </h2>
       <main>
-        <p>
-          (
-            {js|
+        (
+          {js|## Why sponsoring
                    This conference aims to demonstrate that ReasonML is able
                    to be more than a niche language in the space of frontend
                    languages.  Attendees should feel motivated to introduce
@@ -20,16 +18,15 @@ let make = _children => {
                    this event will provide a well balanced schedule with
                    practical & theoretical content.
                  |js}
-            |> s
-          )
-        </p>
+          |> md
+        )
       </main>
-      <h2> (s("Why sponsoring")) </h2>
+      <h2> (s("Sponsor Tiers")) </h2>
       <main className="full sponsor-tiers">
         (
           Data.sponsorTiers
           |> Array.map((tier: Data.tierData) =>
-               <SponsorTier tier key=tier.name />
+               <SponsorTier tier key=tier.id />
              )
           |> ReasonReact.arrayToElement
         )
