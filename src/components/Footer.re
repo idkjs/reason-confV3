@@ -50,7 +50,7 @@ DemoConf is a [not-for-profit conference](/about/) event by developers for devel
 
 Design by [Andrey Okonetchnikov](http://okonet.ru) with additional tweaks by [Alain Armand](https://twitter/_idkjs)
 
-© DemoConf, 2018
+© DemoConf 2018
             |j}
             |> md
           )

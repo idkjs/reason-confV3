@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Alain Armand <aarmand.inbox@gmail.com",
   "dependencies": {
+    "basicscroll": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.28",
     "marked": "^0.3.19",
     "normalize.css": "^8.0.0",
