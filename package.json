@@ -5,6 +5,7 @@
   "author": "Alain Armand <aarmand.inbox@gmail.com",
   "dependencies": {
     "gatsby-plugin-google-analytics": "^1.0.28",
+    "marked": "^0.3.19",
     "normalize.css": "^8.0.0",
     "re-classnames": "^1.0.0",
     "react-helmet": "^5.2.0",
