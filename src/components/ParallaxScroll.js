@@ -3,9 +3,18 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var Basicscroll = require("basicscroll");
+var Basicscroll = require("../../vendor/basicscroll");
 
-var BasicScroll = /* module */ [];
+function maybeCreate(opts) {
+  var match = typeof window === "undefined" ? undefined : window;
+  if (match !== undefined) {
+    return /* Some */ [Basicscroll.create(opts)];
+  } else {
+    return /* None */ 0;
+  }
+}
+
+var BasicScroll = /* module */ [/* maybeCreate */ maybeCreate];
 
 var component = ReasonReact.reducerComponent("ParallaxScroll");
 
@@ -21,24 +30,20 @@ function initScroll(from, to_, props, state) {
   if (match || !match$1) {
     return /* () */ 0;
   } else {
-    var newInstance = Basicscroll.create({
+    var newInstance = maybeCreate({
       elem: match$1[0],
       from: from,
       to: to_,
       props: props
     });
-    newInstance.start();
-    state[/* instance */ 0][0] = /* Some */ [newInstance];
-    return /* () */ 0;
-  }
-}
-
-function maybeDo(fn, instance) {
-  var match = instance[0];
-  if (match) {
-    return Curry._1(fn, match[0]);
-  } else {
-    return /* () */ 0;
+    if (newInstance) {
+      var instance = newInstance[0];
+      instance.start();
+      state[/* instance */ 0][0] = /* Some */ [instance];
+      return /* () */ 0;
+    } else {
+      return /* () */ 0;
+    }
   }
 }
 
@@ -98,6 +103,5 @@ exports.BasicScroll = BasicScroll;
 exports.component = component;
 exports.setScrollAreaRef = setScrollAreaRef;
 exports.initScroll = initScroll;
-exports.maybeDo = maybeDo;
 exports.make = make;
 /* component Not a pure module */
