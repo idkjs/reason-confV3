@@ -2,8 +2,6 @@
 
 open Utils;
 
-module ParallaxScroll = Gatsby.ParallaxScroll;
-
 let component = ReasonReact.statelessComponent("SpeakerCard");
 
 /* add ParallaxScroll as a wrapper to the whole element */
@@ -19,12 +17,12 @@ let make = (~speaker: Data.Speaker.t, _children) => {
           "to": "-100px",
         },
       }>
-      <figure className=style##root>
-        <img src=speaker.imgUrl alt=speaker.name />
-        <figcaption>
-          <h3 className=style##name> (s(speaker.name)) </h3>
-          <p> (s(speaker.company)) </p>
-        </figcaption>
-      </figure>
+      ...<figure className=style##root>
+           <img src=speaker.imgUrl alt=speaker.name />
+           <figcaption>
+             <h3 className=style##name> (s(speaker.name)) </h3>
+             <p> (s(speaker.company)) </p>
+           </figcaption>
+         </figure>
     </ParallaxScroll>,
 };

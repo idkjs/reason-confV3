@@ -15,8 +15,6 @@ open Data;
 
 module Link = Gatsby.Link;
 
-module ParallaxScroll = Gatsby.ParallaxScroll;
-
 module Tickets = Tito.Tickets;
 
 let speakerColumn = (speaker: Speaker.t) =>
@@ -44,32 +42,32 @@ let make = _children => {
             "to": "-100px",
           },
         }>
-        <header className="teaser">
-          <section className="container_centered grid grid-6col">
-            <h1 className="teaser--logo">
-              <img
-                src=Assets.logo
-                alt="DemoConf 2018"
-                className="teaser--image"
-              />
-            </h1>
-            <nav className="teaser--navigation">
-              <Navigation pathName="/" />
-            </nav>
-            <h2 className="teaser--dates">
-              <time dateTime="2018-05-11/2018-05-13">
-                ({j|11–13 May 2018|j} |> s)
-              </time>
-            </h2>
-            <p className="teaser--location"> ("Vienna, Austria" |> s) </p>
-            <p className="teaser--tagline">
-              (
-                "World's first Demo Conference for web-developers & OCaml enthusiasts"
-                |> s
-              )
-            </p>
-          </section>
-        </header>
+        ...<header className="teaser">
+             <section className="container_centered grid grid-6col">
+               <h1 className="teaser--logo">
+                 <img
+                   src=Assets.logo
+                   alt="DemoConf 2018"
+                   className="teaser--image"
+                 />
+               </h1>
+               <nav className="teaser--navigation">
+                 <Navigation pathName="/" />
+               </nav>
+               <h2 className="teaser--dates">
+                 <time dateTime="2018-05-11/2018-05-13">
+                   ({j|11–13 May 2018|j} |> s)
+                 </time>
+               </h2>
+               <p className="teaser--location"> ("Vienna, Austria" |> s) </p>
+               <p className="teaser--tagline">
+                 (
+                   "World's first Demo Conference for web-developers & OCaml enthusiasts"
+                   |> s
+                 )
+               </p>
+             </section>
+           </header>
       </ParallaxScroll>
       <section className="offering">
         <div className="container_centered grid grid-6col">
