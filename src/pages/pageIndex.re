@@ -41,6 +41,10 @@ let make = _children => {
             "from": "100px",
             "to": "-100px",
           },
+          "--header-clip": {
+            "from": "10",
+            "to": "4vw",
+          },
         }>
         ...<header className="teaser">
              <section className="container_centered grid grid-6col">
