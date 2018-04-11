@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "author": "Alain Armand <aarmand.inbox@gmail.com",
   "dependencies": {
-    "basicscroll": "^2.1.1",
+    "eases": "^1.0.8",
     "gatsby-plugin-google-analytics": "^1.0.28",
+    "lodash.clonedeep": "^4.5.0",
     "marked": "^0.3.19",
     "normalize.css": "^8.0.0",
+    "parse-unit": "^1.0.1",
     "re-classnames": "^1.0.0",
     "react-helmet": "^5.2.0",
     "react-social-icons": "^2.8.1",
