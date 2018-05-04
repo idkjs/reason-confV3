@@ -7049,9 +7049,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re-classnames@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/re-classnames/-/re-classnames-1.0.0.tgz#5bb1f068ccb066e932cb79944437b8ba8372a028"
+re-classnames@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/re-classnames/-/re-classnames-2.0.0.tgz#1954345471f14d3924ea269e84dd587b8bbdb417"
 
 react-deep-force-update@^2.1.1:
   version "2.1.1"
