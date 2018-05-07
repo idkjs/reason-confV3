@@ -12,7 +12,7 @@
     "parse-unit": "^1.0.1",
     "re-classnames": "^1.0.0",
     "react-helmet": "^5.2.0",
-    "react-social-icons": "^2.8.1",
+    "react-social-icons": "^3.0.0",
     "reason-react": "^0.3.4"
   },
   "keywords": ["gatsby"],
