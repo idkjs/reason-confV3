@@ -3427,13 +3427,13 @@ gatsby-plugin-google-analytics@^1.0.28:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-postcss-sass@1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss-sass/-/gatsby-plugin-postcss-sass-1.0.19.tgz#0effb0bf9c26ab0d63ba8a3bdd35c6c3114ba5c4"
+gatsby-plugin-postcss-sass@1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss-sass/-/gatsby-plugin-postcss-sass-1.0.22.tgz#73e7d163ca16377ba597d5804eac3cb67a8fa488"
   dependencies:
     babel-runtime "^6.26.0"
-    extract-text-webpack-plugin "^1.0.1"
     gatsby-1-config-css-modules "^1.0.11"
+    gatsby-1-config-extract-plugin "^1.0.3"
     node-sass "^4.5.2"
     sass-loader "^4.1.1"
 
