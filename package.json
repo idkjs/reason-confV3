@@ -31,7 +31,7 @@
     "*.{js,json,md,css,scss}": ["prettier --write", "git add"]
   },
   "devDependencies": {
-    "autoprefixer": "8.2.0",
+    "autoprefixer": "8.6.5",
     "bs-platform": "2.2.3",
     "gatsby": "1.9.243",
     "gatsby-link": "1.6.40",
