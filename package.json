@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "8.2.0",
-    "bs-platform": "2.2.3",
+    "bs-platform": "5.2.1",
     "gatsby": "1.9.243",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-postcss-sass": "1.0.19",
