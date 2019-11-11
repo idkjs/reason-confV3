@@ -39,7 +39,7 @@
     "gatsby-plugin-react-helmet": "2.0.8",
     "husky": "0.14.3",
     "lint-staged": "7.0.2",
-    "prettier": "1.11.1"
+    "prettier": "1.19.1"
   },
   "browserslist": ["> 1%", "last 2 versions", "IE 11"]
 }
