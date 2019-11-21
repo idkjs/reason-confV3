@@ -37,7 +37,7 @@
     "gatsby-link": "1.6.40",
     "gatsby-plugin-postcss-sass": "1.0.19",
     "gatsby-plugin-react-helmet": "2.0.8",
-    "husky": "0.14.3",
+    "husky": "3.1.0",
     "lint-staged": "7.0.2",
     "prettier": "1.11.1"
   },
