@@ -7,7 +7,7 @@
     "eases": "^1.0.8",
     "gatsby-plugin-google-analytics": "^1.0.28",
     "lodash.clonedeep": "^4.5.0",
-    "marked": "^0.3.19",
+    "marked": "^0.8.0",
     "normalize.css": "^8.0.0",
     "parse-unit": "^1.0.1",
     "re-classnames": "^1.0.0",
